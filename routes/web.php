@@ -24,6 +24,15 @@ Route::view('/used-cars-for-sale', 'site.used-cars-for-sale');
 Route::view('/car-affordability-calculator', 'site.car-affordability-calculator');
 Route::view('/car-loan-calculator', 'site.car-loan-calculator');
 Route::view('/lease-a-car', 'site.lease-a-car');
+Route::view('/research', 'site.research');
+Route::view('/sell-your-car', 'site.sell-your-car');
+Route::view('/plus', 'site.plus');
+Route::view('/faq', 'site.faq');
+Route::view('/contact-us', 'site.contact-us');
+Route::view('/partner', 'site.partner');
+Route::view('/oem', 'site.oem');
+Route::view('/about-us', 'site.about-us');
+Route::view('/careers', 'site.careers');
 
 // Auth::routes();
 
