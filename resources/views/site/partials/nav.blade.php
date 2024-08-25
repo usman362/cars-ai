@@ -44,7 +44,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                 aria-expanded="false"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                class="flex items-center text-center theme-black"
+                class="flex nav-dropdown-btn items-center text-center theme-black nav"
               >
                 New<svg
                   viewBox="0 0 24 24"
@@ -184,7 +184,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                 aria-expanded="false"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                class="flex items-center text-center theme-black"
+                class="flex nav-dropdown-btn items-center text-center theme-black"
               >
                 Used<svg
                   viewBox="0 0 24 24"
@@ -338,7 +338,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                 aria-expanded="false"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                class="flex items-center text-center theme-black"
+                class="flex nav-dropdown-btn items-center text-center theme-black"
               >
                 Electric<svg
                   viewBox="0 0 24 24"
@@ -479,7 +479,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                 aria-expanded="false"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                class="flex items-center text-center theme-black"
+                class="flex nav-dropdown-btn items-center text-center theme-black"
               >
                 Research<svg
                   viewBox="0 0 24 24"
