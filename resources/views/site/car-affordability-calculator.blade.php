@@ -30,7 +30,7 @@
                                         <legend class="sr-only">1. Looking for</legend><label
                                             class="form-radio-control custom-control w-full"><input
                                                 class="form-radio-control-input custom-control-input custom-control-input-radio"
-                                                type="radio" name="condition" value="NEW">
+                                                type="radio" name="condition" value="NEW" checked>
                                             <div class="indicator-wrapper">
                                                 <div class="custom-control-indicator custom-control-indicator-radio mr-2"
                                                     data-test="radioIndicator"></div>
@@ -371,7 +371,7 @@
                             <legend class="sr-only">1. Looking for</legend><label
                                 class="form-radio-control custom-control w-full"><input
                                     class="form-radio-control-input custom-control-input custom-control-input-radio"
-                                    type="radio" name="condition" value="NEW">
+                                    type="radio" name="condition" checked value="NEW">
                                 <div class="indicator-wrapper">
                                     <div class="custom-control-indicator custom-control-indicator-radio mr-2"
                                         data-test="radioIndicator"></div>

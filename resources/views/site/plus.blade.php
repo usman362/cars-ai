@@ -1,10 +1,10 @@
 @extends('site.layouts.app')
 @section('content')
-    <main id="mainContent" style="margin-top:60px"
+    <main id="mainContent"
         class="mx-auto md:max-w-[var(--layout-max-width-md,none)] lg:max-w-[var(--layout-max-width-lg,none)] xl:max-w-[var(--layout-max-width-xl,none)] md:border-l-[line-width:var(--layout-border,0)] md:border-r-[line-width:var(--layout-border,0)] md:border-r-[#ccc] md:border-l-[#ccc]">
         <div>
             <div class="relative pt-[60px]">
-                <div style="--image-url-sm:url({{asset('assets/_next/static/images/tc-plus-landing-bg-lg-f3460d1ab4f6eec80fa4e6e7a78c1982.jpeg')}});--image-url-md:url({{asset('assets/_next/static/images/tc-plus-landing-bg-lg-f3460d1ab4f6eec80fa4e6e7a78c1982.jpeg')}});--image-url-lg:url({{asset('assets/_next/static/images/tc-plus-landing-bg-lg-f3460d1ab4f6eec80fa4e6e7a78c1982.jpeg')}}?w=2000&amp;h=944)"
+                <div style="--image-url-sm:url({{ asset('assets/_next/static/images/tc-plus-landing-bg-lg-f3460d1ab4f6eec80fa4e6e7a78c1982.jpeg') }});--image-url-md:url({{ asset('assets/_next/static/images/tc-plus-landing-bg-lg-f3460d1ab4f6eec80fa4e6e7a78c1982.jpeg') }});--image-url-lg:url({{ asset('assets/_next/static/images/tc-plus-landing-bg-lg-f3460d1ab4f6eec80fa4e6e7a78c1982.jpeg') }}?w=2000&amp;h=944)"
                     class="bg-[image:var(--image-url-sm)] bg-cover bg-no-repeat text-center text-white md:bg-[image:var(--image-url-md)] lg:bg-[image:var(--image-url-lg)] relative bg-center before:content-[''] before:block before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:bg-gradient-to-r before:from-black before:to-[rgba(36,43,66,0.6)]">
                     <div class="container">
                         <div class="mx-0 mb-[-25px] px-0 md:mx-[30px] md:mb-[-40px] md:px-2 md:text-left lg:pb-6 lg:pt-6">
@@ -14,11 +14,12 @@
                                     NEW</div>
                                 <div>
                                     <h1 class="heading-3 normal-case heading-md-1 md:normal-case pb-1 font-normal md:pb-0">
-                                        <span class="sr-only">TrueCar Plus</span></h1>
+                                        <span class="sr-only">TrueCar Plus</span>
+                                    </h1>
                                     <div class="w-full">
                                         <div class="picture-container" style="padding-bottom:0;width:160px;height:29px"><img
                                                 class="picture-inner picture-svg w-[110px] md:w-[160px]"
-                                                src="{{asset('assets/_next/static/images/tc-plus-dark-theme-logo-f9a028938a01d05a636e4a5a8a188099.svg')}}"
+                                                src="{{ asset('assets/_next/static/images/tc-plus-dark-theme-logo-f9a028938a01d05a636e4a5a8a188099.svg') }}"
                                                 role="presentation" alt=""></div>
                                     </div>
                                 </div>
@@ -26,13 +27,14 @@
                             <div class="relative mt-2 text-left xl:mt-3">
                                 <div class="picture-container max-xl:!w-[380px] max-sm:hidden"
                                     style="padding-bottom:0;width:506px;height:82px"><img class="picture-inner picture-svg"
-                                        src="{{asset('assets/_next/static/images/title-b0b7eb6df743280db2060661e023a6d9.svg')}}"
+                                        src="{{ asset('assets/_next/static/images/title-b0b7eb6df743280db2060661e023a6d9.svg') }}"
                                         alt="Buy online. Have it delivered."></div>
                                 <div class="picture-container sm:hidden" style="padding-bottom:0;width:330px;height:102px">
                                     <img class="picture-inner picture-svg"
-                                        src="{{asset('assets/_next/static/images/title-stacked-00434b4d80b883337793ab9cce983c38.svg')}}"
-                                        alt="Buy online. Have it delivered."></div><button data-test="infoButtonButton"
-                                    aria-label="Info" color="secondary" style="--info-border-color:white"
+                                        src="{{ asset('assets/_next/static/images/title-stacked-00434b4d80b883337793ab9cce983c38.svg') }}"
+                                        alt="Buy online. Have it delivered.">
+                                </div><button data-test="infoButtonButton" aria-label="Info" color="secondary"
+                                    style="--info-border-color:white"
                                     class="info-button flex-grow-0 rounded-full shadow-[inset_0_0_0_1px_var(--info-border-color)] hover:shadow-[inset_0_0_0_2px_var(--info-border-color)] active:shadow-[inset_0_0_0_2px_var(--info-border-color)] absolute z-1 bottom-[16px] ml-[-136px] sm:bottom-[20px] sm:ml-[-16px] xl:bottom-[12px] xl:ml-[-24px]"><svg
                                         viewBox="0 0 24 24" class="icon icon-fill-default flex-shrink-0 fill-white"
                                         style="width:18px;height:18px" aria-hidden="true">
@@ -60,7 +62,8 @@
                                                                     class="icon icon-fill-default z-[200]"
                                                                     style="width:24px;height:24px" aria-hidden="true">
                                                                     <use href="#search"></use>
-                                                                </svg></div>
+                                                                </svg>
+                                                            </div>
                                                             <div class="field-input-label-challenger"><input
                                                                     id="trueCarPlusSearchBarOmnisearchSearchField"
                                                                     autocomplete="off"
@@ -125,7 +128,8 @@
                                                 Electric</span><svg viewBox="0 0 24 24" class="icon icon-fill-default"
                                                 style="width:20px;height:20px" aria-hidden="true">
                                                 <use href="#keyboard_arrow_right"></use>
-                                            </svg></span></a></div>
+                                            </svg></span></a>
+                                </div>
                                 <p class="text-left text-sm md:hidden">Delivery not available in NY, MA, HI, and AK.</p>
                                 <p class="hidden text-left text-sm text-[color:var(--gray-300)] md:block">Delivery not
                                     available in New York, Massachusetts, Hawaii, and Alaska.</p><span
@@ -137,9 +141,10 @@
                         class="relative right-0 bottom-[-25px] ml-[40%] md:mt-5 md:ml-[50%] lg:absolute lg:bottom-[-40px] lg:w-full lg:max-w-[400px] xl:max-w-[600px]">
                         <div class="picture-container picture-container-block" style="padding-bottom:58.94378194207837%">
                             <img class="picture-block" sizes="600px"
-                                src="{{asset('assets/_next/static/images/tc-plus-landing-vehicle-bg-1e34583cf1595a372873ef1ee0b5eff8.png')}}?auto=format&amp;h=330.08517887563886&amp;w=560"
-                                srcset="{{asset('assets/_next/static/images/tc-plus-landing-vehicle-bg-1e34583cf1595a372873ef1ee0b5eff8.png')}}?auto=format&amp;h=330.08517887563886&amp;w=560 560w, {{asset('assets/_next/static/images/tc-plus-landing-vehicle-bg-1e34583cf1595a372873ef1ee0b5eff8.png')}}?auto=format&amp;h=707.3253833049404&amp;w=1200 1200w"
-                                role="presentation" alt=""></div>
+                                src="{{ asset('assets/_next/static/images/tc-plus-landing-vehicle-bg-1e34583cf1595a372873ef1ee0b5eff8.png') }}?auto=format&amp;h=330.08517887563886&amp;w=560"
+                                srcset="{{ asset('assets/_next/static/images/tc-plus-landing-vehicle-bg-1e34583cf1595a372873ef1ee0b5eff8.png') }}?auto=format&amp;h=330.08517887563886&amp;w=560 560w, {{ asset('assets/_next/static/images/tc-plus-landing-vehicle-bg-1e34583cf1595a372873ef1ee0b5eff8.png') }}?auto=format&amp;h=707.3253833049404&amp;w=1200 1200w"
+                                role="presentation" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -162,945 +167,1137 @@
         <div class="container">
             <div class="mt-4 mb-3 text-center" data-test="tcplusTopDealsCarousel">
                 <p class="pt-3 pb-4 text-[30px]">Top deals to buy online</p>
-                <div class="relative mb-3 items-center justify-center">
-                    <div class="carousel">
-                        <div class="relative flex w-full items-center"><button
-                                class="carousel-arrow carousel-arrow-outside carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-2 carousel-arrow-prev carousel-arrow-prev"
-                                data-test="carouselArrowPrev" aria-label="Previous" disabled=""><svg width="16px"
-                                    height="16px" viewBox="0 0 16 16" class="carousel-arrow-icon">
-                                    <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <polyline stroke-width="1.5" fill-rule="nonzero"
-                                            points="5 2 12 8.36363636 5 14.7272727"></polyline>
-                                    </g>
-                                </svg></button>
-                            <div style="position:relative;overflow:hidden" class="grow">
-                                <ul data-test="carouselSlideContainer"
-                                    style="display: flex; flex-flow: row; position: relative; overflow: hidden;"
-                                    class="">
-                                    <li class="px-2" data-test="carouselCurrentSlide0"
-                                        style="scroll-snap-align: start; flex-shrink: 0; width: 25%;">
-                                        <div class="pb-2">
-                                            <div class="flex w-full flex-col">
-                                                <div class="relative rounded-md shadow-lg h-full"
-                                                    aria-label="View details for 2018 Ford Focus, SE Sedan"
-                                                    data-test="usedListing" data-test-item="1FADP3F21JL241921"
-                                                    data-test-dealerid="6884">
-                                                    <div class="relative w-full">
-                                                        <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
-                                                            style="padding-bottom: 56.25%;">
-                                                            <div class="img-container img-container-block preprocessed-image-inner"
-                                                                style="height: auto; padding-bottom: 56.25%; width: 100%;">
-                                                                <img sizes="300px"
-                                                                    src="https://listings-prod.tcimg.net/listings/6884/21/19/1FADP3F21JL241921/MS4X3XKZ5BQFYDY7Z5N6LUFKGQ-cr-860.jpg"
-                                                                    alt="" role="presentation" loading="lazy"
-                                                                    class="img-inner img-block"
-                                                                    srcset="https://listings-prod.tcimg.net/listings/6884/21/19/1FADP3F21JL241921/MS4X3XKZ5BQFYDY7Z5N6LUFKGQ-cr-60.jpg 60w, https://listings-prod.tcimg.net/listings/6884/21/19/1FADP3F21JL241921/MS4X3XKZ5BQFYDY7Z5N6LUFKGQ-cr-120.jpg 120w, https://listings-prod.tcimg.net/listings/6884/21/19/1FADP3F21JL241921/MS4X3XKZ5BQFYDY7Z5N6LUFKGQ-cr-180.jpg 180w, https://listings-prod.tcimg.net/listings/6884/21/19/1FADP3F21JL241921/MS4X3XKZ5BQFYDY7Z5N6LUFKGQ-cr-360.jpg 360w, https://listings-prod.tcimg.net/listings/6884/21/19/1FADP3F21JL241921/MS4X3XKZ5BQFYDY7Z5N6LUFKGQ-cr-540.jpg 540w, https://listings-prod.tcimg.net/listings/6884/21/19/1FADP3F21JL241921/MS4X3XKZ5BQFYDY7Z5N6LUFKGQ-cr-860.jpg 860w, https://listings-prod.tcimg.net/listings/6884/21/19/1FADP3F21JL241921/MS4X3XKZ5BQFYDY7Z5N6LUFKGQ-cr-1400.jpg 1400w"
-                                                                    style="background-image: none;"></div>
-                                                        </div>
-                                                        <div class="absolute bottom-[-16px] right-2 z-20">
-                                                            <div data-test="vehicleCardActionDropDown" class="dropdown">
-                                                                <button aria-haspopup="true"
-                                                                    class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
-                                                                    aria-expanded="false">
-                                                                    <p class="sr-only">Menu</p><svg viewBox="0 0 24 24"
-                                                                        class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
-                                                                        aria-hidden="true"
-                                                                        style="width: 22px; height: 22px;">
-                                                                        <use href="#more-vert"></use>
-                                                                    </svg>
-                                                                </button></div>
-                                                        </div>
-                                                        <div class="absolute top-2 left-2 z-[2]">
-                                                            <div class="flex items-center gap-1"><span
-                                                                    class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-blue-900 text-white flex flex-nowrap px-[8px] drop-shadow-md uppercase"
-                                                                    data-test="vehicleCardTcPlusBadge">Buy Online</span>
-                                                            </div>
-                                                        </div><button type="button"
-                                                            class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
-                                                            aria-label="Like button" data-test="vehicleCardLikeButton"
-                                                            data-test-item=""><svg viewBox="0 0 24 24"
-                                                                class="icon icon-fill-default shrink-0 stroke-white text-dark"
-                                                                aria-hidden="true" style="width: 22px; height: 22px;">
-                                                                <use href="#outlined-heart-fill"></use>
-                                                            </svg>
-                                                            <div class="group-hover:text-white group-hover:underline">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="mt-1 flex w-full items-start p-2 text-left">
-                                                        <div class="w-full truncate">
-                                                            <h2 class="heading-base w-full text-sm"
-                                                                data-test="vehicleCardInfo">
-                                                                <div data-test="vehicleCardConditionYearMake"
-                                                                    class="truncate font-bold">Used 2018 Ford</div>
-                                                                <div class="grid grid-cols-[1fr_auto] gap-1"
-                                                                    data-test="vehicleCardTrim">
-                                                                    <div class="truncate">Focus SE Sedan</div>
+                <div class="mt-4 mb-5 space-y-3 rankingsRecommendationCarousel" id="rankingsRecommendationCarousel">
+                    <div class="relative items-center justify-center">
+                        <div class="carousel">
+                            <div class="relative flex w-full items-center">
+                                <button
+                                    class="carousel-arrow carousel-arrow-outside carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-2 carousel-arrow-prev carousel-arrow-prev"
+                                    data-test="carouselArrowPrev" aria-label="Previous" disabled="">
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="carousel-arrow-icon">
+                                        <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <polyline stroke-width="1.5" fill-rule="nonzero"
+                                                points="5 2 12 8.36363636 5 14.7272727"></polyline>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <div class="grow" style="position: relative; overflow: hidden">
+                                    <ul data-test="carouselSlideContainer" class=""
+                                        style="display: flex; flex-flow: row; position: relative; overflow: hidden; transform: translateX(0px);">
+                                        <li class="px-2" data-test="carouselCurrentSlide0"
+                                            style="
+                                scroll-snap-align: start;
+                                flex-shrink: 0;
+                                width: 33.3333%;
+                              ">
+                                            <div class="pb-2">
+                                                <div class="flex w-full flex-col">
+                                                    <div class="relative rounded-md shadow-lg"
+                                                        aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                        data-test="newListing" data-test-item="4W5KHNRL1RZ503592"
+                                                        data-test-dealerid="466388">
+                                                        <div class="relative w-full">
+                                                            <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
+                                                                style="padding-bottom: 56.25%">
+                                                                <div class="img-container img-container-block preprocessed-image-inner"
+                                                                    style="
+                                            height: auto;
+                                            padding-bottom: 56.25%;
+                                            width: 100%;
+                                          ">
+                                                                    <img sizes="300px"
+                                                                        src="https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-860.jpg"
+                                                                        alt="" role="presentation" loading="lazy"
+                                                                        class="img-inner img-block"
+                                                                        srcset="
+                                              https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-60.jpg     60w,
+                                              https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-120.jpg   120w,
+                                              https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-180.jpg   180w,
+                                              https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-360.jpg   360w,
+                                              https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-540.jpg   540w,
+                                              https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-860.jpg   860w,
+                                              https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-1400.jpg 1400w
+                                            "
+                                                                        style="background-image: none">
                                                                 </div>
-                                                            </h2>
-                                                            <div class="mt-1 flex items-center justify-between gap-1">
-                                                                <div class="flex items-center">
-                                                                    <div class="heading-4 normal-case flex items-center">
-                                                                        <span class="truncate"
-                                                                            data-test="vehicleCardPriceLabelAmount">$8,000</span>
+                                                            </div>
+                                                            <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                <div data-test="vehicleCardActionDropDown"
+                                                                    class="dropdown">
+                                                                    <button aria-haspopup="true"
+                                                                        class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
+                                                                        aria-expanded="false">
+                                                                        <p class="sr-only">Menu</p>
+                                                                        <svg viewBox="0 0 24 24"
+                                                                            class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
+                                                                            aria-hidden="true"
+                                                                            style="width: 22px; height: 22px">
+                                                                            <use href="#more-vert"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="absolute top-2 left-2 z-[2]">
+                                                                <div class="flex items-center gap-1">
+                                                                    <span
+                                                                        class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md"
+                                                                        data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button"
+                                                                class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
+                                                                aria-label="Like button" data-test="vehicleCardLikeButton"
+                                                                data-test-item="">
+                                                                <svg viewBox="0 0 24 24"
+                                                                    class="icon icon-fill-default shrink-0 stroke-white text-dark"
+                                                                    aria-hidden="true" style="width: 22px; height: 22px">
+                                                                    <use href="#outlined-heart-fill"></use>
+                                                                </svg>
+                                                                <div class="group-hover:text-white group-hover:underline">
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                            <div class="w-full truncate">
+                                                                <div data-test="vehicleCardInfo" class="text-sm">
+                                                                    <div data-test="vehicleCardConditionYearMake"
+                                                                        class="w-full truncate font-bold">
+                                                                        New 2024 Acura
                                                                     </div>
-                                                                    <div data-test="vehicleCardPriceRating">
-                                                                        <div class="flex items-center ml-1">
-                                                                            <div class="graph-icon-container graph-icon-bucket-one"
-                                                                                style="height: 1rem; width: 1rem;"><svg
-                                                                                    viewBox="0 0 24 24"
-                                                                                    class="icon icon-fill-default graph-icon"
-                                                                                    aria-hidden="true"
-                                                                                    style="width: 13px; height: 13px;">
-                                                                                    <use href="#caret-double-down"></use>
-                                                                                </svg></div><span
-                                                                                data-test="graphIconLabel"
-                                                                                class="graph-icon-title ml-1 truncate text-xs">Excellent
-                                                                                Price</span>
+                                                                    <div class="w-full grid grid-cols-[1fr_auto] gap-1"
+                                                                        data-test="vehicleCardTrim">
+                                                                        <div class="truncate">
+                                                                            ZDX A-Spec Package AWD
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="flex w-full justify-end">
-                                                                    <div class="flex items-center truncate text-xs"
-                                                                        data-test="vehicleMileage"><svg
-                                                                            viewBox="0 0 24 24"
-                                                                            class="icon icon-fill-default mr-[2px]"
-                                                                            aria-hidden="true"
-                                                                            style="width: 14px; height: 14px;">
-                                                                            <use href="#speed"></use>
-                                                                        </svg>87k mi</div>
+                                                                <div class="mt-1 flex items-center justify-between gap-1">
+                                                                    <div class="flex items-center">
+                                                                        <h3
+                                                                            class="heading-4 normal-case flex items-center">
+                                                                            <div class="truncate"
+                                                                                data-test="vehicleCardMsrpLabelAmount">
+                                                                                <div class="flex items-end">
+                                                                                    <div class="text-[18px]">
+                                                                                        $69,850
+                                                                                    </div>
+                                                                                    <div class="flex pb-[1px]">
+                                                                                        <div
+                                                                                            class="ml-1 mt-[2px] text-[14px]">
+                                                                                            Total MSRP
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </h3>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div data-test="vehicleCardFooter"
+                                                            class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                            <div class="min-h-[18px]">Irvine, CA</div>
+                                                            <div class="flex items-center gap-1">
+                                                                <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark"
+                                                                    data-test="evBadge">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        class="icon icon-fill-default text-[color:var(--green-600)]"
+                                                                        role="img" aria-labelledby="icon-1323"
+                                                                        aria-hidden="false"
+                                                                        style="width: 14px; height: 14px">
+                                                                        <title id="icon-1323">EV</title>
+                                                                        <use href="#bolt-fill"></use>
+                                                                    </svg><span class="text-xs">EV</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
+                                                            data-test="vehicleCardLink"
+                                                            aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                            href="/new-cars-for-sale/listing/4W5KHNRL1RZ503592/2024-acura-zdx/?position=0&amp;sourceType=ranking&amp;sponsored=true"></a>
                                                     </div>
-                                                    <div data-test="vehicleCardFooter"
-                                                        class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
-                                                        <div class="min-h-[18px]"> Delivery to your Door</div>
-                                                        <div class="flex items-center gap-1"></div>
-                                                    </div><a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
-                                                        data-test="vehicleCardLink"
-                                                        aria-label="View details for 2018 Ford Focus, SE Sedan"
-                                                        href="/used-cars-for-sale/listing/1FADP3F21JL241921/2018-ford-focus/?position=0&amp;sourceType=tcplus_landing"></a>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="px-2" data-test=""
-                                        style="scroll-snap-align: start; flex-shrink: 0; width: 25%;">
-                                        <div class="pb-2">
-                                            <div class="flex w-full flex-col">
-                                                <div class="relative rounded-md shadow-lg h-full"
-                                                    aria-label="View details for 2023 Mazda MX-30 EV, Premium Plus"
-                                                    data-test="usedListing" data-test-item="JM1DRADB4P0200639"
-                                                    data-test-dealerid="24903">
-                                                    <div class="relative w-full">
-                                                        <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
-                                                            style="padding-bottom: 56.25%;">
-                                                            <div class="img-container img-container-block preprocessed-image-inner"
-                                                                style="height: auto; padding-bottom: 56.25%; width: 100%;">
-                                                                <img sizes="300px"
-                                                                    src="https://listings-prod.tcimg.net/listings/24903/39/06/JM1DRADB4P0200639/HYHSIROOUJRRZJ4B5EB3GN7S4U-cr-860.jpg"
-                                                                    alt="" role="presentation" loading="lazy"
-                                                                    class="img-inner img-block"
-                                                                    srcset="https://listings-prod.tcimg.net/listings/24903/39/06/JM1DRADB4P0200639/HYHSIROOUJRRZJ4B5EB3GN7S4U-cr-60.jpg 60w, https://listings-prod.tcimg.net/listings/24903/39/06/JM1DRADB4P0200639/HYHSIROOUJRRZJ4B5EB3GN7S4U-cr-120.jpg 120w, https://listings-prod.tcimg.net/listings/24903/39/06/JM1DRADB4P0200639/HYHSIROOUJRRZJ4B5EB3GN7S4U-cr-180.jpg 180w, https://listings-prod.tcimg.net/listings/24903/39/06/JM1DRADB4P0200639/HYHSIROOUJRRZJ4B5EB3GN7S4U-cr-360.jpg 360w, https://listings-prod.tcimg.net/listings/24903/39/06/JM1DRADB4P0200639/HYHSIROOUJRRZJ4B5EB3GN7S4U-cr-540.jpg 540w, https://listings-prod.tcimg.net/listings/24903/39/06/JM1DRADB4P0200639/HYHSIROOUJRRZJ4B5EB3GN7S4U-cr-860.jpg 860w, https://listings-prod.tcimg.net/listings/24903/39/06/JM1DRADB4P0200639/HYHSIROOUJRRZJ4B5EB3GN7S4U-cr-1400.jpg 1400w"
-                                                                    style="background-image: none;"></div>
-                                                        </div>
-                                                        <div class="absolute bottom-[-16px] right-2 z-20">
-                                                            <div data-test="vehicleCardActionDropDown" class="dropdown">
-                                                                <button aria-haspopup="true"
-                                                                    class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
-                                                                    aria-expanded="false">
-                                                                    <p class="sr-only">Menu</p><svg viewBox="0 0 24 24"
-                                                                        class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
-                                                                        aria-hidden="true"
-                                                                        style="width: 22px; height: 22px;">
-                                                                        <use href="#more-vert"></use>
-                                                                    </svg>
-                                                                </button></div>
-                                                        </div>
-                                                        <div class="absolute top-2 left-2 z-[2]">
-                                                            <div class="flex items-center gap-1"><span
-                                                                    class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-blue-900 text-white flex flex-nowrap px-[8px] drop-shadow-md uppercase"
-                                                                    data-test="vehicleCardTcPlusBadge">Buy Online</span>
-                                                            </div>
-                                                        </div><button type="button"
-                                                            class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
-                                                            aria-label="Like button" data-test="vehicleCardLikeButton"
-                                                            data-test-item=""><svg viewBox="0 0 24 24"
-                                                                class="icon icon-fill-default shrink-0 stroke-white text-dark"
-                                                                aria-hidden="true" style="width: 22px; height: 22px;">
-                                                                <use href="#outlined-heart-fill"></use>
-                                                            </svg>
-                                                            <div class="group-hover:text-white group-hover:underline">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="mt-1 flex w-full items-start p-2 text-left">
-                                                        <div class="w-full truncate">
-                                                            <h2 class="heading-base w-full text-sm"
-                                                                data-test="vehicleCardInfo">
-                                                                <div data-test="vehicleCardConditionYearMake"
-                                                                    class="truncate font-bold">Used 2023 Mazda</div>
-                                                                <div class="grid grid-cols-[1fr_auto] gap-1"
-                                                                    data-test="vehicleCardTrim">
-                                                                    <div class="truncate">MX-30 EV Premium Plus</div>
+                                        </li>
+                                        <li class="px-2" data-test=""
+                                            style="
+                                scroll-snap-align: start;
+                                flex-shrink: 0;
+                                width: 33.3333%;
+                              ">
+                                            <div class="pb-2">
+                                                <div class="flex w-full flex-col">
+                                                    <div class="relative rounded-md shadow-lg"
+                                                        aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                        data-test="newListing" data-test-item="4W5KHNRL0RZ502806"
+                                                        data-test-dealerid="466388">
+                                                        <div class="relative w-full">
+                                                            <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
+                                                                style="padding-bottom: 56.25%">
+                                                                <div class="img-container img-container-block preprocessed-image-inner"
+                                                                    style="
+                                            height: auto;
+                                            padding-bottom: 56.25%;
+                                            width: 100%;
+                                          ">
+                                                                    <img sizes="300px"
+                                                                        src="https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg"
+                                                                        alt="" role="presentation" loading="lazy"
+                                                                        class="img-inner img-block"
+                                                                        srcset="
+                                              https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-60.jpg   60w,
+                                              https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-120.jpg 120w,
+                                              https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-180.jpg 180w,
+                                              https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg 360w,
+                                              https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-540.jpg 540w
+                                            "
+                                                                        style="background-image: none">
                                                                 </div>
-                                                            </h2>
-                                                            <div class="mt-1 flex items-center justify-between gap-1">
-                                                                <div class="flex items-center">
-                                                                    <div class="heading-4 normal-case flex items-center">
-                                                                        <span class="truncate"
-                                                                            data-test="vehicleCardPriceLabelAmount">$21,950</span>
+                                                            </div>
+                                                            <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                <div data-test="vehicleCardActionDropDown"
+                                                                    class="dropdown">
+                                                                    <button aria-haspopup="true"
+                                                                        class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
+                                                                        aria-expanded="false">
+                                                                        <p class="sr-only">Menu</p>
+                                                                        <svg viewBox="0 0 24 24"
+                                                                            class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
+                                                                            aria-hidden="true"
+                                                                            style="width: 22px; height: 22px">
+                                                                            <use href="#more-vert"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="absolute top-2 left-2 z-[2]">
+                                                                <div class="flex items-center gap-1">
+                                                                    <span
+                                                                        class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md"
+                                                                        data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button"
+                                                                class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
+                                                                aria-label="Like button" data-test="vehicleCardLikeButton"
+                                                                data-test-item="">
+                                                                <svg viewBox="0 0 24 24"
+                                                                    class="icon icon-fill-default shrink-0 stroke-white text-dark"
+                                                                    aria-hidden="true" style="width: 22px; height: 22px">
+                                                                    <use href="#outlined-heart-fill"></use>
+                                                                </svg>
+                                                                <div class="group-hover:text-white group-hover:underline">
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                            <div class="w-full truncate">
+                                                                <div data-test="vehicleCardInfo" class="text-sm">
+                                                                    <div data-test="vehicleCardConditionYearMake"
+                                                                        class="w-full truncate font-bold">
+                                                                        New 2024 Acura
                                                                     </div>
-                                                                    <div data-test="vehicleCardPriceRating">
-                                                                        <div class="flex items-center ml-1">
-                                                                            <div class="graph-icon-container graph-icon-bucket-one"
-                                                                                style="height: 1rem; width: 1rem;"><svg
-                                                                                    viewBox="0 0 24 24"
-                                                                                    class="icon icon-fill-default graph-icon"
-                                                                                    aria-hidden="true"
-                                                                                    style="width: 13px; height: 13px;">
-                                                                                    <use href="#caret-double-down"></use>
-                                                                                </svg></div><span
-                                                                                data-test="graphIconLabel"
-                                                                                class="graph-icon-title ml-1 truncate text-xs">Excellent
-                                                                                Price</span>
+                                                                    <div class="w-full grid grid-cols-[1fr_auto] gap-1"
+                                                                        data-test="vehicleCardTrim">
+                                                                        <div class="truncate">
+                                                                            ZDX A-Spec Package AWD
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="flex w-full justify-end">
-                                                                    <div class="flex items-center truncate text-xs"
-                                                                        data-test="vehicleMileage"><svg
-                                                                            viewBox="0 0 24 24"
-                                                                            class="icon icon-fill-default mr-[2px]"
-                                                                            aria-hidden="true"
-                                                                            style="width: 14px; height: 14px;">
-                                                                            <use href="#speed"></use>
-                                                                        </svg>3k mi</div>
+                                                                <div class="mt-1 flex items-center justify-between gap-1">
+                                                                    <div class="flex items-center">
+                                                                        <h3
+                                                                            class="heading-4 normal-case flex items-center">
+                                                                            <div class="truncate"
+                                                                                data-test="vehicleCardMsrpLabelAmount">
+                                                                                <div class="flex items-end">
+                                                                                    <div class="text-[18px]">
+                                                                                        $70,450
+                                                                                    </div>
+                                                                                    <div class="flex pb-[1px]">
+                                                                                        <div
+                                                                                            class="ml-1 mt-[2px] text-[14px]">
+                                                                                            Total MSRP
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </h3>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div data-test="vehicleCardFooter"
-                                                        class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
-                                                        <div class="min-h-[18px]"> Delivery to your Door</div>
-                                                        <div class="flex items-center gap-1">
-                                                            <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark"
-                                                                data-test="cpoBadge"><svg viewBox="0 0 24 24"
-                                                                    class="icon icon-fill-default fill-purple shrink-0 mr-[2px]"
-                                                                    role="presentation" aria-hidden="true"
-                                                                    style="width: 14px; height: 14px;">
-                                                                    <use href="#verified-fill"></use>
-                                                                </svg><span class="text-xs font-bold">CPO</span></div>
-                                                            <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark"
-                                                                data-test="evBadge"><svg viewBox="0 0 24 24"
-                                                                    class="icon icon-fill-default text-[color:var(--green-600)]"
-                                                                    role="img" aria-labelledby="icon-153"
-                                                                    aria-hidden="false"
-                                                                    style="width: 14px; height: 14px;">
-                                                                    <title id="icon-153">EV</title>
-                                                                    <use href="#bolt-fill"></use>
-                                                                </svg><span class="text-xs">EV</span></div>
+                                                        <div data-test="vehicleCardFooter"
+                                                            class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                            <div class="min-h-[18px]">Irvine, CA</div>
+                                                            <div class="flex items-center gap-1">
+                                                                <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark"
+                                                                    data-test="evBadge">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        class="icon icon-fill-default text-[color:var(--green-600)]"
+                                                                        role="img" aria-labelledby="icon-1331"
+                                                                        aria-hidden="false"
+                                                                        style="width: 14px; height: 14px">
+                                                                        <title id="icon-1331">EV</title>
+                                                                        <use href="#bolt-fill"></use>
+                                                                    </svg><span class="text-xs">EV</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div><a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
-                                                        data-test="vehicleCardLink"
-                                                        aria-label="View details for 2023 Mazda MX-30 EV, Premium Plus"
-                                                        href="/used-cars-for-sale/listing/JM1DRADB4P0200639/2023-mazda-mx-30-ev/?position=1&amp;sourceType=tcplus_landing"></a>
+                                                        <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
+                                                            data-test="vehicleCardLink"
+                                                            aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                            href="/new-cars-for-sale/listing/4W5KHNRL0RZ502806/2024-acura-zdx/?position=1&amp;sourceType=ranking&amp;sponsored=true"></a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="px-2" data-test=""
-                                        style="scroll-snap-align: start; flex-shrink: 0; width: 25%;">
-                                        <div class="pb-2">
-                                            <div class="flex w-full flex-col">
-                                                <div class="relative rounded-md shadow-lg h-full"
-                                                    aria-label="View details for 2023 Ford Edge, SEL"
-                                                    data-test="usedListing" data-test-item="2FMPK4J92PBA02494"
-                                                    data-test-dealerid="50600">
-                                                    <div class="relative w-full">
-                                                        <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
-                                                            style="padding-bottom: 56.25%;">
-                                                            <div class="img-container img-container-block preprocessed-image-inner"
-                                                                style="height: auto; padding-bottom: 56.25%; width: 100%;">
-                                                                <img sizes="300px"
-                                                                    src="https://listings-prod.tcimg.net/listings/50600/94/24/2FMPK4J92PBA02494/VVWUHQ35XPVNDLOOBLUHGZCEFE-cr-860.jpg"
-                                                                    alt="" role="presentation" loading="lazy"
-                                                                    class="img-inner img-block"
-                                                                    srcset="https://listings-prod.tcimg.net/listings/50600/94/24/2FMPK4J92PBA02494/VVWUHQ35XPVNDLOOBLUHGZCEFE-cr-60.jpg 60w, https://listings-prod.tcimg.net/listings/50600/94/24/2FMPK4J92PBA02494/VVWUHQ35XPVNDLOOBLUHGZCEFE-cr-120.jpg 120w, https://listings-prod.tcimg.net/listings/50600/94/24/2FMPK4J92PBA02494/VVWUHQ35XPVNDLOOBLUHGZCEFE-cr-180.jpg 180w, https://listings-prod.tcimg.net/listings/50600/94/24/2FMPK4J92PBA02494/VVWUHQ35XPVNDLOOBLUHGZCEFE-cr-360.jpg 360w, https://listings-prod.tcimg.net/listings/50600/94/24/2FMPK4J92PBA02494/VVWUHQ35XPVNDLOOBLUHGZCEFE-cr-540.jpg 540w, https://listings-prod.tcimg.net/listings/50600/94/24/2FMPK4J92PBA02494/VVWUHQ35XPVNDLOOBLUHGZCEFE-cr-860.jpg 860w, https://listings-prod.tcimg.net/listings/50600/94/24/2FMPK4J92PBA02494/VVWUHQ35XPVNDLOOBLUHGZCEFE-cr-1400.jpg 1400w"
-                                                                    style="background-image: none;"></div>
-                                                        </div>
-                                                        <div class="absolute bottom-[-16px] right-2 z-20">
-                                                            <div data-test="vehicleCardActionDropDown" class="dropdown">
-                                                                <button aria-haspopup="true"
-                                                                    class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
-                                                                    aria-expanded="false">
-                                                                    <p class="sr-only">Menu</p><svg viewBox="0 0 24 24"
-                                                                        class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
-                                                                        aria-hidden="true"
-                                                                        style="width: 22px; height: 22px;">
-                                                                        <use href="#more-vert"></use>
-                                                                    </svg>
-                                                                </button></div>
-                                                        </div>
-                                                        <div class="absolute top-2 left-2 z-[2]">
-                                                            <div class="flex items-center gap-1"><span
-                                                                    class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-blue-900 text-white flex flex-nowrap px-[8px] drop-shadow-md uppercase"
-                                                                    data-test="vehicleCardTcPlusBadge">Buy Online</span>
-                                                            </div>
-                                                        </div><button type="button"
-                                                            class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
-                                                            aria-label="Like button" data-test="vehicleCardLikeButton"
-                                                            data-test-item=""><svg viewBox="0 0 24 24"
-                                                                class="icon icon-fill-default shrink-0 stroke-white text-dark"
-                                                                aria-hidden="true" style="width: 22px; height: 22px;">
-                                                                <use href="#outlined-heart-fill"></use>
-                                                            </svg>
-                                                            <div class="group-hover:text-white group-hover:underline">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="mt-1 flex w-full items-start p-2 text-left">
-                                                        <div class="w-full truncate">
-                                                            <h2 class="heading-base w-full text-sm"
-                                                                data-test="vehicleCardInfo">
-                                                                <div data-test="vehicleCardConditionYearMake"
-                                                                    class="truncate font-bold">Used 2023 Ford</div>
-                                                                <div class="grid grid-cols-[1fr_auto] gap-1"
-                                                                    data-test="vehicleCardTrim">
-                                                                    <div class="truncate">Edge SEL</div>
+                                        </li>
+                                        <li class="px-2" data-test=""
+                                            style="
+                                scroll-snap-align: start;
+                                flex-shrink: 0;
+                                width: 33.3333%;
+                              ">
+                                            <div class="pb-2">
+                                                <div class="flex w-full flex-col">
+                                                    <div class="relative rounded-md shadow-lg"
+                                                        aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                        data-test="newListing" data-test-item="4W5KHNRL3RZ503593"
+                                                        data-test-dealerid="466388">
+                                                        <div class="relative w-full">
+                                                            <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
+                                                                style="padding-bottom: 56.25%">
+                                                                <div class="img-container img-container-block preprocessed-image-inner"
+                                                                    style="
+                                            height: auto;
+                                            padding-bottom: 56.25%;
+                                            width: 100%;
+                                          ">
+                                                                    <img sizes="300px"
+                                                                        src="https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-360.jpg"
+                                                                        alt="" role="presentation" loading="lazy"
+                                                                        class="img-inner img-block"
+                                                                        srcset="
+                                              https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-60.jpg   60w,
+                                              https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-120.jpg 120w,
+                                              https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-180.jpg 180w,
+                                              https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-360.jpg 360w,
+                                              https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-540.jpg 540w
+                                            "
+                                                                        style="background-image: none">
                                                                 </div>
-                                                            </h2>
-                                                            <div class="mt-1 flex items-center justify-between gap-1">
-                                                                <div class="flex items-center">
-                                                                    <div class="heading-4 normal-case flex items-center">
-                                                                        <span class="truncate"
-                                                                            data-test="vehicleCardPriceLabelAmount">$19,771</span>
+                                                            </div>
+                                                            <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                <div data-test="vehicleCardActionDropDown"
+                                                                    class="dropdown">
+                                                                    <button aria-haspopup="true"
+                                                                        class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
+                                                                        aria-expanded="false">
+                                                                        <p class="sr-only">Menu</p>
+                                                                        <svg viewBox="0 0 24 24"
+                                                                            class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
+                                                                            aria-hidden="true"
+                                                                            style="width: 22px; height: 22px">
+                                                                            <use href="#more-vert"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="absolute top-2 left-2 z-[2]">
+                                                                <div class="flex items-center gap-1">
+                                                                    <span
+                                                                        class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md"
+                                                                        data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button"
+                                                                class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
+                                                                aria-label="Like button" data-test="vehicleCardLikeButton"
+                                                                data-test-item="">
+                                                                <svg viewBox="0 0 24 24"
+                                                                    class="icon icon-fill-default shrink-0 stroke-white text-dark"
+                                                                    aria-hidden="true" style="width: 22px; height: 22px">
+                                                                    <use href="#outlined-heart-fill"></use>
+                                                                </svg>
+                                                                <div class="group-hover:text-white group-hover:underline">
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                            <div class="w-full truncate">
+                                                                <div data-test="vehicleCardInfo" class="text-sm">
+                                                                    <div data-test="vehicleCardConditionYearMake"
+                                                                        class="w-full truncate font-bold">
+                                                                        New 2024 Acura
                                                                     </div>
-                                                                    <div data-test="vehicleCardPriceRating">
-                                                                        <div class="flex items-center ml-1">
-                                                                            <div class="graph-icon-container graph-icon-bucket-one"
-                                                                                style="height: 1rem; width: 1rem;"><svg
-                                                                                    viewBox="0 0 24 24"
-                                                                                    class="icon icon-fill-default graph-icon"
-                                                                                    aria-hidden="true"
-                                                                                    style="width: 13px; height: 13px;">
-                                                                                    <use href="#caret-double-down"></use>
-                                                                                </svg></div><span
-                                                                                data-test="graphIconLabel"
-                                                                                class="graph-icon-title ml-1 truncate text-xs">Excellent
-                                                                                Price</span>
+                                                                    <div class="w-full grid grid-cols-[1fr_auto] gap-1"
+                                                                        data-test="vehicleCardTrim">
+                                                                        <div class="truncate">
+                                                                            ZDX A-Spec Package AWD
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="flex w-full justify-end">
-                                                                    <div class="flex items-center truncate text-xs"
-                                                                        data-test="vehicleMileage"><svg
-                                                                            viewBox="0 0 24 24"
-                                                                            class="icon icon-fill-default mr-[2px]"
-                                                                            aria-hidden="true"
-                                                                            style="width: 14px; height: 14px;">
-                                                                            <use href="#speed"></use>
-                                                                        </svg>48k mi</div>
+                                                                <div class="mt-1 flex items-center justify-between gap-1">
+                                                                    <div class="flex items-center">
+                                                                        <h3
+                                                                            class="heading-4 normal-case flex items-center">
+                                                                            <div class="truncate"
+                                                                                data-test="vehicleCardMsrpLabelAmount">
+                                                                                <div class="flex items-end">
+                                                                                    <div class="text-[18px]">
+                                                                                        $69,850
+                                                                                    </div>
+                                                                                    <div class="flex pb-[1px]">
+                                                                                        <div
+                                                                                            class="ml-1 mt-[2px] text-[14px]">
+                                                                                            Total MSRP
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </h3>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div data-test="vehicleCardFooter"
+                                                            class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                            <div class="min-h-[18px]">Irvine, CA</div>
+                                                            <div class="flex items-center gap-1">
+                                                                <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark"
+                                                                    data-test="evBadge">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        class="icon icon-fill-default text-[color:var(--green-600)]"
+                                                                        role="img" aria-labelledby="icon-1339"
+                                                                        aria-hidden="false"
+                                                                        style="width: 14px; height: 14px">
+                                                                        <title id="icon-1339">EV</title>
+                                                                        <use href="#bolt-fill"></use>
+                                                                    </svg><span class="text-xs">EV</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
+                                                            data-test="vehicleCardLink"
+                                                            aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                            href="/new-cars-for-sale/listing/4W5KHNRL3RZ503593/2024-acura-zdx/?position=2&amp;sourceType=ranking&amp;sponsored=true"></a>
                                                     </div>
-                                                    <div data-test="vehicleCardFooter"
-                                                        class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
-                                                        <div class="min-h-[18px]"> Delivery to your Door</div>
-                                                        <div class="flex items-center gap-1"></div>
-                                                    </div><a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
-                                                        data-test="vehicleCardLink"
-                                                        aria-label="View details for 2023 Ford Edge, SEL"
-                                                        href="/used-cars-for-sale/listing/2FMPK4J92PBA02494/2023-ford-edge/?position=2&amp;sourceType=tcplus_landing"></a>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="px-2" data-test=""
-                                        style="scroll-snap-align: start; flex-shrink: 0; width: 25%;">
-                                        <div class="pb-2">
-                                            <div class="flex w-full flex-col">
-                                                <div class="relative rounded-md shadow-lg h-full"
-                                                    aria-label="View details for 2019 Jeep Grand Cherokee, Summit 4WD"
-                                                    data-test="usedListing" data-test-item="1C4RJFJG0KC733606"
-                                                    data-test-dealerid="375669">
-                                                    <div class="relative w-full">
-                                                        <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
-                                                            style="padding-bottom: 56.25%;">
-                                                            <div class="img-container img-container-block preprocessed-image-inner"
-                                                                style="height: auto; padding-bottom: 56.25%; width: 100%;">
-                                                                <img sizes="300px"
-                                                                    src="https://listings-prod.tcimg.net/listings/375669/06/36/1C4RJFJG0KC733606/QSKVUTLVNZZLY2USVSUSA7QENI-cr-860.jpg"
-                                                                    alt="" role="presentation" loading="lazy"
-                                                                    class="img-inner img-block"
-                                                                    srcset="https://listings-prod.tcimg.net/listings/375669/06/36/1C4RJFJG0KC733606/QSKVUTLVNZZLY2USVSUSA7QENI-cr-60.jpg 60w, https://listings-prod.tcimg.net/listings/375669/06/36/1C4RJFJG0KC733606/QSKVUTLVNZZLY2USVSUSA7QENI-cr-120.jpg 120w, https://listings-prod.tcimg.net/listings/375669/06/36/1C4RJFJG0KC733606/QSKVUTLVNZZLY2USVSUSA7QENI-cr-180.jpg 180w, https://listings-prod.tcimg.net/listings/375669/06/36/1C4RJFJG0KC733606/QSKVUTLVNZZLY2USVSUSA7QENI-cr-360.jpg 360w, https://listings-prod.tcimg.net/listings/375669/06/36/1C4RJFJG0KC733606/QSKVUTLVNZZLY2USVSUSA7QENI-cr-540.jpg 540w, https://listings-prod.tcimg.net/listings/375669/06/36/1C4RJFJG0KC733606/QSKVUTLVNZZLY2USVSUSA7QENI-cr-860.jpg 860w, https://listings-prod.tcimg.net/listings/375669/06/36/1C4RJFJG0KC733606/QSKVUTLVNZZLY2USVSUSA7QENI-cr-1400.jpg 1400w"
-                                                                    style="background-image: none;"></div>
-                                                        </div>
-                                                        <div class="absolute bottom-[-16px] right-2 z-20">
-                                                            <div data-test="vehicleCardActionDropDown" class="dropdown">
-                                                                <button aria-haspopup="true"
-                                                                    class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
-                                                                    aria-expanded="false">
-                                                                    <p class="sr-only">Menu</p><svg viewBox="0 0 24 24"
-                                                                        class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
-                                                                        aria-hidden="true"
-                                                                        style="width: 22px; height: 22px;">
-                                                                        <use href="#more-vert"></use>
-                                                                    </svg>
-                                                                </button></div>
-                                                        </div>
-                                                        <div class="absolute top-2 left-2 z-[2]">
-                                                            <div class="flex items-center gap-1"><span
-                                                                    class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-blue-900 text-white flex flex-nowrap px-[8px] drop-shadow-md uppercase"
-                                                                    data-test="vehicleCardTcPlusBadge">Buy Online</span>
-                                                            </div>
-                                                        </div><button type="button"
-                                                            class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
-                                                            aria-label="Like button" data-test="vehicleCardLikeButton"
-                                                            data-test-item=""><svg viewBox="0 0 24 24"
-                                                                class="icon icon-fill-default shrink-0 stroke-white text-dark"
-                                                                aria-hidden="true" style="width: 22px; height: 22px;">
-                                                                <use href="#outlined-heart-fill"></use>
-                                                            </svg>
-                                                            <div class="group-hover:text-white group-hover:underline">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="mt-1 flex w-full items-start p-2 text-left">
-                                                        <div class="w-full truncate">
-                                                            <h2 class="heading-base w-full text-sm"
-                                                                data-test="vehicleCardInfo">
-                                                                <div data-test="vehicleCardConditionYearMake"
-                                                                    class="truncate font-bold">Used 2019 Jeep</div>
-                                                                <div class="grid grid-cols-[1fr_auto] gap-1"
-                                                                    data-test="vehicleCardTrim">
-                                                                    <div class="truncate">Grand Cherokee Summit 4WD</div>
+                                        </li>
+                                        <li class="px-2" data-test=""
+                                            style="
+                                scroll-snap-align: start;
+                                flex-shrink: 0;
+                                width: 33.3333%;
+                              "
+                                            inert="" aria-hidden="true">
+                                            <div class="pb-2">
+                                                <div class="flex w-full flex-col">
+                                                    <div class="relative rounded-md shadow-lg"
+                                                        aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                        data-test="newListing" data-test-item="4W5KHNRL2RZ502676"
+                                                        data-test-dealerid="466388">
+                                                        <div class="relative w-full">
+                                                            <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
+                                                                style="padding-bottom: 56.25%">
+                                                                <div class="img-container img-container-block preprocessed-image-inner"
+                                                                    style="
+                                            height: auto;
+                                            padding-bottom: 56.25%;
+                                            width: 100%;
+                                          ">
+                                                                    <img sizes="300px"
+                                                                        src="https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg"
+                                                                        alt="" role="presentation" loading="lazy"
+                                                                        class="img-inner img-block"
+                                                                        srcset="
+                                              https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-60.jpg   60w,
+                                              https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-120.jpg 120w,
+                                              https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-180.jpg 180w,
+                                              https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg 360w,
+                                              https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-540.jpg 540w
+                                            "
+                                                                        style="background-image: none">
                                                                 </div>
-                                                            </h2>
-                                                            <div class="mt-1 flex items-center justify-between gap-1">
-                                                                <div class="flex items-center">
-                                                                    <div class="heading-4 normal-case flex items-center">
-                                                                        <span class="truncate"
-                                                                            data-test="vehicleCardPriceLabelAmount">$27,939</span>
+                                                            </div>
+                                                            <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                <div data-test="vehicleCardActionDropDown"
+                                                                    class="dropdown">
+                                                                    <button aria-haspopup="true"
+                                                                        class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
+                                                                        aria-expanded="false" tabindex="-1">
+                                                                        <p class="sr-only">Menu</p>
+                                                                        <svg viewBox="0 0 24 24"
+                                                                            class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
+                                                                            aria-hidden="true"
+                                                                            style="width: 22px; height: 22px">
+                                                                            <use href="#more-vert"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="absolute top-2 left-2 z-[2]">
+                                                                <div class="flex items-center gap-1">
+                                                                    <span
+                                                                        class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md"
+                                                                        data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button"
+                                                                class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
+                                                                aria-label="Like button" data-test="vehicleCardLikeButton"
+                                                                data-test-item="" tabindex="-1">
+                                                                <svg viewBox="0 0 24 24"
+                                                                    class="icon icon-fill-default shrink-0 stroke-white text-dark"
+                                                                    aria-hidden="true" style="width: 22px; height: 22px">
+                                                                    <use href="#outlined-heart-fill"></use>
+                                                                </svg>
+                                                                <div class="group-hover:text-white group-hover:underline">
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                            <div class="w-full truncate">
+                                                                <div data-test="vehicleCardInfo" class="text-sm">
+                                                                    <div data-test="vehicleCardConditionYearMake"
+                                                                        class="w-full truncate font-bold">
+                                                                        New 2024 Acura
                                                                     </div>
-                                                                    <div data-test="vehicleCardPriceRating">
-                                                                        <div class="flex items-center ml-1">
-                                                                            <div class="graph-icon-container graph-icon-bucket-one"
-                                                                                style="height: 1rem; width: 1rem;"><svg
-                                                                                    viewBox="0 0 24 24"
-                                                                                    class="icon icon-fill-default graph-icon"
-                                                                                    aria-hidden="true"
-                                                                                    style="width: 13px; height: 13px;">
-                                                                                    <use href="#caret-double-down"></use>
-                                                                                </svg></div><span
-                                                                                data-test="graphIconLabel"
-                                                                                class="graph-icon-title ml-1 truncate text-xs">Excellent
-                                                                                Price</span>
+                                                                    <div class="w-full grid grid-cols-[1fr_auto] gap-1"
+                                                                        data-test="vehicleCardTrim">
+                                                                        <div class="truncate">
+                                                                            ZDX A-Spec Package AWD
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="flex w-full justify-end">
-                                                                    <div class="flex items-center truncate text-xs"
-                                                                        data-test="vehicleMileage"><svg
-                                                                            viewBox="0 0 24 24"
-                                                                            class="icon icon-fill-default mr-[2px]"
-                                                                            aria-hidden="true"
-                                                                            style="width: 14px; height: 14px;">
-                                                                            <use href="#speed"></use>
-                                                                        </svg>68k mi</div>
+                                                                <div class="mt-1 flex items-center justify-between gap-1">
+                                                                    <div class="flex items-center">
+                                                                        <h3
+                                                                            class="heading-4 normal-case flex items-center">
+                                                                            <div class="truncate"
+                                                                                data-test="vehicleCardMsrpLabelAmount">
+                                                                                <div class="flex items-end">
+                                                                                    <div class="text-[18px]">
+                                                                                        $70,450
+                                                                                    </div>
+                                                                                    <div class="flex pb-[1px]">
+                                                                                        <div
+                                                                                            class="ml-1 mt-[2px] text-[14px]">
+                                                                                            Total MSRP
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </h3>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div data-test="vehicleCardFooter"
+                                                            class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                            <div class="min-h-[18px]">Irvine, CA</div>
+                                                            <div class="flex items-center gap-1">
+                                                                <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark"
+                                                                    data-test="evBadge">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        class="icon icon-fill-default text-[color:var(--green-600)]"
+                                                                        role="img" aria-labelledby="icon-1347"
+                                                                        aria-hidden="false"
+                                                                        style="width: 14px; height: 14px">
+                                                                        <title id="icon-1347">EV</title>
+                                                                        <use href="#bolt-fill"></use>
+                                                                    </svg><span class="text-xs">EV</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
+                                                            data-test="vehicleCardLink"
+                                                            aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                            href="/new-cars-for-sale/listing/4W5KHNRL2RZ502676/2024-acura-zdx/?position=3&amp;sourceType=ranking&amp;sponsored=true"
+                                                            tabindex="-1"></a>
                                                     </div>
-                                                    <div data-test="vehicleCardFooter"
-                                                        class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
-                                                        <div class="min-h-[18px]"> Delivery to your Door</div>
-                                                        <div class="flex items-center gap-1"></div>
-                                                    </div><a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
-                                                        data-test="vehicleCardLink"
-                                                        aria-label="View details for 2019 Jeep Grand Cherokee, Summit 4WD"
-                                                        href="/used-cars-for-sale/listing/1C4RJFJG0KC733606/2019-jeep-grand-cherokee/?position=3&amp;sourceType=tcplus_landing"></a>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="px-2" data-test="" inert=""
-                                        style="scroll-snap-align: start; flex-shrink: 0; width: 25%;" aria-hidden="true">
-                                        <div class="pb-2">
-                                            <div class="flex w-full flex-col">
-                                                <div class="relative rounded-md shadow-lg h-full"
-                                                    aria-label="View details for 2022 Kia Niro EV, EX"
-                                                    data-test="usedListing" data-test-item="KNDCC3LG7N5122900"
-                                                    data-test-dealerid="8849">
-                                                    <div class="relative w-full">
-                                                        <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
-                                                            style="padding-bottom: 56.25%;">
-                                                            <div class="img-container img-container-block preprocessed-image-inner"
-                                                                style="height: auto; padding-bottom: 56.25%; width: 100%;">
-                                                                <img sizes="300px"
-                                                                    src="https://listings-prod.tcimg.net/listings/8849/00/29/KNDCC3LG7N5122900/3ILJ6J55YFFQ75YUS47WOQMOOU-cr-860.jpg"
-                                                                    alt="" role="presentation" loading="lazy"
-                                                                    class="img-inner img-block"
-                                                                    srcset="https://listings-prod.tcimg.net/listings/8849/00/29/KNDCC3LG7N5122900/3ILJ6J55YFFQ75YUS47WOQMOOU-cr-60.jpg 60w, https://listings-prod.tcimg.net/listings/8849/00/29/KNDCC3LG7N5122900/3ILJ6J55YFFQ75YUS47WOQMOOU-cr-120.jpg 120w, https://listings-prod.tcimg.net/listings/8849/00/29/KNDCC3LG7N5122900/3ILJ6J55YFFQ75YUS47WOQMOOU-cr-180.jpg 180w, https://listings-prod.tcimg.net/listings/8849/00/29/KNDCC3LG7N5122900/3ILJ6J55YFFQ75YUS47WOQMOOU-cr-360.jpg 360w, https://listings-prod.tcimg.net/listings/8849/00/29/KNDCC3LG7N5122900/3ILJ6J55YFFQ75YUS47WOQMOOU-cr-540.jpg 540w, https://listings-prod.tcimg.net/listings/8849/00/29/KNDCC3LG7N5122900/3ILJ6J55YFFQ75YUS47WOQMOOU-cr-860.jpg 860w, https://listings-prod.tcimg.net/listings/8849/00/29/KNDCC3LG7N5122900/3ILJ6J55YFFQ75YUS47WOQMOOU-cr-1400.jpg 1400w"
-                                                                    style="background-image: none;"></div>
-                                                        </div>
-                                                        <div class="absolute bottom-[-16px] right-2 z-20">
-                                                            <div data-test="vehicleCardActionDropDown" class="dropdown">
-                                                                <button aria-haspopup="true"
-                                                                    class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
-                                                                    aria-expanded="false" tabindex="-1">
-                                                                    <p class="sr-only">Menu</p><svg viewBox="0 0 24 24"
-                                                                        class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
-                                                                        aria-hidden="true"
-                                                                        style="width: 22px; height: 22px;">
-                                                                        <use href="#more-vert"></use>
-                                                                    </svg>
-                                                                </button></div>
-                                                        </div>
-                                                        <div class="absolute top-2 left-2 z-[2]">
-                                                            <div class="flex items-center gap-1"><span
-                                                                    class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-blue-900 text-white flex flex-nowrap px-[8px] drop-shadow-md uppercase"
-                                                                    data-test="vehicleCardTcPlusBadge">Buy Online</span>
-                                                            </div>
-                                                        </div><button type="button"
-                                                            class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
-                                                            aria-label="Like button" data-test="vehicleCardLikeButton"
-                                                            data-test-item="" tabindex="-1"><svg viewBox="0 0 24 24"
-                                                                class="icon icon-fill-default shrink-0 stroke-white text-dark"
-                                                                aria-hidden="true" style="width: 22px; height: 22px;">
-                                                                <use href="#outlined-heart-fill"></use>
-                                                            </svg>
-                                                            <div class="group-hover:text-white group-hover:underline">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="mt-1 flex w-full items-start p-2 text-left">
-                                                        <div class="w-full truncate">
-                                                            <h2 class="heading-base w-full text-sm"
-                                                                data-test="vehicleCardInfo">
-                                                                <div data-test="vehicleCardConditionYearMake"
-                                                                    class="truncate font-bold">Used 2022 Kia</div>
-                                                                <div class="grid grid-cols-[1fr_auto] gap-1"
-                                                                    data-test="vehicleCardTrim">
-                                                                    <div class="truncate">Niro EV EX</div>
+                                        </li>
+                                        <li class="px-2" data-test=""
+                                            style="
+                                scroll-snap-align: start;
+                                flex-shrink: 0;
+                                width: 33.3333%;
+                              "
+                                            inert="" aria-hidden="true">
+                                            <div class="pb-2">
+                                                <div class="flex w-full flex-col">
+                                                    <div class="relative rounded-md shadow-lg"
+                                                        aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                        data-test="newListing" data-test-item="4W5KHNRL0RZ503650"
+                                                        data-test-dealerid="466388">
+                                                        <div class="relative w-full">
+                                                            <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
+                                                                style="padding-bottom: 56.25%">
+                                                                <div class="img-container img-container-block preprocessed-image-inner"
+                                                                    style="
+                                            height: auto;
+                                            padding-bottom: 56.25%;
+                                            width: 100%;
+                                          ">
+                                                                    <img sizes="300px"
+                                                                        src="https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-360.jpg"
+                                                                        alt="" role="presentation" loading="lazy"
+                                                                        class="img-inner img-block"
+                                                                        srcset="
+                                              https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-60.jpg   60w,
+                                              https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-120.jpg 120w,
+                                              https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-180.jpg 180w,
+                                              https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-360.jpg 360w,
+                                              https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-540.jpg 540w
+                                            "
+                                                                        style="background-image: none">
                                                                 </div>
-                                                            </h2>
-                                                            <div class="mt-1 flex items-center justify-between gap-1">
-                                                                <div class="flex items-center">
-                                                                    <div class="heading-4 normal-case flex items-center">
-                                                                        <span class="truncate"
-                                                                            data-test="vehicleCardPriceLabelAmount">$20,365</span>
+                                                            </div>
+                                                            <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                <div data-test="vehicleCardActionDropDown"
+                                                                    class="dropdown">
+                                                                    <button aria-haspopup="true"
+                                                                        class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
+                                                                        aria-expanded="false" tabindex="-1">
+                                                                        <p class="sr-only">Menu</p>
+                                                                        <svg viewBox="0 0 24 24"
+                                                                            class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
+                                                                            aria-hidden="true"
+                                                                            style="width: 22px; height: 22px">
+                                                                            <use href="#more-vert"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="absolute top-2 left-2 z-[2]">
+                                                                <div class="flex items-center gap-1">
+                                                                    <span
+                                                                        class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md"
+                                                                        data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button"
+                                                                class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
+                                                                aria-label="Like button" data-test="vehicleCardLikeButton"
+                                                                data-test-item="" tabindex="-1">
+                                                                <svg viewBox="0 0 24 24"
+                                                                    class="icon icon-fill-default shrink-0 stroke-white text-dark"
+                                                                    aria-hidden="true" style="width: 22px; height: 22px">
+                                                                    <use href="#outlined-heart-fill"></use>
+                                                                </svg>
+                                                                <div class="group-hover:text-white group-hover:underline">
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                            <div class="w-full truncate">
+                                                                <div data-test="vehicleCardInfo" class="text-sm">
+                                                                    <div data-test="vehicleCardConditionYearMake"
+                                                                        class="w-full truncate font-bold">
+                                                                        New 2024 Acura
                                                                     </div>
-                                                                    <div data-test="vehicleCardPriceRating">
-                                                                        <div class="flex items-center ml-1">
-                                                                            <div class="graph-icon-container graph-icon-bucket-one"
-                                                                                style="height: 1rem; width: 1rem;"><svg
-                                                                                    viewBox="0 0 24 24"
-                                                                                    class="icon icon-fill-default graph-icon"
-                                                                                    aria-hidden="true"
-                                                                                    style="width: 13px; height: 13px;">
-                                                                                    <use href="#caret-double-down"></use>
-                                                                                </svg></div><span
-                                                                                data-test="graphIconLabel"
-                                                                                class="graph-icon-title ml-1 truncate text-xs">Excellent
-                                                                                Price</span>
+                                                                    <div class="w-full grid grid-cols-[1fr_auto] gap-1"
+                                                                        data-test="vehicleCardTrim">
+                                                                        <div class="truncate">
+                                                                            ZDX A-Spec Package AWD
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="flex w-full justify-end">
-                                                                    <div class="flex items-center truncate text-xs"
-                                                                        data-test="vehicleMileage"><svg
-                                                                            viewBox="0 0 24 24"
-                                                                            class="icon icon-fill-default mr-[2px]"
-                                                                            aria-hidden="true"
-                                                                            style="width: 14px; height: 14px;">
-                                                                            <use href="#speed"></use>
-                                                                        </svg>36k mi</div>
+                                                                <div class="mt-1 flex items-center justify-between gap-1">
+                                                                    <div class="flex items-center">
+                                                                        <h3
+                                                                            class="heading-4 normal-case flex items-center">
+                                                                            <div class="truncate"
+                                                                                data-test="vehicleCardMsrpLabelAmount">
+                                                                                <div class="flex items-end">
+                                                                                    <div class="text-[18px]">
+                                                                                        $70,450
+                                                                                    </div>
+                                                                                    <div class="flex pb-[1px]">
+                                                                                        <div
+                                                                                            class="ml-1 mt-[2px] text-[14px]">
+                                                                                            Total MSRP
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </h3>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div data-test="vehicleCardFooter"
-                                                        class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
-                                                        <div class="min-h-[18px]"> Delivery to your Door</div>
-                                                        <div class="flex items-center gap-1">
-                                                            <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark"
-                                                                data-test="evBadge"><svg viewBox="0 0 24 24"
-                                                                    class="icon icon-fill-default text-[color:var(--green-600)]"
-                                                                    role="img" aria-labelledby="icon-181"
-                                                                    aria-hidden="false"
-                                                                    style="width: 14px; height: 14px;">
-                                                                    <title id="icon-181">EV</title>
-                                                                    <use href="#bolt-fill"></use>
-                                                                </svg><span class="text-xs">EV</span></div>
+                                                        <div data-test="vehicleCardFooter"
+                                                            class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                            <div class="min-h-[18px]">Irvine, CA</div>
+                                                            <div class="flex items-center gap-1">
+                                                                <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark"
+                                                                    data-test="evBadge">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        class="icon icon-fill-default text-[color:var(--green-600)]"
+                                                                        role="img" aria-labelledby="icon-1355"
+                                                                        aria-hidden="false"
+                                                                        style="width: 14px; height: 14px">
+                                                                        <title id="icon-1355">EV</title>
+                                                                        <use href="#bolt-fill"></use>
+                                                                    </svg><span class="text-xs">EV</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div><a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
-                                                        data-test="vehicleCardLink"
-                                                        aria-label="View details for 2022 Kia Niro EV, EX"
-                                                        href="/used-cars-for-sale/listing/KNDCC3LG7N5122900/2022-kia-niro-ev/?position=4&amp;sourceType=tcplus_landing"
-                                                        tabindex="-1"></a>
+                                                        <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
+                                                            data-test="vehicleCardLink"
+                                                            aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                            href="/new-cars-for-sale/listing/4W5KHNRL0RZ503650/2024-acura-zdx/?position=4&amp;sourceType=ranking&amp;sponsored=true"
+                                                            tabindex="-1"></a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="px-2" data-test="" inert=""
-                                        style="scroll-snap-align: start; flex-shrink: 0; width: 25%;" aria-hidden="true">
-                                        <div class="pb-2">
-                                            <div class="flex w-full flex-col">
-                                                <div class="relative rounded-md shadow-lg h-full"
-                                                    aria-label="View details for 2023 Audi A6, Premium 2.0"
-                                                    data-test="usedListing" data-test-item="WAUD3BF22PN055492"
-                                                    data-test-dealerid="375669">
-                                                    <div class="relative w-full">
-                                                        <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
-                                                            style="padding-bottom: 56.25%;">
-                                                            <div class="img-container img-container-block preprocessed-image-inner"
-                                                                style="height: auto; padding-bottom: 56.25%; width: 100%;">
-                                                                <img sizes="300px"
-                                                                    src="https://listings-prod.tcimg.net/listings/375669/92/54/WAUD3BF22PN055492/5IPU2JFCZB62AXZZXUMW2AIJJM-cr-860.jpg"
-                                                                    alt="" role="presentation" loading="lazy"
-                                                                    class="img-inner img-block"
-                                                                    srcset="https://listings-prod.tcimg.net/listings/375669/92/54/WAUD3BF22PN055492/5IPU2JFCZB62AXZZXUMW2AIJJM-cr-60.jpg 60w, https://listings-prod.tcimg.net/listings/375669/92/54/WAUD3BF22PN055492/5IPU2JFCZB62AXZZXUMW2AIJJM-cr-120.jpg 120w, https://listings-prod.tcimg.net/listings/375669/92/54/WAUD3BF22PN055492/5IPU2JFCZB62AXZZXUMW2AIJJM-cr-180.jpg 180w, https://listings-prod.tcimg.net/listings/375669/92/54/WAUD3BF22PN055492/5IPU2JFCZB62AXZZXUMW2AIJJM-cr-360.jpg 360w, https://listings-prod.tcimg.net/listings/375669/92/54/WAUD3BF22PN055492/5IPU2JFCZB62AXZZXUMW2AIJJM-cr-540.jpg 540w, https://listings-prod.tcimg.net/listings/375669/92/54/WAUD3BF22PN055492/5IPU2JFCZB62AXZZXUMW2AIJJM-cr-860.jpg 860w, https://listings-prod.tcimg.net/listings/375669/92/54/WAUD3BF22PN055492/5IPU2JFCZB62AXZZXUMW2AIJJM-cr-1400.jpg 1400w"
-                                                                    style="background-image: none;"></div>
-                                                        </div>
-                                                        <div class="absolute bottom-[-16px] right-2 z-20">
-                                                            <div data-test="vehicleCardActionDropDown" class="dropdown">
-                                                                <button aria-haspopup="true"
-                                                                    class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
-                                                                    aria-expanded="false" tabindex="-1">
-                                                                    <p class="sr-only">Menu</p><svg viewBox="0 0 24 24"
-                                                                        class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
-                                                                        aria-hidden="true"
-                                                                        style="width: 22px; height: 22px;">
-                                                                        <use href="#more-vert"></use>
-                                                                    </svg>
-                                                                </button></div>
-                                                        </div>
-                                                        <div class="absolute top-2 left-2 z-[2]">
-                                                            <div class="flex items-center gap-1"><span
-                                                                    class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-blue-900 text-white flex flex-nowrap px-[8px] drop-shadow-md uppercase"
-                                                                    data-test="vehicleCardTcPlusBadge">Buy Online</span>
-                                                            </div>
-                                                        </div><button type="button"
-                                                            class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
-                                                            aria-label="Like button" data-test="vehicleCardLikeButton"
-                                                            data-test-item="" tabindex="-1"><svg viewBox="0 0 24 24"
-                                                                class="icon icon-fill-default shrink-0 stroke-white text-dark"
-                                                                aria-hidden="true" style="width: 22px; height: 22px;">
-                                                                <use href="#outlined-heart-fill"></use>
-                                                            </svg>
-                                                            <div class="group-hover:text-white group-hover:underline">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="mt-1 flex w-full items-start p-2 text-left">
-                                                        <div class="w-full truncate">
-                                                            <h2 class="heading-base w-full text-sm"
-                                                                data-test="vehicleCardInfo">
-                                                                <div data-test="vehicleCardConditionYearMake"
-                                                                    class="truncate font-bold">Used 2023 Audi</div>
-                                                                <div class="grid grid-cols-[1fr_auto] gap-1"
-                                                                    data-test="vehicleCardTrim">
-                                                                    <div class="truncate">A6 Premium 2.0</div>
+                                        </li>
+                                        <li class="px-2" data-test=""
+                                            style="
+                                scroll-snap-align: start;
+                                flex-shrink: 0;
+                                width: 33.3333%;
+                              "
+                                            inert="" aria-hidden="true">
+                                            <div class="pb-2">
+                                                <div class="flex w-full flex-col">
+                                                    <div class="relative rounded-md shadow-lg"
+                                                        aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                        data-test="newListing" data-test-item="4W5KHNRL5RZ504180"
+                                                        data-test-dealerid="466388">
+                                                        <div class="relative w-full">
+                                                            <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
+                                                                style="padding-bottom: 56.25%">
+                                                                <div class="img-container img-container-block preprocessed-image-inner"
+                                                                    style="
+                                            height: auto;
+                                            padding-bottom: 56.25%;
+                                            width: 100%;
+                                          ">
+                                                                    <img sizes="300px"
+                                                                        src="https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg"
+                                                                        alt="" role="presentation" loading="lazy"
+                                                                        class="img-inner img-block"
+                                                                        srcset="
+                                              https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-60.jpg   60w,
+                                              https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-120.jpg 120w,
+                                              https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-180.jpg 180w,
+                                              https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg 360w,
+                                              https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-540.jpg 540w
+                                            "
+                                                                        style="background-image: none">
                                                                 </div>
-                                                            </h2>
-                                                            <div class="mt-1 flex items-center justify-between gap-1">
-                                                                <div class="flex items-center">
-                                                                    <div class="heading-4 normal-case flex items-center">
-                                                                        <span class="truncate"
-                                                                            data-test="vehicleCardPriceLabelAmount">$36,153</span>
+                                                            </div>
+                                                            <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                <div data-test="vehicleCardActionDropDown"
+                                                                    class="dropdown">
+                                                                    <button aria-haspopup="true"
+                                                                        class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
+                                                                        aria-expanded="false" tabindex="-1">
+                                                                        <p class="sr-only">Menu</p>
+                                                                        <svg viewBox="0 0 24 24"
+                                                                            class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
+                                                                            aria-hidden="true"
+                                                                            style="width: 22px; height: 22px">
+                                                                            <use href="#more-vert"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="absolute top-2 left-2 z-[2]">
+                                                                <div class="flex items-center gap-1">
+                                                                    <span
+                                                                        class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md"
+                                                                        data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button"
+                                                                class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
+                                                                aria-label="Like button" data-test="vehicleCardLikeButton"
+                                                                data-test-item="" tabindex="-1">
+                                                                <svg viewBox="0 0 24 24"
+                                                                    class="icon icon-fill-default shrink-0 stroke-white text-dark"
+                                                                    aria-hidden="true" style="width: 22px; height: 22px">
+                                                                    <use href="#outlined-heart-fill"></use>
+                                                                </svg>
+                                                                <div class="group-hover:text-white group-hover:underline">
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                            <div class="w-full truncate">
+                                                                <div data-test="vehicleCardInfo" class="text-sm">
+                                                                    <div data-test="vehicleCardConditionYearMake"
+                                                                        class="w-full truncate font-bold">
+                                                                        New 2024 Acura
                                                                     </div>
-                                                                    <div data-test="vehicleCardPriceRating">
-                                                                        <div class="flex items-center ml-1">
-                                                                            <div class="graph-icon-container graph-icon-bucket-one"
-                                                                                style="height: 1rem; width: 1rem;"><svg
-                                                                                    viewBox="0 0 24 24"
-                                                                                    class="icon icon-fill-default graph-icon"
-                                                                                    aria-hidden="true"
-                                                                                    style="width: 13px; height: 13px;">
-                                                                                    <use href="#caret-double-down"></use>
-                                                                                </svg></div><span
-                                                                                data-test="graphIconLabel"
-                                                                                class="graph-icon-title ml-1 truncate text-xs">Excellent
-                                                                                Price</span>
+                                                                    <div class="w-full grid grid-cols-[1fr_auto] gap-1"
+                                                                        data-test="vehicleCardTrim">
+                                                                        <div class="truncate">
+                                                                            ZDX A-Spec Package AWD
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="flex w-full justify-end">
-                                                                    <div class="flex items-center truncate text-xs"
-                                                                        data-test="vehicleMileage"><svg
-                                                                            viewBox="0 0 24 24"
-                                                                            class="icon icon-fill-default mr-[2px]"
-                                                                            aria-hidden="true"
-                                                                            style="width: 14px; height: 14px;">
-                                                                            <use href="#speed"></use>
-                                                                        </svg>9k mi</div>
+                                                                <div class="mt-1 flex items-center justify-between gap-1">
+                                                                    <div class="flex items-center">
+                                                                        <h3
+                                                                            class="heading-4 normal-case flex items-center">
+                                                                            <div class="truncate"
+                                                                                data-test="vehicleCardMsrpLabelAmount">
+                                                                                <div class="flex items-end">
+                                                                                    <div class="text-[18px]">
+                                                                                        $70,450
+                                                                                    </div>
+                                                                                    <div class="flex pb-[1px]">
+                                                                                        <div
+                                                                                            class="ml-1 mt-[2px] text-[14px]">
+                                                                                            Total MSRP
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </h3>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div data-test="vehicleCardFooter"
+                                                            class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                            <div class="min-h-[18px]">Irvine, CA</div>
+                                                            <div class="flex items-center gap-1">
+                                                                <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark"
+                                                                    data-test="evBadge">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        class="icon icon-fill-default text-[color:var(--green-600)]"
+                                                                        role="img" aria-labelledby="icon-1363"
+                                                                        aria-hidden="false"
+                                                                        style="width: 14px; height: 14px">
+                                                                        <title id="icon-1363">EV</title>
+                                                                        <use href="#bolt-fill"></use>
+                                                                    </svg><span class="text-xs">EV</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
+                                                            data-test="vehicleCardLink"
+                                                            aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                            href="/new-cars-for-sale/listing/4W5KHNRL5RZ504180/2024-acura-zdx/?position=5&amp;sourceType=ranking&amp;sponsored=true"
+                                                            tabindex="-1"></a>
                                                     </div>
-                                                    <div data-test="vehicleCardFooter"
-                                                        class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
-                                                        <div class="min-h-[18px]"> Delivery to your Door</div>
-                                                        <div class="flex items-center gap-1"></div>
-                                                    </div><a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
-                                                        data-test="vehicleCardLink"
-                                                        aria-label="View details for 2023 Audi A6, Premium 2.0"
-                                                        href="/used-cars-for-sale/listing/WAUD3BF22PN055492/2023-audi-a6/?position=5&amp;sourceType=tcplus_landing"
-                                                        tabindex="-1"></a>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="px-2" data-test="" inert=""
-                                        style="scroll-snap-align: start; flex-shrink: 0; width: 25%;" aria-hidden="true">
-                                        <div class="pb-2">
-                                            <div class="flex w-full flex-col">
-                                                <div class="relative rounded-md shadow-lg h-full"
-                                                    aria-label="View details for 2021 Volkswagen Tiguan, 2.0T SEL Premium R-Line 4MOTION"
-                                                    data-test="usedListing" data-test-item="3VV4B7AX5MM082926"
-                                                    data-test-dealerid="6719">
-                                                    <div class="relative w-full">
-                                                        <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
-                                                            style="padding-bottom: 56.25%;">
-                                                            <div class="img-container img-container-block preprocessed-image-inner"
-                                                                style="height: auto; padding-bottom: 56.25%; width: 100%;">
-                                                                <img sizes="300px"
-                                                                    src="https://listings-prod.tcimg.net/listings/6719/26/29/3VV4B7AX5MM082926/5W5KPEIBTCUZJMB7WXT2LMCGNY-cr-860.jpg"
-                                                                    alt="" role="presentation" loading="lazy"
-                                                                    class="img-inner img-block"
-                                                                    srcset="https://listings-prod.tcimg.net/listings/6719/26/29/3VV4B7AX5MM082926/5W5KPEIBTCUZJMB7WXT2LMCGNY-cr-60.jpg 60w, https://listings-prod.tcimg.net/listings/6719/26/29/3VV4B7AX5MM082926/5W5KPEIBTCUZJMB7WXT2LMCGNY-cr-120.jpg 120w, https://listings-prod.tcimg.net/listings/6719/26/29/3VV4B7AX5MM082926/5W5KPEIBTCUZJMB7WXT2LMCGNY-cr-180.jpg 180w, https://listings-prod.tcimg.net/listings/6719/26/29/3VV4B7AX5MM082926/5W5KPEIBTCUZJMB7WXT2LMCGNY-cr-360.jpg 360w, https://listings-prod.tcimg.net/listings/6719/26/29/3VV4B7AX5MM082926/5W5KPEIBTCUZJMB7WXT2LMCGNY-cr-540.jpg 540w, https://listings-prod.tcimg.net/listings/6719/26/29/3VV4B7AX5MM082926/5W5KPEIBTCUZJMB7WXT2LMCGNY-cr-860.jpg 860w, https://listings-prod.tcimg.net/listings/6719/26/29/3VV4B7AX5MM082926/5W5KPEIBTCUZJMB7WXT2LMCGNY-cr-1400.jpg 1400w"
-                                                                    style="background-image: none;"></div>
-                                                        </div>
-                                                        <div class="absolute bottom-[-16px] right-2 z-20">
-                                                            <div data-test="vehicleCardActionDropDown" class="dropdown">
-                                                                <button aria-haspopup="true"
-                                                                    class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
-                                                                    aria-expanded="false" tabindex="-1">
-                                                                    <p class="sr-only">Menu</p><svg viewBox="0 0 24 24"
-                                                                        class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
-                                                                        aria-hidden="true"
-                                                                        style="width: 22px; height: 22px;">
-                                                                        <use href="#more-vert"></use>
-                                                                    </svg>
-                                                                </button></div>
-                                                        </div>
-                                                        <div class="absolute top-2 left-2 z-[2]">
-                                                            <div class="flex items-center gap-1"><span
-                                                                    class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-blue-900 text-white flex flex-nowrap px-[8px] drop-shadow-md uppercase"
-                                                                    data-test="vehicleCardTcPlusBadge">Buy Online</span>
-                                                            </div>
-                                                        </div><button type="button"
-                                                            class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
-                                                            aria-label="Like button" data-test="vehicleCardLikeButton"
-                                                            data-test-item="" tabindex="-1"><svg viewBox="0 0 24 24"
-                                                                class="icon icon-fill-default shrink-0 stroke-white text-dark"
-                                                                aria-hidden="true" style="width: 22px; height: 22px;">
-                                                                <use href="#outlined-heart-fill"></use>
-                                                            </svg>
-                                                            <div class="group-hover:text-white group-hover:underline">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="mt-1 flex w-full items-start p-2 text-left">
-                                                        <div class="w-full truncate">
-                                                            <h2 class="heading-base w-full text-sm"
-                                                                data-test="vehicleCardInfo">
-                                                                <div data-test="vehicleCardConditionYearMake"
-                                                                    class="truncate font-bold">Used 2021 Volkswagen</div>
-                                                                <div class="grid grid-cols-[1fr_auto] gap-1"
-                                                                    data-test="vehicleCardTrim">
-                                                                    <div class="truncate">Tiguan 2.0T SEL Premium R-Line
-                                                                        4MOTION</div>
+                                        </li>
+                                        <li class="px-2" data-test=""
+                                            style="
+                                scroll-snap-align: start;
+                                flex-shrink: 0;
+                                width: 33.3333%;
+                              "
+                                            inert="" aria-hidden="true">
+                                            <div class="pb-2">
+                                                <div class="flex w-full flex-col">
+                                                    <div class="relative rounded-md shadow-lg"
+                                                        aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                        data-test="newListing" data-test-item="4W5KHNRL0RZ504359"
+                                                        data-test-dealerid="466388">
+                                                        <div class="relative w-full">
+                                                            <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
+                                                                style="padding-bottom: 56.25%">
+                                                                <div class="img-container img-container-block preprocessed-image-inner"
+                                                                    style="
+                                            height: auto;
+                                            padding-bottom: 56.25%;
+                                            width: 100%;
+                                          ">
+                                                                    <img sizes="300px"
+                                                                        src="https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-860.jpg"
+                                                                        alt="" role="presentation" loading="lazy"
+                                                                        class="img-inner img-block"
+                                                                        srcset="
+                                              https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-60.jpg     60w,
+                                              https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-120.jpg   120w,
+                                              https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-180.jpg   180w,
+                                              https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-360.jpg   360w,
+                                              https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-540.jpg   540w,
+                                              https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-860.jpg   860w,
+                                              https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-1400.jpg 1400w
+                                            "
+                                                                        style="background-image: none">
                                                                 </div>
-                                                            </h2>
-                                                            <div class="mt-1 flex items-center justify-between gap-1">
-                                                                <div class="flex items-center">
-                                                                    <div class="heading-4 normal-case flex items-center">
-                                                                        <span class="truncate"
-                                                                            data-test="vehicleCardPriceLabelAmount">$25,995</span>
+                                                            </div>
+                                                            <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                <div data-test="vehicleCardActionDropDown"
+                                                                    class="dropdown">
+                                                                    <button aria-haspopup="true"
+                                                                        class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
+                                                                        aria-expanded="false" tabindex="-1">
+                                                                        <p class="sr-only">Menu</p>
+                                                                        <svg viewBox="0 0 24 24"
+                                                                            class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
+                                                                            aria-hidden="true"
+                                                                            style="width: 22px; height: 22px">
+                                                                            <use href="#more-vert"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="absolute top-2 left-2 z-[2]">
+                                                                <div class="flex items-center gap-1">
+                                                                    <span
+                                                                        class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md"
+                                                                        data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button"
+                                                                class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
+                                                                aria-label="Like button" data-test="vehicleCardLikeButton"
+                                                                data-test-item="" tabindex="-1">
+                                                                <svg viewBox="0 0 24 24"
+                                                                    class="icon icon-fill-default shrink-0 stroke-white text-dark"
+                                                                    aria-hidden="true" style="width: 22px; height: 22px">
+                                                                    <use href="#outlined-heart-fill"></use>
+                                                                </svg>
+                                                                <div class="group-hover:text-white group-hover:underline">
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                            <div class="w-full truncate">
+                                                                <div data-test="vehicleCardInfo" class="text-sm">
+                                                                    <div data-test="vehicleCardConditionYearMake"
+                                                                        class="w-full truncate font-bold">
+                                                                        New 2024 Acura
                                                                     </div>
-                                                                    <div data-test="vehicleCardPriceRating">
-                                                                        <div class="flex items-center ml-1">
-                                                                            <div class="graph-icon-container graph-icon-bucket-one"
-                                                                                style="height: 1rem; width: 1rem;"><svg
-                                                                                    viewBox="0 0 24 24"
-                                                                                    class="icon icon-fill-default graph-icon"
-                                                                                    aria-hidden="true"
-                                                                                    style="width: 13px; height: 13px;">
-                                                                                    <use href="#caret-double-down"></use>
-                                                                                </svg></div><span
-                                                                                data-test="graphIconLabel"
-                                                                                class="graph-icon-title ml-1 truncate text-xs">Excellent
-                                                                                Price</span>
+                                                                    <div class="w-full grid grid-cols-[1fr_auto] gap-1"
+                                                                        data-test="vehicleCardTrim">
+                                                                        <div class="truncate">
+                                                                            ZDX A-Spec Package AWD
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="flex w-full justify-end">
-                                                                    <div class="flex items-center truncate text-xs"
-                                                                        data-test="vehicleMileage"><svg
-                                                                            viewBox="0 0 24 24"
-                                                                            class="icon icon-fill-default mr-[2px]"
-                                                                            aria-hidden="true"
-                                                                            style="width: 14px; height: 14px;">
-                                                                            <use href="#speed"></use>
-                                                                        </svg>24k mi</div>
+                                                                <div class="mt-1 flex items-center justify-between gap-1">
+                                                                    <div class="flex items-center">
+                                                                        <h3
+                                                                            class="heading-4 normal-case flex items-center">
+                                                                            <div class="truncate"
+                                                                                data-test="vehicleCardMsrpLabelAmount">
+                                                                                <div class="flex items-end">
+                                                                                    <div class="text-[18px]">
+                                                                                        $70,450
+                                                                                    </div>
+                                                                                    <div class="flex pb-[1px]">
+                                                                                        <div
+                                                                                            class="ml-1 mt-[2px] text-[14px]">
+                                                                                            Total MSRP
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </h3>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div data-test="vehicleCardFooter"
+                                                            class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                            <div class="min-h-[18px]">Irvine, CA</div>
+                                                            <div class="flex items-center gap-1">
+                                                                <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark"
+                                                                    data-test="evBadge">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        class="icon icon-fill-default text-[color:var(--green-600)]"
+                                                                        role="img" aria-labelledby="icon-1371"
+                                                                        aria-hidden="false"
+                                                                        style="width: 14px; height: 14px">
+                                                                        <title id="icon-1371">EV</title>
+                                                                        <use href="#bolt-fill"></use>
+                                                                    </svg><span class="text-xs">EV</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
+                                                            data-test="vehicleCardLink"
+                                                            aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                            href="/new-cars-for-sale/listing/4W5KHNRL0RZ504359/2024-acura-zdx/?position=6&amp;sourceType=ranking&amp;sponsored=true"
+                                                            tabindex="-1"></a>
                                                     </div>
-                                                    <div data-test="vehicleCardFooter"
-                                                        class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
-                                                        <div class="min-h-[18px]"> Delivery to your Door</div>
-                                                        <div class="flex items-center gap-1"></div>
-                                                    </div><a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
-                                                        data-test="vehicleCardLink"
-                                                        aria-label="View details for 2021 Volkswagen Tiguan, 2.0T SEL Premium R-Line 4MOTION"
-                                                        href="/used-cars-for-sale/listing/3VV4B7AX5MM082926/2021-volkswagen-tiguan/?position=6&amp;sourceType=tcplus_landing"
-                                                        tabindex="-1"></a>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="px-2" data-test="" inert=""
-                                        style="scroll-snap-align: start; flex-shrink: 0; width: 25%;" aria-hidden="true">
-                                        <div class="pb-2">
-                                            <div class="flex w-full flex-col">
-                                                <div class="relative rounded-md shadow-lg h-full"
-                                                    aria-label="View details for 2020 Land Rover Discovery, SE V6 Supercharged"
-                                                    data-test="usedListing" data-test-item="SALRG2RVXL2425336"
-                                                    data-test-dealerid="12217">
-                                                    <div class="relative w-full">
-                                                        <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
-                                                            style="padding-bottom: 56.25%;">
-                                                            <div class="img-container img-container-block preprocessed-image-inner"
-                                                                style="height: auto; padding-bottom: 56.25%; width: 100%;">
-                                                                <img sizes="300px"
-                                                                    src="https://listings-prod.tcimg.net/listings/12217/36/53/SALRG2RVXL2425336/ZZTEZWWOB454TIEHB555AN22ME-cr-860.jpg"
-                                                                    alt="" role="presentation" loading="lazy"
-                                                                    class="img-inner img-block"
-                                                                    srcset="https://listings-prod.tcimg.net/listings/12217/36/53/SALRG2RVXL2425336/ZZTEZWWOB454TIEHB555AN22ME-cr-60.jpg 60w, https://listings-prod.tcimg.net/listings/12217/36/53/SALRG2RVXL2425336/ZZTEZWWOB454TIEHB555AN22ME-cr-120.jpg 120w, https://listings-prod.tcimg.net/listings/12217/36/53/SALRG2RVXL2425336/ZZTEZWWOB454TIEHB555AN22ME-cr-180.jpg 180w, https://listings-prod.tcimg.net/listings/12217/36/53/SALRG2RVXL2425336/ZZTEZWWOB454TIEHB555AN22ME-cr-360.jpg 360w, https://listings-prod.tcimg.net/listings/12217/36/53/SALRG2RVXL2425336/ZZTEZWWOB454TIEHB555AN22ME-cr-540.jpg 540w, https://listings-prod.tcimg.net/listings/12217/36/53/SALRG2RVXL2425336/ZZTEZWWOB454TIEHB555AN22ME-cr-860.jpg 860w, https://listings-prod.tcimg.net/listings/12217/36/53/SALRG2RVXL2425336/ZZTEZWWOB454TIEHB555AN22ME-cr-1400.jpg 1400w"
-                                                                    style="background-image: none;"></div>
-                                                        </div>
-                                                        <div class="absolute bottom-[-16px] right-2 z-20">
-                                                            <div data-test="vehicleCardActionDropDown" class="dropdown">
-                                                                <button aria-haspopup="true"
-                                                                    class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
-                                                                    aria-expanded="false" tabindex="-1">
-                                                                    <p class="sr-only">Menu</p><svg viewBox="0 0 24 24"
-                                                                        class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
-                                                                        aria-hidden="true"
-                                                                        style="width: 22px; height: 22px;">
-                                                                        <use href="#more-vert"></use>
-                                                                    </svg>
-                                                                </button></div>
-                                                        </div>
-                                                        <div class="absolute top-2 left-2 z-[2]">
-                                                            <div class="flex items-center gap-1"><span
-                                                                    class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-blue-900 text-white flex flex-nowrap px-[8px] drop-shadow-md uppercase"
-                                                                    data-test="vehicleCardTcPlusBadge">Buy Online</span>
-                                                            </div>
-                                                        </div><button type="button"
-                                                            class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
-                                                            aria-label="Like button" data-test="vehicleCardLikeButton"
-                                                            data-test-item="" tabindex="-1"><svg viewBox="0 0 24 24"
-                                                                class="icon icon-fill-default shrink-0 stroke-white text-dark"
-                                                                aria-hidden="true" style="width: 22px; height: 22px;">
-                                                                <use href="#outlined-heart-fill"></use>
-                                                            </svg>
-                                                            <div class="group-hover:text-white group-hover:underline">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="mt-1 flex w-full items-start p-2 text-left">
-                                                        <div class="w-full truncate">
-                                                            <h2 class="heading-base w-full text-sm"
-                                                                data-test="vehicleCardInfo">
-                                                                <div data-test="vehicleCardConditionYearMake"
-                                                                    class="truncate font-bold">Used 2020 Land Rover</div>
-                                                                <div class="grid grid-cols-[1fr_auto] gap-1"
-                                                                    data-test="vehicleCardTrim">
-                                                                    <div class="truncate">Discovery SE V6 Supercharged
-                                                                    </div>
+                                        </li>
+                                        <li class="px-2" data-test=""
+                                            style="
+                                scroll-snap-align: start;
+                                flex-shrink: 0;
+                                width: 33.3333%;
+                              "
+                                            inert="" aria-hidden="true">
+                                            <div class="pb-2">
+                                                <div class="flex w-full flex-col">
+                                                    <div class="relative rounded-md shadow-lg"
+                                                        aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                        data-test="newListing" data-test-item="4W5KHNRL2RZ500569"
+                                                        data-test-dealerid="466388">
+                                                        <div class="relative w-full">
+                                                            <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]"
+                                                                style="padding-bottom: 56.25%">
+                                                                <div class="img-container img-container-block preprocessed-image-inner"
+                                                                    style="
+                                            height: auto;
+                                            padding-bottom: 56.25%;
+                                            width: 100%;
+                                          ">
+                                                                    <img sizes="300px"
+                                                                        src="https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-860.jpg"
+                                                                        alt="" role="presentation" loading="lazy"
+                                                                        class="img-inner img-block"
+                                                                        srcset="
+                                              https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-60.jpg     60w,
+                                              https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-120.jpg   120w,
+                                              https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-180.jpg   180w,
+                                              https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-360.jpg   360w,
+                                              https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-540.jpg   540w,
+                                              https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-860.jpg   860w,
+                                              https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-1400.jpg 1400w
+                                            "
+                                                                        style="background-image: none">
                                                                 </div>
-                                                            </h2>
-                                                            <div class="mt-1 flex items-center justify-between gap-1">
-                                                                <div class="flex items-center">
-                                                                    <div class="heading-4 normal-case flex items-center">
-                                                                        <span class="truncate"
-                                                                            data-test="vehicleCardPriceLabelAmount">$19,729</span>
+                                                            </div>
+                                                            <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                <div data-test="vehicleCardActionDropDown"
+                                                                    class="dropdown">
+                                                                    <button aria-haspopup="true"
+                                                                        class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg"
+                                                                        aria-expanded="false" tabindex="-1">
+                                                                        <p class="sr-only">Menu</p>
+                                                                        <svg viewBox="0 0 24 24"
+                                                                            class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]"
+                                                                            aria-hidden="true"
+                                                                            style="width: 22px; height: 22px">
+                                                                            <use href="#more-vert"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="absolute top-2 left-2 z-[2]">
+                                                                <div class="flex items-center gap-1">
+                                                                    <span
+                                                                        class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md"
+                                                                        data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button"
+                                                                class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2"
+                                                                aria-label="Like button" data-test="vehicleCardLikeButton"
+                                                                data-test-item="" tabindex="-1">
+                                                                <svg viewBox="0 0 24 24"
+                                                                    class="icon icon-fill-default shrink-0 stroke-white text-dark"
+                                                                    aria-hidden="true" style="width: 22px; height: 22px">
+                                                                    <use href="#outlined-heart-fill"></use>
+                                                                </svg>
+                                                                <div class="group-hover:text-white group-hover:underline">
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                            <div class="w-full truncate">
+                                                                <div data-test="vehicleCardInfo" class="text-sm">
+                                                                    <div data-test="vehicleCardConditionYearMake"
+                                                                        class="w-full truncate font-bold">
+                                                                        New 2024 Acura
                                                                     </div>
-                                                                    <div data-test="vehicleCardPriceRating">
-                                                                        <div class="flex items-center ml-1">
-                                                                            <div class="graph-icon-container graph-icon-bucket-one"
-                                                                                style="height: 1rem; width: 1rem;"><svg
-                                                                                    viewBox="0 0 24 24"
-                                                                                    class="icon icon-fill-default graph-icon"
-                                                                                    aria-hidden="true"
-                                                                                    style="width: 13px; height: 13px;">
-                                                                                    <use href="#caret-double-down"></use>
-                                                                                </svg></div><span
-                                                                                data-test="graphIconLabel"
-                                                                                class="graph-icon-title ml-1 truncate text-xs">Excellent
-                                                                                Price</span>
+                                                                    <div class="w-full grid grid-cols-[1fr_auto] gap-1"
+                                                                        data-test="vehicleCardTrim">
+                                                                        <div class="truncate">
+                                                                            ZDX A-Spec Package AWD
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="flex w-full justify-end">
-                                                                    <div class="flex items-center truncate text-xs"
-                                                                        data-test="vehicleMileage"><svg
-                                                                            viewBox="0 0 24 24"
-                                                                            class="icon icon-fill-default mr-[2px]"
-                                                                            aria-hidden="true"
-                                                                            style="width: 14px; height: 14px;">
-                                                                            <use href="#speed"></use>
-                                                                        </svg>73k mi</div>
+                                                                <div class="mt-1 flex items-center justify-between gap-1">
+                                                                    <div class="flex items-center">
+                                                                        <h3
+                                                                            class="heading-4 normal-case flex items-center">
+                                                                            <div class="truncate"
+                                                                                data-test="vehicleCardMsrpLabelAmount">
+                                                                                <div class="flex items-end">
+                                                                                    <div class="text-[18px]">
+                                                                                        $70,450
+                                                                                    </div>
+                                                                                    <div class="flex pb-[1px]">
+                                                                                        <div
+                                                                                            class="ml-1 mt-[2px] text-[14px]">
+                                                                                            Total MSRP
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </h3>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div data-test="vehicleCardFooter"
+                                                            class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                            <div class="min-h-[18px]">Irvine, CA</div>
+                                                            <div class="flex items-center gap-1">
+                                                                <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark"
+                                                                    data-test="evBadge">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        class="icon icon-fill-default text-[color:var(--green-600)]"
+                                                                        role="img" aria-labelledby="icon-1379"
+                                                                        aria-hidden="false"
+                                                                        style="width: 14px; height: 14px">
+                                                                        <title id="icon-1379">EV</title>
+                                                                        <use href="#bolt-fill"></use>
+                                                                    </svg><span class="text-xs">EV</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
+                                                            data-test="vehicleCardLink"
+                                                            aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD"
+                                                            href="/new-cars-for-sale/listing/4W5KHNRL2RZ500569/2024-acura-zdx/?position=7&amp;sourceType=ranking&amp;sponsored=true"
+                                                            tabindex="-1"></a>
                                                     </div>
-                                                    <div data-test="vehicleCardFooter"
-                                                        class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
-                                                        <div class="min-h-[18px]"> Delivery to your Door</div>
-                                                        <div class="flex items-center gap-1"></div>
-                                                    </div><a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]"
-                                                        data-test="vehicleCardLink"
-                                                        aria-label="View details for 2020 Land Rover Discovery, SE V6 Supercharged"
-                                                        href="/used-cars-for-sale/listing/SALRG2RVXL2425336/2020-land-rover-discovery/?position=7&amp;sourceType=tcplus_landing"
-                                                        tabindex="-1"></a>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><button
-                                class="carousel-arrow carousel-arrow-outside carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-2 carousel-arrow-next carousel-arrow-next"
-                                data-test="carouselArrowNext" aria-label="Next"><svg width="16px" height="16px"
-                                    viewBox="0 0 16 16" class="carousel-arrow-icon">
-                                    <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <polyline stroke-width="1.5" fill-rule="nonzero"
-                                            points="5 2 12 8.36363636 5 14.7272727"></polyline>
-                                    </g>
-                                </svg></button>
-                        </div>
-                        <div class="relative flex select-none items-center justify-center pt-2-5">
-                            <div class="mx-auto inline-flex items-center justify-center overflow-hidden relative h-[4px]">
-                                <ul data-test="carouselDots"
-                                    class="m-0 inline-flex items-center justify-center gap-1 transition-transform duration-300 h-[4px]"
-                                    style="transform: translateX(0px);">
-                                    <li class="transition-[property:background,opacity] block shrink-0 rounded-full duration-[400ms] h-[4px] w-[10px] bg-black"
-                                        data-test="carouselDotsDot"></li>
-                                    <li class="transition-[property:background,opacity] block shrink-0 rounded-full duration-[400ms] h-[4px] w-[10px] bg-[color:var(--gray-200)]"
-                                        data-test="carouselDotsDot"></li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button
+                                    class="carousel-arrow carousel-arrow-outside carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-2 carousel-arrow-next carousel-arrow-next"
+                                    data-test="carouselArrowNext" aria-label="Next">
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="carousel-arrow-icon">
+                                        <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <polyline stroke-width="1.5" fill-rule="nonzero"
+                                                points="5 2 12 8.36363636 5 14.7272727"></polyline>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="relative flex select-none items-center justify-center pt-2-5">
+                                <div
+                                    class="mx-auto inline-flex items-center justify-center overflow-hidden relative h-[4px]">
+                                    <ul data-test="carouselDots"
+                                        class="m-0 inline-flex items-center justify-center gap-1 transition-transform duration-300 h-[4px]"
+                                        style="transform: translateX(0px)">
+                                        <li class="transition-[property:background,opacity] block shrink-0 rounded-full duration-[400ms] h-[4px] w-[10px] bg-black"
+                                            data-test="carouselDotsDot"></li>
+                                        <li class="transition-[property:background,opacity] block shrink-0 rounded-full duration-[400ms] h-[4px] w-[10px] bg-[color:var(--gray-200)]"
+                                            data-test="carouselDotsDot"></li>
+                                        <li class="transition-[property:background,opacity] block shrink-0 rounded-full duration-[400ms] h-[4px] w-[10px] bg-[color:var(--gray-200)]"
+                                            data-test="carouselDotsDot"></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div><a data-ignore-contrast="true" data-loading="false"
+                </div>
+                <a data-ignore-contrast="true" data-loading="false"
                     class="!max-w-none md:!max-w-[140px] btn btn-primary btn-lg btn-block"
                     href="/used-cars-for-sale/listings/?buyOnline=true"><span class="btn-inner">View more</span></a>
             </div>
@@ -1111,14 +1308,14 @@
                     class="rounded-[10px] border border-[color:var(--gray-900)] bg-[color:rgba(30,30,30,0.5)] relative z-[2] mx-4 max-w-full space-y-4 py-4 px-3 backdrop-blur-lg sm:px-4 min-[1540px]:mx-auto min-[1540px]:max-w-[1190px]">
                     <div class="heading-2 normal-case font-[500]">How does<div class="picture-container mx-2"
                             style="padding-bottom:0;width:131px;height:23px"><img class="picture-inner picture-svg"
-                                src="{{asset('assets/_next/static/images/tc-plus-dark-theme-logo-f9a028938a01d05a636e4a5a8a188099.svg')}}"
+                                src="{{ asset('assets/_next/static/images/tc-plus-dark-theme-logo-f9a028938a01d05a636e4a5a8a188099.svg') }}"
                                 alt="TrueCar Plus"></div>work?</div>
                     <ol
                         class="mx-auto grid max-w-[400px] gap-3 p-0 pr-3 text-left min-[1080px]:max-w-full min-[1080px]:grid-cols-[repeat(3,auto)] min-[1140px]:pr-5 min-[1540px]:pr-7">
                         <li class="flex list-none items-start gap-2-5">
                             <div class="picture-container -mr-3 shrink-0 origin-top-left scale-75 min-[1080px]:mr-0 min-[1080px]:scale-100"
                                 style="padding-bottom:0;width:74px;height:94px"><img class="picture-inner picture-svg"
-                                    src="{{asset('assets/_next/static/images/number-1-5f3f6bfeb32e9113f9a4ed55c11f4b94.svg')}}"
+                                    src="{{ asset('assets/_next/static/images/number-1-5f3f6bfeb32e9113f9a4ed55c11f4b94.svg') }}"
                                     alt="1"></div>
                             <div class="space-y-1">
                                 <div class="heading-3 normal-case font-[500]">You're in total control</div>
@@ -1128,7 +1325,7 @@
                         <li class="flex list-none items-start gap-2-5">
                             <div class="picture-container -mr-3 shrink-0 origin-top-left scale-75 min-[1080px]:mr-0 min-[1080px]:scale-100"
                                 style="padding-bottom:0;width:74px;height:94px"><img class="picture-inner picture-svg"
-                                    src="{{asset('assets/_next/static/images/number-2-2db898bea518a47edfe0cbeade0a155b.svg')}}"
+                                    src="{{ asset('assets/_next/static/images/number-2-2db898bea518a47edfe0cbeade0a155b.svg') }}"
                                     alt="1"></div>
                             <div class="space-y-1">
                                 <div class="heading-3 normal-case font-[500]">Find the right financing</div>
@@ -1138,7 +1335,7 @@
                         <li class="flex list-none items-start gap-2-5">
                             <div class="picture-container -mr-3 shrink-0 origin-top-left scale-75 min-[1080px]:mr-0 min-[1080px]:scale-100"
                                 style="padding-bottom:0;width:74px;height:94px"><img class="picture-inner picture-svg"
-                                    src="{{asset('assets/_next/static/images/number-3-7df2c01b3f48551ae97e84ee42f4a600.svg')}}"
+                                    src="{{ asset('assets/_next/static/images/number-3-7df2c01b3f48551ae97e84ee42f4a600.svg') }}"
                                     alt="1"></div>
                             <div class="space-y-1">
                                 <div class="heading-3 normal-case font-[500]">Receive your car<button
@@ -1153,18 +1350,18 @@
                             </div>
                         </li>
                     </ol><button type="button" data-ignore-contrast="true" data-loading="false"
-                        data-test="tcplusBannerCTA" class="btn-dark btn btn-primary btn-lg"><span
-                            class="btn-inner">Buy online</span></button>
+                        data-test="tcplusBannerCTA" class="btn-dark btn btn-primary btn-lg"><span class="btn-inner">Buy
+                            online</span></button>
                 </div>
                 <div class="picture-container absolute right-[calc(100%_-_150px)] z-1 bottom-[-180px] min-[1540px]:right-auto min-[1540px]:left-[60px] min-[1540px]:scale-[85%] hidden md:block"
                     style="padding-bottom:0;width:276px;height:304px"><img class="picture-inner"
-                        src="{{asset('assets/_next/static/images/phone-left-743e848adcec5270d0e95db71ddb17c5.png')}}?auto=format&amp;h=304&amp;w=276"
-                        srcset="{{asset('assets/_next/static/images/phone-left-743e848adcec5270d0e95db71ddb17c5.png')}}?auto=format&amp;h=304&amp;w=276 1x, {{asset('assets/_next/static/images/phone-left-743e848adcec5270d0e95db71ddb17c5.png')}}?auto=format&amp;h=608&amp;w=552 2x"
+                        src="{{ asset('assets/_next/static/images/phone-left-743e848adcec5270d0e95db71ddb17c5.png') }}?auto=format&amp;h=304&amp;w=276"
+                        srcset="{{ asset('assets/_next/static/images/phone-left-743e848adcec5270d0e95db71ddb17c5.png') }}?auto=format&amp;h=304&amp;w=276 1x, {{ asset('assets/_next/static/images/phone-left-743e848adcec5270d0e95db71ddb17c5.png') }}?auto=format&amp;h=608&amp;w=552 2x"
                         alt="" role="presentation"></div>
                 <div class="picture-container absolute left-[calc(100%_-_130px)] z-[3] origin-bottom scale-75 bottom-[-102px] min-[1540px]:bottom-[-140px] min-[1140px]:left-[calc(100%_-_170px)] min-[1540px]:left-auto min-[1540px]:right-[60px] min-[1540px]:scale-[85%] hidden md:block"
                     style="padding-bottom:0;width:285px;height:414px"><img class="picture-inner"
-                        src="{{asset('assets/_next/static/images/phone-right-a9d600ac9c6d63007f8358dc04d61dd2.png')}}?auto=format&amp;h=414&amp;w=285"
-                        srcset="{{asset('assets/_next/static/images/phone-right-a9d600ac9c6d63007f8358dc04d61dd2.png')}}?auto=format&amp;h=414&amp;w=285 1x, {{asset('assets/_next/static/images/phone-right-a9d600ac9c6d63007f8358dc04d61dd2.png')}}?auto=format&amp;h=828&amp;w=570 2x"
+                        src="{{ asset('assets/_next/static/images/phone-right-a9d600ac9c6d63007f8358dc04d61dd2.png') }}?auto=format&amp;h=414&amp;w=285"
+                        srcset="{{ asset('assets/_next/static/images/phone-right-a9d600ac9c6d63007f8358dc04d61dd2.png') }}?auto=format&amp;h=414&amp;w=285 1x, {{ asset('assets/_next/static/images/phone-right-a9d600ac9c6d63007f8358dc04d61dd2.png') }}?auto=format&amp;h=828&amp;w=570 2x"
                         alt="" role="presentation"></div>
             </div>
         </div>
@@ -1191,7 +1388,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo_text/384x384_full_color/d88259cdbac929b7/Hyundai.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo_text/384x384_full_color/d88259cdbac929b7/Hyundai.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo_text/384x384_full_color/d88259cdbac929b7/Hyundai.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Hyundai</div>
                                         </div>
@@ -1203,7 +1401,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/991x384_full_color/588008e646f944ab/Ford.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/991x384_full_color/588008e646f944ab/Ford.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/991x384_full_color/588008e646f944ab/Ford.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Ford</div>
                                         </div>
@@ -1215,7 +1414,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo_text/389x384_full_color/c320eb8ddc97ecf7/Mazda.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo_text/389x384_full_color/c320eb8ddc97ecf7/Mazda.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo_text/389x384_full_color/c320eb8ddc97ecf7/Mazda.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Mazda</div>
                                         </div>
@@ -1227,7 +1427,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo_text/820x384_full_color/1dd21e0781f0e450/Chevrolet.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo_text/820x384_full_color/1dd21e0781f0e450/Chevrolet.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo_text/820x384_full_color/1dd21e0781f0e450/Chevrolet.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Chevrolet</div>
                                         </div>
@@ -1239,7 +1440,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/1629x384_full_color/638bbde84c5f569e/Kia.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/1629x384_full_color/638bbde84c5f569e/Kia.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/1629x384_full_color/638bbde84c5f569e/Kia.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Kia</div>
                                         </div>
@@ -1251,7 +1453,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/384x384_full_color/cf0bb1b2deca5e84/Toyota.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/384x384_full_color/cf0bb1b2deca5e84/Toyota.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/384x384_full_color/cf0bb1b2deca5e84/Toyota.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Toyota</div>
                                         </div>
@@ -1263,7 +1466,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/1088x384_full_color/0598fce6d069a5a0/Audi.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/1088x384_full_color/0598fce6d069a5a0/Audi.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/1088x384_full_color/0598fce6d069a5a0/Audi.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Audi</div>
                                         </div>
@@ -1275,7 +1479,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/450x384_full_color/688cbf406361c9c1/Nissan.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/450x384_full_color/688cbf406361c9c1/Nissan.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/450x384_full_color/688cbf406361c9c1/Nissan.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Nissan</div>
                                         </div>
@@ -1287,7 +1492,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/1694x384_full_color/81e05d9044355a28/GMC.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/1694x384_full_color/81e05d9044355a28/GMC.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/1694x384_full_color/81e05d9044355a28/GMC.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">GMC</div>
                                         </div>
@@ -1299,7 +1505,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/689x384_full_color/43b494c614cd8ca3/Subaru.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/689x384_full_color/43b494c614cd8ca3/Subaru.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/689x384_full_color/43b494c614cd8ca3/Subaru.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Subaru</div>
                                         </div>
@@ -1311,7 +1518,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo_text/384x384_full_color/2e91116c833bfded/Volkswagen.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo_text/384x384_full_color/2e91116c833bfded/Volkswagen.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo_text/384x384_full_color/2e91116c833bfded/Volkswagen.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Volkswagen</div>
                                         </div>
@@ -1323,7 +1531,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/974x384_full_color/a8fcfe1e70a37d25/Jeep.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/974x384_full_color/a8fcfe1e70a37d25/Jeep.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/974x384_full_color/a8fcfe1e70a37d25/Jeep.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Jeep</div>
                                         </div>
@@ -1335,7 +1544,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/605x384_full_color/00fea4dbe4426fc2/Honda.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/605x384_full_color/00fea4dbe4426fc2/Honda.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/605x384_full_color/00fea4dbe4426fc2/Honda.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Honda</div>
                                         </div>
@@ -1347,7 +1557,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/385x384_full_color/894bffb70433ffd7/Tesla.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/385x384_full_color/894bffb70433ffd7/Tesla.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/385x384_full_color/894bffb70433ffd7/Tesla.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Tesla</div>
                                         </div>
@@ -1359,7 +1570,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/344x384_full_color/3d7b5b777d15c593/Ram.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/344x384_full_color/3d7b5b777d15c593/Ram.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/344x384_full_color/3d7b5b777d15c593/Ram.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Ram</div>
                                         </div>
@@ -1371,7 +1583,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo_text/938x384_full_color/26078ba5f8aba234/Cadillac.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo_text/938x384_full_color/26078ba5f8aba234/Cadillac.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo_text/938x384_full_color/26078ba5f8aba234/Cadillac.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Cadillac</div>
                                         </div>
@@ -1383,7 +1596,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/1664x384_full_color/3669c24f879ba296/Genesis.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/1664x384_full_color/3669c24f879ba296/Genesis.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/1664x384_full_color/3669c24f879ba296/Genesis.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Genesis</div>
                                         </div>
@@ -1395,7 +1609,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/2751x384_full_color/0d87acfca3ddd404/Dodge.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/2751x384_full_color/0d87acfca3ddd404/Dodge.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/2751x384_full_color/0d87acfca3ddd404/Dodge.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Dodge</div>
                                         </div>
@@ -1407,7 +1622,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/385x384_full_color/4acbf7c7efa21a3b/Buick.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/385x384_full_color/4acbf7c7efa21a3b/Buick.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/385x384_full_color/4acbf7c7efa21a3b/Buick.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Buick</div>
                                         </div>
@@ -1419,7 +1635,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/384x384_full_color/614861eca7caf1b4/BMW.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/384x384_full_color/614861eca7caf1b4/BMW.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/384x384_full_color/614861eca7caf1b4/BMW.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">BMW</div>
                                         </div>
@@ -1431,7 +1648,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/543x384_full_color/c8d23de545755e0d/Lexus.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/543x384_full_color/c8d23de545755e0d/Lexus.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/543x384_full_color/c8d23de545755e0d/Lexus.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Lexus</div>
                                         </div>
@@ -1443,7 +1661,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/384x384_full_color/c39d70a40d578560/Volvo.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/384x384_full_color/c39d70a40d578560/Volvo.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/384x384_full_color/c39d70a40d578560/Volvo.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Volvo</div>
                                         </div>
@@ -1455,7 +1674,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo_text/710x384_full_color/18bc580ce00c3c95/Acura.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo_text/710x384_full_color/18bc580ce00c3c95/Acura.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo_text/710x384_full_color/18bc580ce00c3c95/Acura.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Acura</div>
                                         </div>
@@ -1467,7 +1687,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/3658x384_full_color/f8a2454c744fb2af/Chrysler.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/3658x384_full_color/f8a2454c744fb2af/Chrysler.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/3658x384_full_color/f8a2454c744fb2af/Chrysler.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Chrysler</div>
                                         </div>
@@ -1479,7 +1700,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/115x384_full_color/b31e23eab6fd3beb/Lincoln.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/115x384_full_color/b31e23eab6fd3beb/Lincoln.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/115x384_full_color/b31e23eab6fd3beb/Lincoln.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Lincoln</div>
                                         </div>
@@ -1491,7 +1713,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/384x384_full_color/959be7e00726a9e0/Mercedes-Benz.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/384x384_full_color/959be7e00726a9e0/Mercedes-Benz.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/384x384_full_color/959be7e00726a9e0/Mercedes-Benz.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Mercedes-Benz</div>
                                         </div>
@@ -1503,7 +1726,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/722x384_full_color/2e9c24a2f6e9d190/Land_Rover.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/722x384_full_color/2e9c24a2f6e9d190/Land_Rover.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/722x384_full_color/2e9c24a2f6e9d190/Land_Rover.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Land Rover</div>
                                         </div>
@@ -1515,7 +1739,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/874x384_full_color/519add2e55e837af/MINI.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/874x384_full_color/519add2e55e837af/MINI.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/874x384_full_color/519add2e55e837af/MINI.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">MINI</div>
                                         </div>
@@ -1527,7 +1752,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/296x384_full_color/5505f9fd129ce1d5/Porsche.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/296x384_full_color/5505f9fd129ce1d5/Porsche.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/296x384_full_color/5505f9fd129ce1d5/Porsche.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Porsche</div>
                                         </div>
@@ -1544,7 +1770,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo_text/384x384_full_color/d88259cdbac929b7/Hyundai.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo_text/384x384_full_color/d88259cdbac929b7/Hyundai.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo_text/384x384_full_color/d88259cdbac929b7/Hyundai.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Hyundai</div>
                                         </div>
@@ -1556,7 +1783,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo_text/820x384_full_color/1dd21e0781f0e450/Chevrolet.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo_text/820x384_full_color/1dd21e0781f0e450/Chevrolet.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo_text/820x384_full_color/1dd21e0781f0e450/Chevrolet.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Chevrolet</div>
                                         </div>
@@ -1568,7 +1796,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo_text/389x384_full_color/c320eb8ddc97ecf7/Mazda.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo_text/389x384_full_color/c320eb8ddc97ecf7/Mazda.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo_text/389x384_full_color/c320eb8ddc97ecf7/Mazda.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Mazda</div>
                                         </div>
@@ -1580,7 +1809,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/991x384_full_color/588008e646f944ab/Ford.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/991x384_full_color/588008e646f944ab/Ford.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/991x384_full_color/588008e646f944ab/Ford.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Ford</div>
                                         </div>
@@ -1592,7 +1822,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/1629x384_full_color/638bbde84c5f569e/Kia.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/1629x384_full_color/638bbde84c5f569e/Kia.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/1629x384_full_color/638bbde84c5f569e/Kia.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Kia</div>
                                         </div>
@@ -1604,7 +1835,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/689x384_full_color/43b494c614cd8ca3/Subaru.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/689x384_full_color/43b494c614cd8ca3/Subaru.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/689x384_full_color/43b494c614cd8ca3/Subaru.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Subaru</div>
                                         </div>
@@ -1616,7 +1848,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/1694x384_full_color/81e05d9044355a28/GMC.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/1694x384_full_color/81e05d9044355a28/GMC.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/1694x384_full_color/81e05d9044355a28/GMC.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">GMC</div>
                                         </div>
@@ -1628,7 +1861,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo_text/384x384_full_color/2e91116c833bfded/Volkswagen.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo_text/384x384_full_color/2e91116c833bfded/Volkswagen.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo_text/384x384_full_color/2e91116c833bfded/Volkswagen.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Volkswagen</div>
                                         </div>
@@ -1640,7 +1874,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo/1088x384_full_color/0598fce6d069a5a0/Audi.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo/1088x384_full_color/0598fce6d069a5a0/Audi.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo/1088x384_full_color/0598fce6d069a5a0/Audi.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Audi</div>
                                         </div>
@@ -1652,7 +1887,8 @@
                                             <img class="picture-inner"
                                                 src="https://static.tcimg.net/vehicles/logo_text/938x384_full_color/26078ba5f8aba234/Cadillac.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60"
                                                 srcset="https://static.tcimg.net/vehicles/logo_text/938x384_full_color/26078ba5f8aba234/Cadillac.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=60&amp;w=60 1x, https://static.tcimg.net/vehicles/logo_text/938x384_full_color/26078ba5f8aba234/Cadillac.png?auto=format&amp;fill=solid&amp;fit=fill&amp;h=120&amp;w=120 2x"
-                                                role="presentation" alt=""></div>
+                                                role="presentation" alt="">
+                                        </div>
                                         <div class="pl-3">
                                             <div class="heading-base">Cadillac</div>
                                         </div>

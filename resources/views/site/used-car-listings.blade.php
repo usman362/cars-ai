@@ -36,7 +36,7 @@
                                             <div class="-mx-3 border-b px-3 py-3">
                                                 <div class="-mx-3 px-3">
                                                     <fieldset class="switch-bar switch-bar-block" aria-invalid="false">
-                                                        <legend class="sr-only">Vehicle Condition</legend><label class="form-radio-control switch w-full switch-active" data-test="usedCarsSwitch"><input class="form-radio-control-input custom-control-input" type="radio" name="radio-group-24" value="USED" checked="">
+                                                        <legend class="sr-only">Vehicle Condition</legend><label class="form-radio-control switch w-full" data-test="usedCarsSwitch"><input class="form-radio-control-input custom-control-input" type="radio" name="radio-group-24" value="USED" checked="">
                                                             <div>Used Cars </div>
                                                         </label><label class="form-radio-control switch w-full" data-test="newCarsSwitch"><input class="form-radio-control-input custom-control-input" type="radio" name="radio-group-24" value="NEW">
                                                             <div>New Cars </div>

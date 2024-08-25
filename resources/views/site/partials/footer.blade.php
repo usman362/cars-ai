@@ -92,7 +92,7 @@
 
                 <li><a data-linkname="footer-site-map" data-component="footer-our-company" data-component-index="6" data-activity-rule-type="page-over-page" href="/sitemap/">Site Map</a></li>
 
-                <li><a data-linkname="footer-feedback" data-component="footer-our-company" data-activity-rule-type="custom" data-component-index="7" data-toggle="modal" data-target="#qualtrics-modal" href="#" data-modal-registered="1">Feedback</a></li>
+                <li><a data-linkname="footer-feedback" data-component="footer-our-company" data-activity-rule-type="custom" data-component-index="7" data-toggle="modal" data-target="#qualtrics-modal" href="javascript:void(0)" data-modal-registered="1">Feedback</a></li>
 
             </ul>
           </div>
@@ -143,7 +143,7 @@
 
               <li><a data-linkname="footer-personal-information" data-component="footer-legal" data-activity-rule-type="page-over-page" data-component-index="4" href="/about/ccpa-privacy-notice/#exercising-access-use-limitation-data-portability-deletion-and-correction-rights">My Privacy Choices<img height="14px" loading="lazy" src="assets/img/privacyoptions.svg"></a></li>
 
-              <li><a class="optanon-show-settings" data-component="footer-legal" data-component-index="5" href="#" trc="" trid="f8a95eb0-4f9a-467a-80b5-d7c890383917">Cookie Preferences</a></li>
+              <li><a class="optanon-show-settings" data-component="footer-legal" data-component-index="5" href="javascript:void(0)" trc="" trid="f8a95eb0-4f9a-467a-80b5-d7c890383917">Cookie Preferences</a></li>
 
               <li><a data-linkname="footer-accessibility" data-component="footer-legal" data-activity-rule-type="page-over-page" data-component-index="6" href="/about/accessibility/">Accessibility Statement</a></li>
 

@@ -64,7 +64,7 @@
                         <div data-test="stickyWrapperChildren" class="">
                             <div class="flex justify-center" role="navigation" aria-label="In Page">
                                 <div class="container">
-                                    <div class="hidden"></div><a href="#" class="navigation-arrow navigation-arrow-prev hidden" aria-label="Previous"><span class="navigation-arrow-inner"><svg viewBox="0 0 24 24" class="icon icon-fill-default" aria-hidden="true" style="width: 16px; height: 16px; stroke-width: 1px;">
+                                    <div class="hidden"></div><a href="javascript:void(0)" class="navigation-arrow navigation-arrow-prev hidden" aria-label="Previous"><span class="navigation-arrow-inner"><svg viewBox="0 0 24 24" class="icon icon-fill-default" aria-hidden="true" style="width: 16px; height: 16px; stroke-width: 1px;">
                                                 <use href="#keyboard_arrow_right"></use>
                                             </svg></span></a>
                                     <ul class="tab-bar tab-bar-block tab-bar-scrollable navigation-bar lg:justify-center md:justify-center justify-start">

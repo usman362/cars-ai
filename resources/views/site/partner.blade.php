@@ -3076,7 +3076,7 @@
                 <div class="section-inner section-fit section-relative">
                     <div class="widget item-absolute  " id="element-18">
                         <div class="contents cropped item-block" data-at="image-cropp">
-                            <a href="#" class="url-link item-content-box item-block"
+                            <a href="javascript:void(0)" class="url-link item-content-box item-block"
                                 id="link-0hfiza3h5ix" data-at="image-link" data-link-0hfiza3h5ix="" target="_blank">
                             </a>
                         </div>
@@ -3137,11 +3137,11 @@
                     <div class="widget item-absolute paragraph  " id="element-16" data-at="paragraph">
                         <div class="contents">
                             <p class="x_dc68832a x_2c80ab57"><span class="x_f2074b6c"><a
-                                        href="#" id="link-bsisjr5wo2s" target="_blank"
+                                        href="javascript:void(0)" id="link-bsisjr5wo2s" target="_blank"
                                         data-link-bsisjr5wo2s="" class="url-link">Terms of Service</a>&nbsp; |&nbsp;
-                                    <a href="#" id="link-mtryed27p8" target="_blank"
+                                    <a href="javascript:void(0)" id="link-mtryed27p8" target="_blank"
                                         data-link-mtryed27p8="" class="url-link">Privacy Policy</a>&nbsp; | &nbsp;<a
-                                        href="#" id="link-4nhcdj3c4h"
+                                        href="javascript:void(0)" id="link-4nhcdj3c4h"
                                         target="_blank" data-link-4nhcdj3c4h="" class="url-link">Do Not Sell My
                                         Personal Information</a></span></p>
                         </div>

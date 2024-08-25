@@ -21,7 +21,7 @@
                                             <h1 class="heading-3 normal-case hidden-sm-down mx-2-5 pt-2 text-left">Browse new vehicles by brand or body&nbsp;type.</h1>
                                             <div class="flex w-full flex-row items-center justify-center py-2 md:justify-start md:text-center">
                                                 <fieldset class="switch-bar switch-bar-block my-2 w-full max-w-[200px]" aria-invalid="false">
-                                                    <legend class="sr-only">Filter Vehicles</legend><label class="form-radio-control switch w-full switch-active" data-test="shopMakeModelBrandSwitch"><input class="form-radio-control-input custom-control-input" type="radio" name="radio-group-18" value="brand" checked="">
+                                                    <legend class="sr-only">Filter Vehicles</legend><label class="form-radio-control switch w-full" data-test="shopMakeModelBrandSwitch"><input class="form-radio-control-input custom-control-input" type="radio" name="radio-group-18" value="brand" checked="">
                                                         <div>Brand </div>
                                                     </label><label class="form-radio-control switch w-full" data-test="shopMakeModelBodySwitch"><input class="form-radio-control-input custom-control-input" type="radio" name="radio-group-18" value="body">
                                                         <div>Type </div>
@@ -316,15 +316,15 @@
                                                     0% {
                                                         left: 100%;
                                                     }
-                
+
                                                     30% {
                                                         left: 16px;
                                                     }
-                
+
                                                     70% {
                                                         left: 16px;
                                                     }
-                
+
                                                     100% {
                                                         left: -100%;
                                                     }

@@ -14,7 +14,7 @@
                     <div class="text-center lg:mt-3 col-md-6 offset-md-3 col-lg-7 offset-lg-0">
                         <div class="picture-container picture-container-block" style="padding-bottom: 66.9388%;"><img
                                 class="picture-block picture-svg lg:px-3"
-                                src="{{asset('assets/_next/static/images/research-and-compare-48d73c06611e64122f4fb2f02404d4a3.svg')}}"
+                                src="{{ asset('assets/_next/static/images/research-and-compare-48d73c06611e64122f4fb2f02404d4a3.svg') }}"
                                 data-test="researchLandingHeaderImg" alt="Research and Compare"></div>
                     </div>
                 </div>
@@ -143,7 +143,8 @@
                                                         <svg viewBox="0 0 24 24" class="icon icon-fill-default"
                                                             aria-hidden="true" style="width: 24px; height: 24px;">
                                                             <use href="#arrow_drop_down"></use>
-                                                        </svg></div>
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                                 <div class="field-message-challenger">
                                                     <div class="field-message-text-challenger"></div>
@@ -164,461 +165,823 @@
                     <div class="pt-2-5 pb-4 text-center lg:pt-5 lg:pb-5">
                         <h2 class="heading-3 normal-case">Featured Reviews</h2>
                         <p class="pb-3">Our experts road-test selected models.</p>
-                        <div class="carousel">
-                            <div class="relative flex w-full items-center"><button
-                                    class="carousel-arrow carousel-arrow-middle carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-2 carousel-arrow-prev carousel-arrow-prev"
-                                    data-test="carouselArrowPrev" aria-label="Previous" disabled=""><svg
-                                        width="16px" height="16px" viewBox="0 0 16 16" class="carousel-arrow-icon">
-                                        <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <polyline stroke-width="1.5" fill-rule="nonzero"
-                                                points="5 2 12 8.36363636 5 14.7272727"></polyline>
-                                        </g>
-                                    </svg></button>
-                                <div class="grow" style="position: relative; overflow: hidden;">
-                                    <ul data-test="carouselSlideContainer" class=""
-                                        style="display: flex; flex-flow: row; position: relative; overflow: hidden;">
-                                        <li class="px-2" data-test="carouselCurrentSlide0"
-                                            style="scroll-snap-align: start; flex-shrink: 0; width: 25%;">
-                                            <div class="h-full pt-1 pb-2 md:pt-0" data-test="editorialReviewCard"><a
-                                                    class="linkable card transition-[transition:box-shadow] shadow-[2px_2px_7px_0_rgba(1,1,1,0.15)] duration-300 ease-[cubic-bezier(0.64,0.04,0.35,1)] hover:shadow-[2px_2px_6px_0_rgba(1,1,1,0.05),2px_4px_9px_0_rgba(1,1,1,0.15)] h-full"
-                                                    aria-label="2024 Bentley Continental, reviewed by Matt DiGiulio"
-                                                    href="/overview/bentley/continental/">
-                                                    <div class="card-image">
-                                                        <div class="picture-container picture-container-block"
-                                                            style="padding-bottom: 55.3191%;"><img
-                                                                class="picture-block rounded-t" sizes="212.5px"
-                                                                src="https://static.tcimg.net/vehicles/oem/12afcb6deac05783/2020-Bentley-Continental.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240"
-                                                                srcset="https://static.tcimg.net/vehicles/oem/12afcb6deac05783/2020-Bentley-Continental.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240 240w, https://static.tcimg.net/vehicles/oem/12afcb6deac05783/2020-Bentley-Continental.jpg?auto=format&amp;fit=crop&amp;h=265.53191489361706&amp;w=480 480w"
-                                                                data-test="editorialReviewCardImage" alt=""
-                                                                role="presentation"></div>
-                                                    </div>
-                                                    <div data-test="cardContent"
-                                                        class="card-content flex justify-around px-2-5 pb-2-5 pt-2">
-                                                        <div
-                                                            class="heading-5 normal-case flex h-full items-center text-left">
-                                                            <span class="line-clamp-2">2024 Bentley Continental</span>
-                                                        </div>
-                                                        <div class="mt-2 border-t pt-2 text-left">
-                                                            <p class="text-sm line-clamp-3">The 2024 Bentley Continental is
-                                                                a top-tier luxury grand tourer that excels in performance,
-                                                                opulence, and cutting-edge technology. While it commands a
-                                                                high price and has limited rear space, its unmatched
-                                                                refinement and power make it a strong recommendation for
-                                                                those seeking a premium driving experience.</p>
-                                                            <div
-                                                                class="flex min-h-[40px] items-center pt-2 text-xs text-muted">
-                                                                <div class="picture-container mr-2"
-                                                                    style="padding-bottom: 0px; width: 30px; height: 30px;">
-                                                                    <img class="picture-inner rounded-full"
-                                                                        src="https://static.tcimg.net/authors/376b6653e80db88e/matt-digiulio.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30"
-                                                                        srcset="https://static.tcimg.net/authors/376b6653e80db88e/matt-digiulio.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30 1x, https://static.tcimg.net/authors/376b6653e80db88e/matt-digiulio.jpg?auto=format&amp;fit=crop&amp;h=60&amp;w=60 2x"
-                                                                        data-test="editorialReviewCardAuthorImage"
-                                                                        alt="" role="presentation"></div>
-                                                                <span>Review by Matt DiGiulio</span>
+
+                        <div class="mt-4 mb-5 space-y-3 rankingsRecommendationCarousel" id="rankingsRecommendationCarousel">
+
+                            <div class="relative items-center justify-center">
+                                <div class="carousel">
+                                    <div class="relative flex w-full items-center">
+                                        <button class="carousel-arrow carousel-arrow-outside carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-2 carousel-arrow-prev carousel-arrow-prev" data-test="carouselArrowPrev" aria-label="Previous" disabled="">
+                                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="carousel-arrow-icon">
+                                                <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                                    <polyline stroke-width="1.5" fill-rule="nonzero" points="5 2 12 8.36363636 5 14.7272727"></polyline>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <div class="grow" style="position: relative; overflow: hidden">
+                                            <ul data-test="carouselSlideContainer" class="" style="display: flex; flex-flow: row; position: relative; overflow: hidden; transform: translateX(0px);">
+                                                <li class="px-2" data-test="carouselCurrentSlide0" style="
+                                        scroll-snap-align: start;
+                                        flex-shrink: 0;
+                                        width: 33.3333%;
+                                      ">
+                                                    <div class="pb-2">
+                                                        <div class="flex w-full flex-col">
+                                                            <div class="relative rounded-md shadow-lg" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" data-test="newListing" data-test-item="4W5KHNRL1RZ503592" data-test-dealerid="466388">
+                                                                <div class="relative w-full">
+                                                                    <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]" style="padding-bottom: 56.25%">
+                                                                        <div class="img-container img-container-block preprocessed-image-inner" style="
+                                                    height: auto;
+                                                    padding-bottom: 56.25%;
+                                                    width: 100%;
+                                                  ">
+                                                                            <img sizes="300px" src="https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-860.jpg" alt="" role="presentation" loading="lazy" class="img-inner img-block" srcset="
+                                                      https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-60.jpg     60w,
+                                                      https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-120.jpg   120w,
+                                                      https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-180.jpg   180w,
+                                                      https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-360.jpg   360w,
+                                                      https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-540.jpg   540w,
+                                                      https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-860.jpg   860w,
+                                                      https://listings-prod.tcimg.net/listings/466388/92/35/4W5KHNRL1RZ503592/XA7TWXZ6J2KNVZ2YMISE46JSLM-og-1400.jpg 1400w
+                                                    " style="background-image: none">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                        <div data-test="vehicleCardActionDropDown" class="dropdown">
+                                                                            <button aria-haspopup="true" class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg" aria-expanded="false">
+                                                                                <p class="sr-only">Menu</p>
+                                                                                <svg viewBox="0 0 24 24" class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                                    <use href="#more-vert"></use>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute top-2 left-2 z-[2]">
+                                                                        <div class="flex items-center gap-1">
+                                                                            <span class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md" data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="button" class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2" aria-label="Like button" data-test="vehicleCardLikeButton" data-test-item="">
+                                                                        <svg viewBox="0 0 24 24" class="icon icon-fill-default shrink-0 stroke-white text-dark" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                            <use href="#outlined-heart-fill"></use>
+                                                                        </svg>
+                                                                        <div class="group-hover:text-white group-hover:underline">
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                                    <div class="w-full truncate">
+                                                                        <div data-test="vehicleCardInfo" class="text-sm">
+                                                                            <div data-test="vehicleCardConditionYearMake" class="w-full truncate font-bold">
+                                                                                New 2024 Acura
+                                                                            </div>
+                                                                            <div class="w-full grid grid-cols-[1fr_auto] gap-1" data-test="vehicleCardTrim">
+                                                                                <div class="truncate">
+                                                                                    ZDX A-Spec Package AWD
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mt-1 flex items-center justify-between gap-1">
+                                                                            <div class="flex items-center">
+                                                                                <h3 class="heading-4 normal-case flex items-center">
+                                                                                    <div class="truncate" data-test="vehicleCardMsrpLabelAmount">
+                                                                                        <div class="flex items-end">
+                                                                                            <div class="text-[18px]">
+                                                                                                $69,850
+                                                                                            </div>
+                                                                                            <div class="flex pb-[1px]">
+                                                                                                <div class="ml-1 mt-[2px] text-[14px]">
+                                                                                                    Total MSRP
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-test="vehicleCardFooter" class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                                    <div class="min-h-[18px]">Irvine, CA</div>
+                                                                    <div class="flex items-center gap-1">
+                                                                        <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark" data-test="evBadge">
+                                                                            <svg viewBox="0 0 24 24" class="icon icon-fill-default text-[color:var(--green-600)]" role="img" aria-labelledby="icon-1323" aria-hidden="false" style="width: 14px; height: 14px">
+                                                                                <title id="icon-1323">EV</title>
+                                                                                <use href="#bolt-fill"></use>
+                                                                            </svg><span class="text-xs">EV</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]" data-test="vehicleCardLink" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" href="/new-cars-for-sale/listing/4W5KHNRL1RZ503592/2024-acura-zdx/?position=0&amp;sourceType=ranking&amp;sponsored=true"></a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </a></div>
-                                        </li>
-                                        <li class="px-2" data-test=""
-                                            style="scroll-snap-align: start; flex-shrink: 0; width: 25%;">
-                                            <div class="h-full pt-1 pb-2 md:pt-0" data-test="editorialReviewCard"><a
-                                                    class="linkable card transition-[transition:box-shadow] shadow-[2px_2px_7px_0_rgba(1,1,1,0.15)] duration-300 ease-[cubic-bezier(0.64,0.04,0.35,1)] hover:shadow-[2px_2px_6px_0_rgba(1,1,1,0.05),2px_4px_9px_0_rgba(1,1,1,0.15)] h-full"
-                                                    aria-label="2024 GMC Savana Cargo Van, reviewed by Matt DiGiulio"
-                                                    href="/overview/gmc/savana-cargo-van/">
-                                                    <div class="card-image">
-                                                        <div class="picture-container picture-container-block"
-                                                            style="padding-bottom: 55.3191%;"><img
-                                                                class="picture-block rounded-t" sizes="212.5px"
-                                                                src="https://static.tcimg.net/vehicles/oem/4982aea6fb459572/2019-GMC-Savana_Cargo_Van.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240"
-                                                                srcset="https://static.tcimg.net/vehicles/oem/4982aea6fb459572/2019-GMC-Savana_Cargo_Van.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240 240w, https://static.tcimg.net/vehicles/oem/4982aea6fb459572/2019-GMC-Savana_Cargo_Van.jpg?auto=format&amp;fit=crop&amp;h=265.53191489361706&amp;w=480 480w"
-                                                                data-test="editorialReviewCardImage" alt=""
-                                                                role="presentation"></div>
-                                                    </div>
-                                                    <div data-test="cardContent"
-                                                        class="card-content flex justify-around px-2-5 pb-2-5 pt-2">
-                                                        <div
-                                                            class="heading-5 normal-case flex h-full items-center text-left">
-                                                            <span class="line-clamp-2">2024 GMC Savana Cargo Van</span>
-                                                        </div>
-                                                        <div class="mt-2 border-t pt-2 text-left">
-                                                            <p class="text-sm line-clamp-3">The 2024 GMC Savana Cargo Van
-                                                                is a rugged workhorse tailored for businesses needing ample
-                                                                cargo space and solid hauling capabilities. While it lags
-                                                                behind in technology and driver aids, its reliability and
-                                                                generous cargo area make it a practical choice for
-                                                                commercial use.</p>
-                                                            <div
-                                                                class="flex min-h-[40px] items-center pt-2 text-xs text-muted">
-                                                                <div class="picture-container mr-2"
-                                                                    style="padding-bottom: 0px; width: 30px; height: 30px;">
-                                                                    <img class="picture-inner rounded-full"
-                                                                        src="https://static.tcimg.net/authors/376b6653e80db88e/matt-digiulio.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30"
-                                                                        srcset="https://static.tcimg.net/authors/376b6653e80db88e/matt-digiulio.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30 1x, https://static.tcimg.net/authors/376b6653e80db88e/matt-digiulio.jpg?auto=format&amp;fit=crop&amp;h=60&amp;w=60 2x"
-                                                                        data-test="editorialReviewCardAuthorImage"
-                                                                        alt="" role="presentation"></div>
-                                                                <span>Review by Matt DiGiulio</span>
+                                                </li>
+                                                <li class="px-2" data-test="" style="
+                                        scroll-snap-align: start;
+                                        flex-shrink: 0;
+                                        width: 33.3333%;
+                                      ">
+                                                    <div class="pb-2">
+                                                        <div class="flex w-full flex-col">
+                                                            <div class="relative rounded-md shadow-lg" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" data-test="newListing" data-test-item="4W5KHNRL0RZ502806" data-test-dealerid="466388">
+                                                                <div class="relative w-full">
+                                                                    <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]" style="padding-bottom: 56.25%">
+                                                                        <div class="img-container img-container-block preprocessed-image-inner" style="
+                                                    height: auto;
+                                                    padding-bottom: 56.25%;
+                                                    width: 100%;
+                                                  ">
+                                                                            <img sizes="300px" src="https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg" alt="" role="presentation" loading="lazy" class="img-inner img-block" srcset="
+                                                      https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-60.jpg   60w,
+                                                      https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-120.jpg 120w,
+                                                      https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-180.jpg 180w,
+                                                      https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg 360w,
+                                                      https://listings-prod.tcimg.net/listings/466388/06/28/4W5KHNRL0RZ502806/VIYWP77B3NKIDBECX7E2XA72HE-cr-540.jpg 540w
+                                                    " style="background-image: none">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                        <div data-test="vehicleCardActionDropDown" class="dropdown">
+                                                                            <button aria-haspopup="true" class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg" aria-expanded="false">
+                                                                                <p class="sr-only">Menu</p>
+                                                                                <svg viewBox="0 0 24 24" class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                                    <use href="#more-vert"></use>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute top-2 left-2 z-[2]">
+                                                                        <div class="flex items-center gap-1">
+                                                                            <span class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md" data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="button" class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2" aria-label="Like button" data-test="vehicleCardLikeButton" data-test-item="">
+                                                                        <svg viewBox="0 0 24 24" class="icon icon-fill-default shrink-0 stroke-white text-dark" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                            <use href="#outlined-heart-fill"></use>
+                                                                        </svg>
+                                                                        <div class="group-hover:text-white group-hover:underline">
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                                    <div class="w-full truncate">
+                                                                        <div data-test="vehicleCardInfo" class="text-sm">
+                                                                            <div data-test="vehicleCardConditionYearMake" class="w-full truncate font-bold">
+                                                                                New 2024 Acura
+                                                                            </div>
+                                                                            <div class="w-full grid grid-cols-[1fr_auto] gap-1" data-test="vehicleCardTrim">
+                                                                                <div class="truncate">
+                                                                                    ZDX A-Spec Package AWD
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mt-1 flex items-center justify-between gap-1">
+                                                                            <div class="flex items-center">
+                                                                                <h3 class="heading-4 normal-case flex items-center">
+                                                                                    <div class="truncate" data-test="vehicleCardMsrpLabelAmount">
+                                                                                        <div class="flex items-end">
+                                                                                            <div class="text-[18px]">
+                                                                                                $70,450
+                                                                                            </div>
+                                                                                            <div class="flex pb-[1px]">
+                                                                                                <div class="ml-1 mt-[2px] text-[14px]">
+                                                                                                    Total MSRP
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-test="vehicleCardFooter" class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                                    <div class="min-h-[18px]">Irvine, CA</div>
+                                                                    <div class="flex items-center gap-1">
+                                                                        <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark" data-test="evBadge">
+                                                                            <svg viewBox="0 0 24 24" class="icon icon-fill-default text-[color:var(--green-600)]" role="img" aria-labelledby="icon-1331" aria-hidden="false" style="width: 14px; height: 14px">
+                                                                                <title id="icon-1331">EV</title>
+                                                                                <use href="#bolt-fill"></use>
+                                                                            </svg><span class="text-xs">EV</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]" data-test="vehicleCardLink" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" href="/new-cars-for-sale/listing/4W5KHNRL0RZ502806/2024-acura-zdx/?position=1&amp;sourceType=ranking&amp;sponsored=true"></a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </a></div>
-                                        </li>
-                                        <li class="px-2" data-test=""
-                                            style="scroll-snap-align: start; flex-shrink: 0; width: 25%;">
-                                            <div class="h-full pt-1 pb-2 md:pt-0" data-test="editorialReviewCard"><a
-                                                    class="linkable card transition-[transition:box-shadow] shadow-[2px_2px_7px_0_rgba(1,1,1,0.15)] duration-300 ease-[cubic-bezier(0.64,0.04,0.35,1)] hover:shadow-[2px_2px_6px_0_rgba(1,1,1,0.05),2px_4px_9px_0_rgba(1,1,1,0.15)] h-full"
-                                                    aria-label="2024 Bentley Bentayga, reviewed by Matt DiGiulio"
-                                                    href="/overview/bentley/bentayga/">
-                                                    <div class="card-image">
-                                                        <div class="picture-container picture-container-block"
-                                                            style="padding-bottom: 55.3191%;"><img
-                                                                class="picture-block rounded-t" sizes="212.5px"
-                                                                src="https://static.tcimg.net/vehicles/oem/42522ee933b53597/2023-Bentley-Bentayga.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240"
-                                                                srcset="https://static.tcimg.net/vehicles/oem/42522ee933b53597/2023-Bentley-Bentayga.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240 240w, https://static.tcimg.net/vehicles/oem/42522ee933b53597/2023-Bentley-Bentayga.jpg?auto=format&amp;fit=crop&amp;h=265.53191489361706&amp;w=480 480w"
-                                                                data-test="editorialReviewCardImage" alt=""
-                                                                role="presentation"></div>
-                                                    </div>
-                                                    <div data-test="cardContent"
-                                                        class="card-content flex justify-around px-2-5 pb-2-5 pt-2">
-                                                        <div
-                                                            class="heading-5 normal-case flex h-full items-center text-left">
-                                                            <span class="line-clamp-2">2024 Bentley Bentayga</span></div>
-                                                        <div class="mt-2 border-t pt-2 text-left">
-                                                            <p class="text-sm line-clamp-3">The 2024 Bentley Bentayga is a
-                                                                high-end luxury SUV that excels in opulence and performance
-                                                                but comes with a hefty price and limited cargo space. If you
-                                                                prioritize unparalleled luxury and powerful engines, the
-                                                                Bentayga is a standout choice.</p>
-                                                            <div
-                                                                class="flex min-h-[40px] items-center pt-2 text-xs text-muted">
-                                                                <div class="picture-container mr-2"
-                                                                    style="padding-bottom: 0px; width: 30px; height: 30px;">
-                                                                    <img class="picture-inner rounded-full"
-                                                                        src="https://static.tcimg.net/authors/376b6653e80db88e/matt-digiulio.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30"
-                                                                        srcset="https://static.tcimg.net/authors/376b6653e80db88e/matt-digiulio.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30 1x, https://static.tcimg.net/authors/376b6653e80db88e/matt-digiulio.jpg?auto=format&amp;fit=crop&amp;h=60&amp;w=60 2x"
-                                                                        data-test="editorialReviewCardAuthorImage"
-                                                                        alt="" role="presentation"></div>
-                                                                <span>Review by Matt DiGiulio</span>
+                                                </li>
+                                                <li class="px-2" data-test="" style="
+                                        scroll-snap-align: start;
+                                        flex-shrink: 0;
+                                        width: 33.3333%;
+                                      ">
+                                                    <div class="pb-2">
+                                                        <div class="flex w-full flex-col">
+                                                            <div class="relative rounded-md shadow-lg" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" data-test="newListing" data-test-item="4W5KHNRL3RZ503593" data-test-dealerid="466388">
+                                                                <div class="relative w-full">
+                                                                    <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]" style="padding-bottom: 56.25%">
+                                                                        <div class="img-container img-container-block preprocessed-image-inner" style="
+                                                    height: auto;
+                                                    padding-bottom: 56.25%;
+                                                    width: 100%;
+                                                  ">
+                                                                            <img sizes="300px" src="https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-360.jpg" alt="" role="presentation" loading="lazy" class="img-inner img-block" srcset="
+                                                      https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-60.jpg   60w,
+                                                      https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-120.jpg 120w,
+                                                      https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-180.jpg 180w,
+                                                      https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-360.jpg 360w,
+                                                      https://listings-prod.tcimg.net/listings/466388/93/35/4W5KHNRL3RZ503593/EXK4A22K5KZGJX4VRJA6DRNZ7Q-cr-540.jpg 540w
+                                                    " style="background-image: none">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                        <div data-test="vehicleCardActionDropDown" class="dropdown">
+                                                                            <button aria-haspopup="true" class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg" aria-expanded="false">
+                                                                                <p class="sr-only">Menu</p>
+                                                                                <svg viewBox="0 0 24 24" class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                                    <use href="#more-vert"></use>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute top-2 left-2 z-[2]">
+                                                                        <div class="flex items-center gap-1">
+                                                                            <span class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md" data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="button" class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2" aria-label="Like button" data-test="vehicleCardLikeButton" data-test-item="">
+                                                                        <svg viewBox="0 0 24 24" class="icon icon-fill-default shrink-0 stroke-white text-dark" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                            <use href="#outlined-heart-fill"></use>
+                                                                        </svg>
+                                                                        <div class="group-hover:text-white group-hover:underline">
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                                    <div class="w-full truncate">
+                                                                        <div data-test="vehicleCardInfo" class="text-sm">
+                                                                            <div data-test="vehicleCardConditionYearMake" class="w-full truncate font-bold">
+                                                                                New 2024 Acura
+                                                                            </div>
+                                                                            <div class="w-full grid grid-cols-[1fr_auto] gap-1" data-test="vehicleCardTrim">
+                                                                                <div class="truncate">
+                                                                                    ZDX A-Spec Package AWD
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mt-1 flex items-center justify-between gap-1">
+                                                                            <div class="flex items-center">
+                                                                                <h3 class="heading-4 normal-case flex items-center">
+                                                                                    <div class="truncate" data-test="vehicleCardMsrpLabelAmount">
+                                                                                        <div class="flex items-end">
+                                                                                            <div class="text-[18px]">
+                                                                                                $69,850
+                                                                                            </div>
+                                                                                            <div class="flex pb-[1px]">
+                                                                                                <div class="ml-1 mt-[2px] text-[14px]">
+                                                                                                    Total MSRP
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-test="vehicleCardFooter" class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                                    <div class="min-h-[18px]">Irvine, CA</div>
+                                                                    <div class="flex items-center gap-1">
+                                                                        <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark" data-test="evBadge">
+                                                                            <svg viewBox="0 0 24 24" class="icon icon-fill-default text-[color:var(--green-600)]" role="img" aria-labelledby="icon-1339" aria-hidden="false" style="width: 14px; height: 14px">
+                                                                                <title id="icon-1339">EV</title>
+                                                                                <use href="#bolt-fill"></use>
+                                                                            </svg><span class="text-xs">EV</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]" data-test="vehicleCardLink" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" href="/new-cars-for-sale/listing/4W5KHNRL3RZ503593/2024-acura-zdx/?position=2&amp;sourceType=ranking&amp;sponsored=true"></a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </a></div>
-                                        </li>
-                                        <li class="px-2" data-test=""
-                                            style="scroll-snap-align: start; flex-shrink: 0; width: 25%;">
-                                            <div class="h-full pt-1 pb-2 md:pt-0" data-test="editorialReviewCard"><a
-                                                    class="linkable card transition-[transition:box-shadow] shadow-[2px_2px_7px_0_rgba(1,1,1,0.15)] duration-300 ease-[cubic-bezier(0.64,0.04,0.35,1)] hover:shadow-[2px_2px_6px_0_rgba(1,1,1,0.05),2px_4px_9px_0_rgba(1,1,1,0.15)] h-full"
-                                                    aria-label="2025 Genesis GV80 Coupe, reviewed by Perry Stern"
-                                                    href="/overview/genesis/gv80-coupe/">
-                                                    <div class="card-image">
-                                                        <div class="picture-container picture-container-block"
-                                                            style="padding-bottom: 55.3191%;"><img
-                                                                class="picture-block rounded-t" sizes="212.5px"
-                                                                src="https://static.tcimg.net/vehicles/oem/b00ee5bc98d4eb4a/2025-Genesis-GV80_Coupe.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240"
-                                                                srcset="https://static.tcimg.net/vehicles/oem/b00ee5bc98d4eb4a/2025-Genesis-GV80_Coupe.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240 240w, https://static.tcimg.net/vehicles/oem/b00ee5bc98d4eb4a/2025-Genesis-GV80_Coupe.jpg?auto=format&amp;fit=crop&amp;h=265.53191489361706&amp;w=480 480w"
-                                                                data-test="editorialReviewCardImage" alt=""
-                                                                role="presentation"></div>
-                                                    </div>
-                                                    <div data-test="cardContent"
-                                                        class="card-content flex justify-around px-2-5 pb-2-5 pt-2">
-                                                        <div
-                                                            class="heading-5 normal-case flex h-full items-center text-left">
-                                                            <span class="line-clamp-2">2025 Genesis GV80 Coupe</span></div>
-                                                        <div class="mt-2 border-t pt-2 text-left">
-                                                            <p class="text-sm line-clamp-3">With sleek styling, a gorgeous
-                                                                interior, plenty of utility, and excellent performance, the
-                                                                new 2025 Genesis GV80 Coupe brings strong competition to the
-                                                                European brands.</p>
-                                                            <div
-                                                                class="flex min-h-[40px] items-center pt-2 text-xs text-muted">
-                                                                <div class="picture-container mr-2"
-                                                                    style="padding-bottom: 0px; width: 30px; height: 30px;">
-                                                                    <img class="picture-inner rounded-full"
-                                                                        src="https://static.tcimg.net/authors/5001ec2b4def491a/perry-stern.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30"
-                                                                        srcset="https://static.tcimg.net/authors/5001ec2b4def491a/perry-stern.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30 1x, https://static.tcimg.net/authors/5001ec2b4def491a/perry-stern.jpg?auto=format&amp;fit=crop&amp;h=60&amp;w=60 2x"
-                                                                        data-test="editorialReviewCardAuthorImage"
-                                                                        alt="" role="presentation"></div>
-                                                                <span>Review by Perry Stern</span>
+                                                </li>
+                                                <li class="px-2" data-test="" style="
+                                        scroll-snap-align: start;
+                                        flex-shrink: 0;
+                                        width: 33.3333%;
+                                      " inert="" aria-hidden="true">
+                                                    <div class="pb-2">
+                                                        <div class="flex w-full flex-col">
+                                                            <div class="relative rounded-md shadow-lg" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" data-test="newListing" data-test-item="4W5KHNRL2RZ502676" data-test-dealerid="466388">
+                                                                <div class="relative w-full">
+                                                                    <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]" style="padding-bottom: 56.25%">
+                                                                        <div class="img-container img-container-block preprocessed-image-inner" style="
+                                                    height: auto;
+                                                    padding-bottom: 56.25%;
+                                                    width: 100%;
+                                                  ">
+                                                                            <img sizes="300px" src="https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg" alt="" role="presentation" loading="lazy" class="img-inner img-block" srcset="
+                                                      https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-60.jpg   60w,
+                                                      https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-120.jpg 120w,
+                                                      https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-180.jpg 180w,
+                                                      https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg 360w,
+                                                      https://listings-prod.tcimg.net/listings/466388/76/26/4W5KHNRL2RZ502676/VIYWP77B3NKIDBECX7E2XA72HE-cr-540.jpg 540w
+                                                    " style="background-image: none">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                        <div data-test="vehicleCardActionDropDown" class="dropdown">
+                                                                            <button aria-haspopup="true" class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg" aria-expanded="false" tabindex="-1">
+                                                                                <p class="sr-only">Menu</p>
+                                                                                <svg viewBox="0 0 24 24" class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                                    <use href="#more-vert"></use>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute top-2 left-2 z-[2]">
+                                                                        <div class="flex items-center gap-1">
+                                                                            <span class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md" data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="button" class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2" aria-label="Like button" data-test="vehicleCardLikeButton" data-test-item="" tabindex="-1">
+                                                                        <svg viewBox="0 0 24 24" class="icon icon-fill-default shrink-0 stroke-white text-dark" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                            <use href="#outlined-heart-fill"></use>
+                                                                        </svg>
+                                                                        <div class="group-hover:text-white group-hover:underline">
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                                    <div class="w-full truncate">
+                                                                        <div data-test="vehicleCardInfo" class="text-sm">
+                                                                            <div data-test="vehicleCardConditionYearMake" class="w-full truncate font-bold">
+                                                                                New 2024 Acura
+                                                                            </div>
+                                                                            <div class="w-full grid grid-cols-[1fr_auto] gap-1" data-test="vehicleCardTrim">
+                                                                                <div class="truncate">
+                                                                                    ZDX A-Spec Package AWD
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mt-1 flex items-center justify-between gap-1">
+                                                                            <div class="flex items-center">
+                                                                                <h3 class="heading-4 normal-case flex items-center">
+                                                                                    <div class="truncate" data-test="vehicleCardMsrpLabelAmount">
+                                                                                        <div class="flex items-end">
+                                                                                            <div class="text-[18px]">
+                                                                                                $70,450
+                                                                                            </div>
+                                                                                            <div class="flex pb-[1px]">
+                                                                                                <div class="ml-1 mt-[2px] text-[14px]">
+                                                                                                    Total MSRP
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-test="vehicleCardFooter" class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                                    <div class="min-h-[18px]">Irvine, CA</div>
+                                                                    <div class="flex items-center gap-1">
+                                                                        <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark" data-test="evBadge">
+                                                                            <svg viewBox="0 0 24 24" class="icon icon-fill-default text-[color:var(--green-600)]" role="img" aria-labelledby="icon-1347" aria-hidden="false" style="width: 14px; height: 14px">
+                                                                                <title id="icon-1347">EV</title>
+                                                                                <use href="#bolt-fill"></use>
+                                                                            </svg><span class="text-xs">EV</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]" data-test="vehicleCardLink" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" href="/new-cars-for-sale/listing/4W5KHNRL2RZ502676/2024-acura-zdx/?position=3&amp;sourceType=ranking&amp;sponsored=true" tabindex="-1"></a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </a></div>
-                                        </li>
-                                        <li class="px-2" data-test=""
-                                            style="scroll-snap-align: start; flex-shrink: 0; width: 25%;" inert=""
-                                            aria-hidden="true">
-                                            <div class="h-full pt-1 pb-2 md:pt-0" data-test="editorialReviewCard"><a
-                                                    class="linkable card transition-[transition:box-shadow] shadow-[2px_2px_7px_0_rgba(1,1,1,0.15)] duration-300 ease-[cubic-bezier(0.64,0.04,0.35,1)] hover:shadow-[2px_2px_6px_0_rgba(1,1,1,0.05),2px_4px_9px_0_rgba(1,1,1,0.15)] h-full"
-                                                    aria-label="2025 INFINITI QX60, reviewed by Mark Takahashi"
-                                                    href="/overview/infiniti/qx60/" tabindex="-1">
-                                                    <div class="card-image">
-                                                        <div class="picture-container picture-container-block"
-                                                            style="padding-bottom: 55.3191%;"><img
-                                                                class="picture-block rounded-t" sizes="212.5px"
-                                                                src="https://static.tcimg.net/vehicles/oem/64af4064a3eb0b19/2022-INFINITI-QX60.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240"
-                                                                srcset="https://static.tcimg.net/vehicles/oem/64af4064a3eb0b19/2022-INFINITI-QX60.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240 240w, https://static.tcimg.net/vehicles/oem/64af4064a3eb0b19/2022-INFINITI-QX60.jpg?auto=format&amp;fit=crop&amp;h=265.53191489361706&amp;w=480 480w"
-                                                                data-test="editorialReviewCardImage" alt=""
-                                                                role="presentation"></div>
-                                                    </div>
-                                                    <div data-test="cardContent"
-                                                        class="card-content flex justify-around px-2-5 pb-2-5 pt-2">
-                                                        <div
-                                                            class="heading-5 normal-case flex h-full items-center text-left">
-                                                            <span class="line-clamp-2">2025 INFINITI QX60</span></div>
-                                                        <div class="mt-2 border-t pt-2 text-left">
-                                                            <p class="text-sm line-clamp-3">The 2025 Infiniti QX60 remains
-                                                                a value leader among entry-level luxury SUVs, but lacks the
-                                                                kind of sporty performance Infiniti is known for.</p>
-                                                            <div
-                                                                class="flex min-h-[40px] items-center pt-2 text-xs text-muted">
-                                                                <div class="picture-container mr-2"
-                                                                    style="padding-bottom: 0px; width: 30px; height: 30px;">
-                                                                    <img class="picture-inner rounded-full"
-                                                                        src="https://static.tcimg.net/authors/e97ee1f457b032ee/mark-takahashi.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30"
-                                                                        srcset="https://static.tcimg.net/authors/e97ee1f457b032ee/mark-takahashi.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30 1x, https://static.tcimg.net/authors/e97ee1f457b032ee/mark-takahashi.jpg?auto=format&amp;fit=crop&amp;h=60&amp;w=60 2x"
-                                                                        data-test="editorialReviewCardAuthorImage"
-                                                                        alt="" role="presentation"></div>
-                                                                <span>Review by Mark Takahashi</span>
+                                                </li>
+                                                <li class="px-2" data-test="" style="
+                                        scroll-snap-align: start;
+                                        flex-shrink: 0;
+                                        width: 33.3333%;
+                                      " inert="" aria-hidden="true">
+                                                    <div class="pb-2">
+                                                        <div class="flex w-full flex-col">
+                                                            <div class="relative rounded-md shadow-lg" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" data-test="newListing" data-test-item="4W5KHNRL0RZ503650" data-test-dealerid="466388">
+                                                                <div class="relative w-full">
+                                                                    <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]" style="padding-bottom: 56.25%">
+                                                                        <div class="img-container img-container-block preprocessed-image-inner" style="
+                                                    height: auto;
+                                                    padding-bottom: 56.25%;
+                                                    width: 100%;
+                                                  ">
+                                                                            <img sizes="300px" src="https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-360.jpg" alt="" role="presentation" loading="lazy" class="img-inner img-block" srcset="
+                                                      https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-60.jpg   60w,
+                                                      https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-120.jpg 120w,
+                                                      https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-180.jpg 180w,
+                                                      https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-360.jpg 360w,
+                                                      https://listings-prod.tcimg.net/listings/466388/50/36/4W5KHNRL0RZ503650/63W57ZGYMF5OHXRMDSKYMEEZTM-cr-540.jpg 540w
+                                                    " style="background-image: none">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                        <div data-test="vehicleCardActionDropDown" class="dropdown">
+                                                                            <button aria-haspopup="true" class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg" aria-expanded="false" tabindex="-1">
+                                                                                <p class="sr-only">Menu</p>
+                                                                                <svg viewBox="0 0 24 24" class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                                    <use href="#more-vert"></use>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute top-2 left-2 z-[2]">
+                                                                        <div class="flex items-center gap-1">
+                                                                            <span class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md" data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="button" class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2" aria-label="Like button" data-test="vehicleCardLikeButton" data-test-item="" tabindex="-1">
+                                                                        <svg viewBox="0 0 24 24" class="icon icon-fill-default shrink-0 stroke-white text-dark" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                            <use href="#outlined-heart-fill"></use>
+                                                                        </svg>
+                                                                        <div class="group-hover:text-white group-hover:underline">
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                                    <div class="w-full truncate">
+                                                                        <div data-test="vehicleCardInfo" class="text-sm">
+                                                                            <div data-test="vehicleCardConditionYearMake" class="w-full truncate font-bold">
+                                                                                New 2024 Acura
+                                                                            </div>
+                                                                            <div class="w-full grid grid-cols-[1fr_auto] gap-1" data-test="vehicleCardTrim">
+                                                                                <div class="truncate">
+                                                                                    ZDX A-Spec Package AWD
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mt-1 flex items-center justify-between gap-1">
+                                                                            <div class="flex items-center">
+                                                                                <h3 class="heading-4 normal-case flex items-center">
+                                                                                    <div class="truncate" data-test="vehicleCardMsrpLabelAmount">
+                                                                                        <div class="flex items-end">
+                                                                                            <div class="text-[18px]">
+                                                                                                $70,450
+                                                                                            </div>
+                                                                                            <div class="flex pb-[1px]">
+                                                                                                <div class="ml-1 mt-[2px] text-[14px]">
+                                                                                                    Total MSRP
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-test="vehicleCardFooter" class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                                    <div class="min-h-[18px]">Irvine, CA</div>
+                                                                    <div class="flex items-center gap-1">
+                                                                        <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark" data-test="evBadge">
+                                                                            <svg viewBox="0 0 24 24" class="icon icon-fill-default text-[color:var(--green-600)]" role="img" aria-labelledby="icon-1355" aria-hidden="false" style="width: 14px; height: 14px">
+                                                                                <title id="icon-1355">EV</title>
+                                                                                <use href="#bolt-fill"></use>
+                                                                            </svg><span class="text-xs">EV</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]" data-test="vehicleCardLink" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" href="/new-cars-for-sale/listing/4W5KHNRL0RZ503650/2024-acura-zdx/?position=4&amp;sourceType=ranking&amp;sponsored=true" tabindex="-1"></a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </a></div>
-                                        </li>
-                                        <li class="px-2" data-test=""
-                                            style="scroll-snap-align: start; flex-shrink: 0; width: 25%;" inert=""
-                                            aria-hidden="true">
-                                            <div class="h-full pt-1 pb-2 md:pt-0" data-test="editorialReviewCard"><a
-                                                    class="linkable card transition-[transition:box-shadow] shadow-[2px_2px_7px_0_rgba(1,1,1,0.15)] duration-300 ease-[cubic-bezier(0.64,0.04,0.35,1)] hover:shadow-[2px_2px_6px_0_rgba(1,1,1,0.05),2px_4px_9px_0_rgba(1,1,1,0.15)] h-full"
-                                                    aria-label="2025 Mercedes-Benz GLE, reviewed by Travis Langness"
-                                                    href="/overview/mercedes-benz/gle/" tabindex="-1">
-                                                    <div class="card-image">
-                                                        <div class="picture-container picture-container-block"
-                                                            style="padding-bottom: 55.3191%;"><img
-                                                                class="picture-block rounded-t" sizes="212.5px"
-                                                                src="https://static.tcimg.net/vehicles/oem/469dbf97d5398752/2023-Mercedes-Benz-GLE.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240"
-                                                                srcset="https://static.tcimg.net/vehicles/oem/469dbf97d5398752/2023-Mercedes-Benz-GLE.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240 240w, https://static.tcimg.net/vehicles/oem/469dbf97d5398752/2023-Mercedes-Benz-GLE.jpg?auto=format&amp;fit=crop&amp;h=265.53191489361706&amp;w=480 480w"
-                                                                data-test="editorialReviewCardImage" alt=""
-                                                                role="presentation"></div>
-                                                    </div>
-                                                    <div data-test="cardContent"
-                                                        class="card-content flex justify-around px-2-5 pb-2-5 pt-2">
-                                                        <div
-                                                            class="heading-5 normal-case flex h-full items-center text-left">
-                                                            <span class="line-clamp-2">2025 Mercedes-Benz GLE</span></div>
-                                                        <div class="mt-2 border-t pt-2 text-left">
-                                                            <p class="text-sm line-clamp-3">With impressive cabin
-                                                                materials, a quiet ride, and several engine options, the
-                                                                2025 Mercedes-Benz GLE has quite a bit of appeal. Rival
-                                                                luxury SUVs may top it in a few areas, but it’s still one of
-                                                                the best in its class.</p>
-                                                            <div
-                                                                class="flex min-h-[40px] items-center pt-2 text-xs text-muted">
-                                                                <div class="picture-container mr-2"
-                                                                    style="padding-bottom: 0px; width: 30px; height: 30px;">
-                                                                    <img class="picture-inner rounded-full"
-                                                                        src="https://static.tcimg.net/authors/4acaf1eb474ea0c0/travis-langness.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30"
-                                                                        srcset="https://static.tcimg.net/authors/4acaf1eb474ea0c0/travis-langness.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30 1x, https://static.tcimg.net/authors/4acaf1eb474ea0c0/travis-langness.jpg?auto=format&amp;fit=crop&amp;h=60&amp;w=60 2x"
-                                                                        data-test="editorialReviewCardAuthorImage"
-                                                                        alt="" role="presentation"></div>
-                                                                <span>Review by Travis Langness</span>
+                                                </li>
+                                                <li class="px-2" data-test="" style="
+                                        scroll-snap-align: start;
+                                        flex-shrink: 0;
+                                        width: 33.3333%;
+                                      " inert="" aria-hidden="true">
+                                                    <div class="pb-2">
+                                                        <div class="flex w-full flex-col">
+                                                            <div class="relative rounded-md shadow-lg" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" data-test="newListing" data-test-item="4W5KHNRL5RZ504180" data-test-dealerid="466388">
+                                                                <div class="relative w-full">
+                                                                    <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]" style="padding-bottom: 56.25%">
+                                                                        <div class="img-container img-container-block preprocessed-image-inner" style="
+                                                    height: auto;
+                                                    padding-bottom: 56.25%;
+                                                    width: 100%;
+                                                  ">
+                                                                            <img sizes="300px" src="https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg" alt="" role="presentation" loading="lazy" class="img-inner img-block" srcset="
+                                                      https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-60.jpg   60w,
+                                                      https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-120.jpg 120w,
+                                                      https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-180.jpg 180w,
+                                                      https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-360.jpg 360w,
+                                                      https://listings-prod.tcimg.net/listings/466388/80/41/4W5KHNRL5RZ504180/VIYWP77B3NKIDBECX7E2XA72HE-cr-540.jpg 540w
+                                                    " style="background-image: none">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                        <div data-test="vehicleCardActionDropDown" class="dropdown">
+                                                                            <button aria-haspopup="true" class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg" aria-expanded="false" tabindex="-1">
+                                                                                <p class="sr-only">Menu</p>
+                                                                                <svg viewBox="0 0 24 24" class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                                    <use href="#more-vert"></use>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute top-2 left-2 z-[2]">
+                                                                        <div class="flex items-center gap-1">
+                                                                            <span class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md" data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="button" class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2" aria-label="Like button" data-test="vehicleCardLikeButton" data-test-item="" tabindex="-1">
+                                                                        <svg viewBox="0 0 24 24" class="icon icon-fill-default shrink-0 stroke-white text-dark" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                            <use href="#outlined-heart-fill"></use>
+                                                                        </svg>
+                                                                        <div class="group-hover:text-white group-hover:underline">
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                                    <div class="w-full truncate">
+                                                                        <div data-test="vehicleCardInfo" class="text-sm">
+                                                                            <div data-test="vehicleCardConditionYearMake" class="w-full truncate font-bold">
+                                                                                New 2024 Acura
+                                                                            </div>
+                                                                            <div class="w-full grid grid-cols-[1fr_auto] gap-1" data-test="vehicleCardTrim">
+                                                                                <div class="truncate">
+                                                                                    ZDX A-Spec Package AWD
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mt-1 flex items-center justify-between gap-1">
+                                                                            <div class="flex items-center">
+                                                                                <h3 class="heading-4 normal-case flex items-center">
+                                                                                    <div class="truncate" data-test="vehicleCardMsrpLabelAmount">
+                                                                                        <div class="flex items-end">
+                                                                                            <div class="text-[18px]">
+                                                                                                $70,450
+                                                                                            </div>
+                                                                                            <div class="flex pb-[1px]">
+                                                                                                <div class="ml-1 mt-[2px] text-[14px]">
+                                                                                                    Total MSRP
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-test="vehicleCardFooter" class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                                    <div class="min-h-[18px]">Irvine, CA</div>
+                                                                    <div class="flex items-center gap-1">
+                                                                        <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark" data-test="evBadge">
+                                                                            <svg viewBox="0 0 24 24" class="icon icon-fill-default text-[color:var(--green-600)]" role="img" aria-labelledby="icon-1363" aria-hidden="false" style="width: 14px; height: 14px">
+                                                                                <title id="icon-1363">EV</title>
+                                                                                <use href="#bolt-fill"></use>
+                                                                            </svg><span class="text-xs">EV</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]" data-test="vehicleCardLink" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" href="/new-cars-for-sale/listing/4W5KHNRL5RZ504180/2024-acura-zdx/?position=5&amp;sourceType=ranking&amp;sponsored=true" tabindex="-1"></a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </a></div>
-                                        </li>
-                                        <li class="px-2" data-test=""
-                                            style="scroll-snap-align: start; flex-shrink: 0; width: 25%;" inert=""
-                                            aria-hidden="true">
-                                            <div class="h-full pt-1 pb-2 md:pt-0" data-test="editorialReviewCard"><a
-                                                    class="linkable card transition-[transition:box-shadow] shadow-[2px_2px_7px_0_rgba(1,1,1,0.15)] duration-300 ease-[cubic-bezier(0.64,0.04,0.35,1)] hover:shadow-[2px_2px_6px_0_rgba(1,1,1,0.05),2px_4px_9px_0_rgba(1,1,1,0.15)] h-full"
-                                                    aria-label="2025 Mercedes-Benz GLS, reviewed by Ben Stewart"
-                                                    href="/overview/mercedes-benz/gls/" tabindex="-1">
-                                                    <div class="card-image">
-                                                        <div class="picture-container picture-container-block"
-                                                            style="padding-bottom: 55.3191%;"><img
-                                                                class="picture-block rounded-t" sizes="212.5px"
-                                                                src="https://static.tcimg.net/vehicles/oem/2c494ed54d169953/2024-Mercedes-Benz-GLS.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240"
-                                                                srcset="https://static.tcimg.net/vehicles/oem/2c494ed54d169953/2024-Mercedes-Benz-GLS.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240 240w, https://static.tcimg.net/vehicles/oem/2c494ed54d169953/2024-Mercedes-Benz-GLS.jpg?auto=format&amp;fit=crop&amp;h=265.53191489361706&amp;w=480 480w"
-                                                                data-test="editorialReviewCardImage" alt=""
-                                                                role="presentation"></div>
-                                                    </div>
-                                                    <div data-test="cardContent"
-                                                        class="card-content flex justify-around px-2-5 pb-2-5 pt-2">
-                                                        <div
-                                                            class="heading-5 normal-case flex h-full items-center text-left">
-                                                            <span class="line-clamp-2">2025 Mercedes-Benz GLS</span></div>
-                                                        <div class="mt-2 border-t pt-2 text-left">
-                                                            <p class="text-sm line-clamp-3">The 2025 Mercedes-Benz GLS
-                                                                delivers an exemplary ride, impressive luxury, and plenty of
-                                                                practicality for families that want a very upscale three-row
-                                                                SUV.</p>
-                                                            <div
-                                                                class="flex min-h-[40px] items-center pt-2 text-xs text-muted">
-                                                                <div class="picture-container mr-2"
-                                                                    style="padding-bottom: 0px; width: 30px; height: 30px;">
-                                                                    <img class="picture-inner rounded-full"
-                                                                        src="https://static.tcimg.net/authors/f87b0438776d6ed1/ben-stewart.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30"
-                                                                        srcset="https://static.tcimg.net/authors/f87b0438776d6ed1/ben-stewart.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30 1x, https://static.tcimg.net/authors/f87b0438776d6ed1/ben-stewart.jpg?auto=format&amp;fit=crop&amp;h=60&amp;w=60 2x"
-                                                                        data-test="editorialReviewCardAuthorImage"
-                                                                        alt="" role="presentation"></div>
-                                                                <span>Review by Ben Stewart</span>
+                                                </li>
+                                                <li class="px-2" data-test="" style="
+                                        scroll-snap-align: start;
+                                        flex-shrink: 0;
+                                        width: 33.3333%;
+                                      " inert="" aria-hidden="true">
+                                                    <div class="pb-2">
+                                                        <div class="flex w-full flex-col">
+                                                            <div class="relative rounded-md shadow-lg" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" data-test="newListing" data-test-item="4W5KHNRL0RZ504359" data-test-dealerid="466388">
+                                                                <div class="relative w-full">
+                                                                    <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]" style="padding-bottom: 56.25%">
+                                                                        <div class="img-container img-container-block preprocessed-image-inner" style="
+                                                    height: auto;
+                                                    padding-bottom: 56.25%;
+                                                    width: 100%;
+                                                  ">
+                                                                            <img sizes="300px" src="https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-860.jpg" alt="" role="presentation" loading="lazy" class="img-inner img-block" srcset="
+                                                      https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-60.jpg     60w,
+                                                      https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-120.jpg   120w,
+                                                      https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-180.jpg   180w,
+                                                      https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-360.jpg   360w,
+                                                      https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-540.jpg   540w,
+                                                      https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-860.jpg   860w,
+                                                      https://listings-prod.tcimg.net/listings/466388/59/43/4W5KHNRL0RZ504359/H7JP6US4DL5SSH5MTUDQTMCEHU-og-1400.jpg 1400w
+                                                    " style="background-image: none">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                        <div data-test="vehicleCardActionDropDown" class="dropdown">
+                                                                            <button aria-haspopup="true" class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg" aria-expanded="false" tabindex="-1">
+                                                                                <p class="sr-only">Menu</p>
+                                                                                <svg viewBox="0 0 24 24" class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                                    <use href="#more-vert"></use>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute top-2 left-2 z-[2]">
+                                                                        <div class="flex items-center gap-1">
+                                                                            <span class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md" data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="button" class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2" aria-label="Like button" data-test="vehicleCardLikeButton" data-test-item="" tabindex="-1">
+                                                                        <svg viewBox="0 0 24 24" class="icon icon-fill-default shrink-0 stroke-white text-dark" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                            <use href="#outlined-heart-fill"></use>
+                                                                        </svg>
+                                                                        <div class="group-hover:text-white group-hover:underline">
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                                    <div class="w-full truncate">
+                                                                        <div data-test="vehicleCardInfo" class="text-sm">
+                                                                            <div data-test="vehicleCardConditionYearMake" class="w-full truncate font-bold">
+                                                                                New 2024 Acura
+                                                                            </div>
+                                                                            <div class="w-full grid grid-cols-[1fr_auto] gap-1" data-test="vehicleCardTrim">
+                                                                                <div class="truncate">
+                                                                                    ZDX A-Spec Package AWD
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mt-1 flex items-center justify-between gap-1">
+                                                                            <div class="flex items-center">
+                                                                                <h3 class="heading-4 normal-case flex items-center">
+                                                                                    <div class="truncate" data-test="vehicleCardMsrpLabelAmount">
+                                                                                        <div class="flex items-end">
+                                                                                            <div class="text-[18px]">
+                                                                                                $70,450
+                                                                                            </div>
+                                                                                            <div class="flex pb-[1px]">
+                                                                                                <div class="ml-1 mt-[2px] text-[14px]">
+                                                                                                    Total MSRP
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-test="vehicleCardFooter" class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                                    <div class="min-h-[18px]">Irvine, CA</div>
+                                                                    <div class="flex items-center gap-1">
+                                                                        <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark" data-test="evBadge">
+                                                                            <svg viewBox="0 0 24 24" class="icon icon-fill-default text-[color:var(--green-600)]" role="img" aria-labelledby="icon-1371" aria-hidden="false" style="width: 14px; height: 14px">
+                                                                                <title id="icon-1371">EV</title>
+                                                                                <use href="#bolt-fill"></use>
+                                                                            </svg><span class="text-xs">EV</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]" data-test="vehicleCardLink" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" href="/new-cars-for-sale/listing/4W5KHNRL0RZ504359/2024-acura-zdx/?position=6&amp;sourceType=ranking&amp;sponsored=true" tabindex="-1"></a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </a></div>
-                                        </li>
-                                        <li class="px-2" data-test=""
-                                            style="scroll-snap-align: start; flex-shrink: 0; width: 25%;" inert=""
-                                            aria-hidden="true">
-                                            <div class="h-full pt-1 pb-2 md:pt-0" data-test="editorialReviewCard"><a
-                                                    class="linkable card transition-[transition:box-shadow] shadow-[2px_2px_7px_0_rgba(1,1,1,0.15)] duration-300 ease-[cubic-bezier(0.64,0.04,0.35,1)] hover:shadow-[2px_2px_6px_0_rgba(1,1,1,0.05),2px_4px_9px_0_rgba(1,1,1,0.15)] h-full"
-                                                    aria-label="2025 Mazda CX-5, reviewed by Travis Langness"
-                                                    href="/overview/mazda/cx-5/" tabindex="-1">
-                                                    <div class="card-image">
-                                                        <div class="picture-container picture-container-block"
-                                                            style="padding-bottom: 55.3191%;"><img
-                                                                class="picture-block rounded-t" sizes="212.5px"
-                                                                src="https://static.tcimg.net/vehicles/oem/682a9b41448ba2f3/2021-Mazda-CX-5.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240"
-                                                                srcset="https://static.tcimg.net/vehicles/oem/682a9b41448ba2f3/2021-Mazda-CX-5.jpg?auto=format&amp;fit=crop&amp;h=132.76595744680853&amp;w=240 240w, https://static.tcimg.net/vehicles/oem/682a9b41448ba2f3/2021-Mazda-CX-5.jpg?auto=format&amp;fit=crop&amp;h=265.53191489361706&amp;w=480 480w"
-                                                                data-test="editorialReviewCardImage" alt=""
-                                                                role="presentation"></div>
-                                                    </div>
-                                                    <div data-test="cardContent"
-                                                        class="card-content flex justify-around px-2-5 pb-2-5 pt-2">
-                                                        <div
-                                                            class="heading-5 normal-case flex h-full items-center text-left">
-                                                            <span class="line-clamp-2">2025 Mazda CX-5</span></div>
-                                                        <div class="mt-2 border-t pt-2 text-left">
-                                                            <p class="text-sm line-clamp-3">Although it hasn’t been fully
-                                                                redesigned since 2017, the Mazda CX-5 is still competitive
-                                                                among compact crossovers. It doesn’t offer a hybrid
-                                                                powertrain and is down a bit on cargo space compared to
-                                                                rivals, but it’s entertaining to drive, and the premium
-                                                                interior is a big plus.</p>
-                                                            <div
-                                                                class="flex min-h-[40px] items-center pt-2 text-xs text-muted">
-                                                                <div class="picture-container mr-2"
-                                                                    style="padding-bottom: 0px; width: 30px; height: 30px;">
-                                                                    <img class="picture-inner rounded-full"
-                                                                        src="https://static.tcimg.net/authors/4acaf1eb474ea0c0/travis-langness.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30"
-                                                                        srcset="https://static.tcimg.net/authors/4acaf1eb474ea0c0/travis-langness.jpg?auto=format&amp;fit=crop&amp;h=30&amp;w=30 1x, https://static.tcimg.net/authors/4acaf1eb474ea0c0/travis-langness.jpg?auto=format&amp;fit=crop&amp;h=60&amp;w=60 2x"
-                                                                        data-test="editorialReviewCardAuthorImage"
-                                                                        alt="" role="presentation"></div>
-                                                                <span>Review by Travis Langness</span>
+                                                </li>
+                                                <li class="px-2" data-test="" style="
+                                        scroll-snap-align: start;
+                                        flex-shrink: 0;
+                                        width: 33.3333%;
+                                      " inert="" aria-hidden="true">
+                                                    <div class="pb-2">
+                                                        <div class="flex w-full flex-col">
+                                                            <div class="relative rounded-md shadow-lg" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" data-test="newListing" data-test-item="4W5KHNRL2RZ500569" data-test-dealerid="466388">
+                                                                <div class="relative w-full">
+                                                                    <div class="preprocessed-image-container preprocessed-image-container-block rounded-md overflow-hidden border-b-[1px]" style="padding-bottom: 56.25%">
+                                                                        <div class="img-container img-container-block preprocessed-image-inner" style="
+                                                    height: auto;
+                                                    padding-bottom: 56.25%;
+                                                    width: 100%;
+                                                  ">
+                                                                            <img sizes="300px" src="https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-860.jpg" alt="" role="presentation" loading="lazy" class="img-inner img-block" srcset="
+                                                      https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-60.jpg     60w,
+                                                      https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-120.jpg   120w,
+                                                      https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-180.jpg   180w,
+                                                      https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-360.jpg   360w,
+                                                      https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-540.jpg   540w,
+                                                      https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-860.jpg   860w,
+                                                      https://listings-prod.tcimg.net/listings/466388/69/05/4W5KHNRL2RZ500569/BPIRWY4XXTZPRQGLIZOTJN67WE-og-1400.jpg 1400w
+                                                    " style="background-image: none">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute bottom-[-16px] right-2 z-20">
+                                                                        <div data-test="vehicleCardActionDropDown" class="dropdown">
+                                                                            <button aria-haspopup="true" class="flex h-[32px] w-[32px] flex-row items-center justify-between overflow-hidden rounded-full border-[1px] bg-white px-2 text-sm text-[color:var(--gray-700)] drop-shadow-sm hover:cursor-pointer hover:drop-shadow active:drop-shadow-lg" aria-expanded="false" tabindex="-1">
+                                                                                <p class="sr-only">Menu</p>
+                                                                                <svg viewBox="0 0 24 24" class="icon icon-fill-default absolute left-1/2 top-1/2 h-[10px] -translate-x-1/2 -translate-y-1/2 fill-[currentColor] align-middle text-[22px] leading-[10px] tracking-[1px]" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                                    <use href="#more-vert"></use>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="absolute top-2 left-2 z-[2]">
+                                                                        <div class="flex items-center gap-1">
+                                                                            <span class="inline-block whitespace-nowrap rounded-full px-2 py-[2px] text-[10px] bg-white text-dark flex flex-nowrap px-[8px] drop-shadow-md" data-test="vehicleCardOverlayBadge">Sponsored</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="button" class="link-button flex justify-center active:bg-transparent hover:no-underline group absolute top-0 right-0 z-10 p-2" aria-label="Like button" data-test="vehicleCardLikeButton" data-test-item="" tabindex="-1">
+                                                                        <svg viewBox="0 0 24 24" class="icon icon-fill-default shrink-0 stroke-white text-dark" aria-hidden="true" style="width: 22px; height: 22px">
+                                                                            <use href="#outlined-heart-fill"></use>
+                                                                        </svg>
+                                                                        <div class="group-hover:text-white group-hover:underline">
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="mt-1 flex w-full items-start p-2 text-left">
+                                                                    <div class="w-full truncate">
+                                                                        <div data-test="vehicleCardInfo" class="text-sm">
+                                                                            <div data-test="vehicleCardConditionYearMake" class="w-full truncate font-bold">
+                                                                                New 2024 Acura
+                                                                            </div>
+                                                                            <div class="w-full grid grid-cols-[1fr_auto] gap-1" data-test="vehicleCardTrim">
+                                                                                <div class="truncate">
+                                                                                    ZDX A-Spec Package AWD
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mt-1 flex items-center justify-between gap-1">
+                                                                            <div class="flex items-center">
+                                                                                <h3 class="heading-4 normal-case flex items-center">
+                                                                                    <div class="truncate" data-test="vehicleCardMsrpLabelAmount">
+                                                                                        <div class="flex items-end">
+                                                                                            <div class="text-[18px]">
+                                                                                                $70,450
+                                                                                            </div>
+                                                                                            <div class="flex pb-[1px]">
+                                                                                                <div class="ml-1 mt-[2px] text-[14px]">
+                                                                                                    Total MSRP
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-test="vehicleCardFooter" class="flex w-full items-center justify-between border-t-[1px] px-2 py-2 text-xs text-[#707070]">
+                                                                    <div class="min-h-[18px]">Irvine, CA</div>
+                                                                    <div class="flex items-center gap-1">
+                                                                        <div class="flex h-[20px] items-center rounded-full pl-[4px] pr-[7px] border bg-white text-dark" data-test="evBadge">
+                                                                            <svg viewBox="0 0 24 24" class="icon icon-fill-default text-[color:var(--green-600)]" role="img" aria-labelledby="icon-1379" aria-hidden="false" style="width: 14px; height: 14px">
+                                                                                <title id="icon-1379">EV</title>
+                                                                                <use href="#bolt-fill"></use>
+                                                                            </svg><span class="text-xs">EV</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a class="absolute top-0 left-0 bottom-0 right-0 w-full z-[2]" data-test="vehicleCardLink" aria-label="View details for 2024 Acura ZDX, A-Spec Package AWD" href="/new-cars-for-sale/listing/4W5KHNRL2RZ500569/2024-acura-zdx/?position=7&amp;sourceType=ranking&amp;sponsored=true" tabindex="-1"></a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </a></div>
-                                        </li>
-                                    </ul>
-                                </div><button
-                                    class="carousel-arrow carousel-arrow-middle carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-2 carousel-arrow-next carousel-arrow-next"
-                                    data-test="carouselArrowNext" aria-label="Next"><svg width="16px" height="16px"
-                                        viewBox="0 0 16 16" class="carousel-arrow-icon">
-                                        <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <polyline stroke-width="1.5" fill-rule="nonzero"
-                                                points="5 2 12 8.36363636 5 14.7272727"></polyline>
-                                        </g>
-                                    </svg></button>
-                            </div>
-                            <div class="relative flex select-none items-center justify-center pt-2-5">
-                                <div
-                                    class="mx-auto inline-flex items-center justify-center overflow-hidden relative h-[4px]">
-                                    <ul data-test="carouselDots"
-                                        class="m-0 inline-flex items-center justify-center gap-1 transition-transform duration-300 h-[4px]"
-                                        style="transform: translateX(0px);">
-                                        <li class="transition-[property:background,opacity] block shrink-0 rounded-full duration-[400ms] h-[4px] w-[10px] bg-black"
-                                            data-test="carouselDotsDot"></li>
-                                        <li class="transition-[property:background,opacity] block shrink-0 rounded-full duration-[400ms] h-[4px] w-[10px] bg-[color:var(--gray-200)]"
-                                            data-test="carouselDotsDot"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="linkable card expandable-card mt-3 text-left"><button
-                                class="expandable-card-title px-3 pt-3" type="button" aria-expanded="false"
-                                aria-controls="expandable-content-22">
-                                <div class="flex flex-nowrap justify-between">
-                                    <div class="heading-4 normal-case text-left flex items-center">See More
-                                        Popular&nbsp;Reviews</div><span class="ml-3 whitespace-nowrap"><svg
-                                            viewBox="0 0 24 24" class="icon icon-fill-default expandable-card-icon"
-                                            aria-hidden="true" style="width: 21px; height: 21px;">
-                                            <use href="#keyboard_arrow_down"></use>
-                                        </svg></span>
-                                </div>
-                            </button>
-                            <div class="expandable-card-collapse px-3 pb-3" id="expandable-content-22">
-                                <div class="collapse">
-                                    <div class="pt-2">
-                                        <ul
-                                            class="space-y-2 pt-2 md:grid md:grid-cols-3 md:space-y-0 md:gap-2 lg:grid-cols-4">
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/ford/maverick/">Ford
-                                                    Maverick Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/ford/bronco/">Ford Bronco
-                                                    Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/polestar/2/">Polestar 2
-                                                    Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/volkswagen/taos/">Volkswagen
-                                                    Taos Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/jeep/gladiator/">Jeep
-                                                    Gladiator Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/subaru/outback/">Subaru
-                                                    Outback Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/audi/q5/">Audi Q5 Review</a>
-                                            </li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/subaru/forester/">Subaru
-                                                    Forester Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/genesis/gv70/">Genesis GV70
-                                                    Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/bmw/x3/">BMW X3 Review</a>
-                                            </li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/hyundai/santa-fe/">Hyundai
-                                                    Santa Fe Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/kia/k5/">Kia K5 Review</a>
-                                            </li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/acura/rdx/">Acura RDX
-                                                    Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/kia/ev6/">Kia EV6 Review</a>
-                                            </li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/ford/ecosport/">Ford
-                                                    EcoSport Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/volkswagen/id-4/">Volkswagen
-                                                    ID.4 Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/porsche/macan/">Porsche
-                                                    Macan Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/honda/civic/">Honda Civic
-                                                    Review</a></li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/bmw/i4/">BMW i4 Review</a>
-                                            </li>
-                                            <li class=""><a aria-current="false" aria-disabled="false"
-                                                    class="link-item-minimal" href="/overview/hyundai/elantra/">Hyundai
-                                                    Elantra Review</a></li>
-                                        </ul><a class="mt-4 mb-1 block" href="/all-reviews/">See All Reviews</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button class="carousel-arrow carousel-arrow-outside carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-2 carousel-arrow-next carousel-arrow-next" data-test="carouselArrowNext" aria-label="Next">
+                                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="carousel-arrow-icon">
+                                                <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                                    <polyline stroke-width="1.5" fill-rule="nonzero" points="5 2 12 8.36363636 5 14.7272727"></polyline>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="relative flex select-none items-center justify-center pt-2-5">
+                                        <div class="mx-auto inline-flex items-center justify-center overflow-hidden relative h-[4px]">
+                                            <ul data-test="carouselDots" class="m-0 inline-flex items-center justify-center gap-1 transition-transform duration-300 h-[4px]" style="transform: translateX(0px)">
+                                                <li class="transition-[property:background,opacity] block shrink-0 rounded-full duration-[400ms] h-[4px] w-[10px] bg-black" data-test="carouselDotsDot"></li>
+                                                <li class="transition-[property:background,opacity] block shrink-0 rounded-full duration-[400ms] h-[4px] w-[10px] bg-[color:var(--gray-200)]" data-test="carouselDotsDot"></li>
+                                                <li class="transition-[property:background,opacity] block shrink-0 rounded-full duration-[400ms] h-[4px] w-[10px] bg-[color:var(--gray-200)]" data-test="carouselDotsDot"></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="expandable-list-item border-t"><button class="flex flex-nowrap justify-between expandable-list-item-button items-center" aria-expanded="false" data-test="seoLinkColumnHeading">
+                            <div class="heading-4 normal-case w-full px-3 py-3">See More Popular Reviews</div><span class="ml-3 whitespace-nowrap">
+                                <div style="position: static;"><svg viewBox="0 0 24 24" class="icon icon-fill-default my-3 mr-3" aria-hidden="true" data-test-item="down" style="width: 21px; height: 21px;">
+                                        <use href="#keyboard_arrow_down"></use>
+                                    </svg></div>
+                            </span>
+                        </button>
+                        <div class="expandable-list-item-collapse border-t collapse" style="">
+                            <div class="px-3 py-3 expandable-list-item-shadow">
+                                <div class="pt-2"><ul class="space-y-2 pt-2 md:grid md:grid-cols-3 md:space-y-0 md:gap-2 lg:grid-cols-4"><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/ford/maverick/">Ford Maverick Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/ford/bronco/">Ford Bronco Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/polestar/2/">Polestar 2 Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/volkswagen/taos/">Volkswagen Taos Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/jeep/gladiator/">Jeep Gladiator Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/subaru/outback/">Subaru Outback Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/audi/q5/">Audi Q5 Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/subaru/forester/">Subaru Forester Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/genesis/gv70/">Genesis GV70 Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/bmw/x3/">BMW X3 Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/hyundai/santa-fe/">Hyundai Santa Fe Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/kia/k5/">Kia K5 Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/acura/rdx/">Acura RDX Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/kia/ev6/">Kia EV6 Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/ford/ecosport/">Ford EcoSport Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/volkswagen/id-4/">Volkswagen ID.4 Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/porsche/macan/">Porsche Macan Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/honda/civic/">Honda Civic Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/bmw/i4/">BMW i4 Review</a></li><li class=""><a aria-current="false" aria-disabled="false" class="link-item-minimal" href="/overview/hyundai/elantra/">Hyundai Elantra Review</a></li></ul><a class="mt-4 mb-1 block" href="/all-reviews/">See All Reviews</a></div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -648,17 +1011,17 @@
                                             Best Cars</h3>
                                         <div class="img-container hidden sm:block"
                                             style="height: 61px; padding-bottom: 0px; width: 123px;"><img
-                                                src="{{asset('assets/_next/static/images/cars-1a091092666f44deead3a3dc15132d25.png')}}"
+                                                src="{{ asset('assets/_next/static/images/cars-1a091092666f44deead3a3dc15132d25.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/cars-1a091092666f44deead3a3dc15132d25.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/cars-1a091092666f44deead3a3dc15132d25.png') }});">
                                         </div>
                                         <div class="img-container mr-1 mt-0 translate-y-[3px] sm:hidden"
                                             style="height: 43px; padding-bottom: 0px; width: 101px;"><img
-                                                src="{{asset('assets/_next/static/images/cars-1a091092666f44deead3a3dc15132d25.png')}}"
+                                                src="{{ asset('assets/_next/static/images/cars-1a091092666f44deead3a3dc15132d25.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/cars-1a091092666f44deead3a3dc15132d25.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/cars-1a091092666f44deead3a3dc15132d25.png') }});">
                                         </div>
                                     </div>
                                 </a></div>
@@ -676,17 +1039,17 @@
                                             Best Trucks</h3>
                                         <div class="img-container hidden sm:block"
                                             style="height: 61px; padding-bottom: 0px; width: 123px;"><img
-                                                src="{{asset('assets/_next/static/images/trucks-9c6f843f671cf1e1f3ce32395874da37.png')}}"
+                                                src="{{ asset('assets/_next/static/images/trucks-9c6f843f671cf1e1f3ce32395874da37.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/trucks-9c6f843f671cf1e1f3ce32395874da37.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/trucks-9c6f843f671cf1e1f3ce32395874da37.png') }});">
                                         </div>
                                         <div class="img-container mr-1 mt-0 translate-y-[3px] sm:hidden"
                                             style="height: 43px; padding-bottom: 0px; width: 101px;"><img
-                                                src="{{asset('assets/_next/static/images/trucks-9c6f843f671cf1e1f3ce32395874da37.png')}}"
+                                                src="{{ asset('assets/_next/static/images/trucks-9c6f843f671cf1e1f3ce32395874da37.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/trucks-9c6f843f671cf1e1f3ce32395874da37.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/trucks-9c6f843f671cf1e1f3ce32395874da37.png') }});">
                                         </div>
                                     </div>
                                 </a></div>
@@ -704,17 +1067,17 @@
                                             Best SUVs</h3>
                                         <div class="img-container hidden sm:block"
                                             style="height: 61px; padding-bottom: 0px; width: 123px;"><img
-                                                src="{{asset('assets/_next/static/images/suvs-efc002759c9094e2b49110cb7576e290.png')}}"
+                                                src="{{ asset('assets/_next/static/images/suvs-efc002759c9094e2b49110cb7576e290.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/suvs-efc002759c9094e2b49110cb7576e290.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/suvs-efc002759c9094e2b49110cb7576e290.png') }});">
                                         </div>
                                         <div class="img-container mr-1 mt-0 translate-y-[3px] sm:hidden"
                                             style="height: 43px; padding-bottom: 0px; width: 101px;"><img
-                                                src="{{asset('assets/_next/static/images/suvs-efc002759c9094e2b49110cb7576e290.png')}}"
+                                                src="{{ asset('assets/_next/static/images/suvs-efc002759c9094e2b49110cb7576e290.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/suvs-efc002759c9094e2b49110cb7576e290.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/suvs-efc002759c9094e2b49110cb7576e290.png') }});">
                                         </div>
                                     </div>
                                 </a></div>
@@ -732,17 +1095,17 @@
                                             Best Sedans</h3>
                                         <div class="img-container hidden sm:block"
                                             style="height: 61px; padding-bottom: 0px; width: 123px;"><img
-                                                src="{{asset('assets/_next/static/images/sedans-29f768e83a0cde5fcceba51338c322cf.png')}}"
+                                                src="{{ asset('assets/_next/static/images/sedans-29f768e83a0cde5fcceba51338c322cf.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/sedans-29f768e83a0cde5fcceba51338c322cf.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/sedans-29f768e83a0cde5fcceba51338c322cf.png') }});">
                                         </div>
                                         <div class="img-container mr-1 mt-0 translate-y-[3px] sm:hidden"
                                             style="height: 43px; padding-bottom: 0px; width: 101px;"><img
-                                                src="{{asset('assets/_next/static/images/sedans-29f768e83a0cde5fcceba51338c322cf.png')}}"
+                                                src="{{ asset('assets/_next/static/images/sedans-29f768e83a0cde5fcceba51338c322cf.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/sedans-29f768e83a0cde5fcceba51338c322cf.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/sedans-29f768e83a0cde5fcceba51338c322cf.png') }});">
                                         </div>
                                     </div>
                                 </a></div>
@@ -760,17 +1123,17 @@
                                             Best Hatchbacks</h3>
                                         <div class="img-container hidden sm:block"
                                             style="height: 61px; padding-bottom: 0px; width: 123px;"><img
-                                                src="{{asset('assets/_next/static/images/hatchbacks-abb3b880c11270e699ca24aa1c1fbffe.png')}}"
+                                                src="{{ asset('assets/_next/static/images/hatchbacks-abb3b880c11270e699ca24aa1c1fbffe.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/hatchbacks-abb3b880c11270e699ca24aa1c1fbffe.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/hatchbacks-abb3b880c11270e699ca24aa1c1fbffe.png') }});">
                                         </div>
                                         <div class="img-container mr-1 mt-0 translate-y-[3px] sm:hidden"
                                             style="height: 43px; padding-bottom: 0px; width: 101px;"><img
-                                                src="{{asset('assets/_next/static/images/hatchbacks-abb3b880c11270e699ca24aa1c1fbffe.png')}}"
+                                                src="{{ asset('assets/_next/static/images/hatchbacks-abb3b880c11270e699ca24aa1c1fbffe.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/hatchbacks-abb3b880c11270e699ca24aa1c1fbffe.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/hatchbacks-abb3b880c11270e699ca24aa1c1fbffe.png') }});">
                                         </div>
                                     </div>
                                 </a></div>
@@ -788,17 +1151,17 @@
                                             Best Coupes</h3>
                                         <div class="img-container hidden sm:block"
                                             style="height: 61px; padding-bottom: 0px; width: 123px;"><img
-                                                src="{{asset('assets/_next/static/images/coupes-5fd935d31f7d9e4d05b087d0793acf29.png')}}"
+                                                src="{{ asset('assets/_next/static/images/coupes-5fd935d31f7d9e4d05b087d0793acf29.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/coupes-5fd935d31f7d9e4d05b087d0793acf29.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/coupes-5fd935d31f7d9e4d05b087d0793acf29.png') }});">
                                         </div>
                                         <div class="img-container mr-1 mt-0 translate-y-[3px] sm:hidden"
                                             style="height: 43px; padding-bottom: 0px; width: 101px;"><img
-                                                src="{{asset('assets/_next/static/images/coupes-5fd935d31f7d9e4d05b087d0793acf29.png')}}"
+                                                src="{{ asset('assets/_next/static/images/coupes-5fd935d31f7d9e4d05b087d0793acf29.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/coupes-5fd935d31f7d9e4d05b087d0793acf29.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/coupes-5fd935d31f7d9e4d05b087d0793acf29.png') }});">
                                         </div>
                                     </div>
                                 </a></div>
@@ -816,17 +1179,17 @@
                                             Best Convertibles</h3>
                                         <div class="img-container hidden sm:block"
                                             style="height: 61px; padding-bottom: 0px; width: 123px;"><img
-                                                src="{{asset('assets/_next/static/images/convertibles-24a1fb24de8772ea405ac87b1cf65551.png')}}"
+                                                src="{{ asset('assets/_next/static/images/convertibles-24a1fb24de8772ea405ac87b1cf65551.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/convertibles-24a1fb24de8772ea405ac87b1cf65551.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/convertibles-24a1fb24de8772ea405ac87b1cf65551.png') }});">
                                         </div>
                                         <div class="img-container mr-1 mt-0 translate-y-[3px] sm:hidden"
                                             style="height: 43px; padding-bottom: 0px; width: 101px;"><img
-                                                src="{{asset('assets/_next/static/images/convertibles-24a1fb24de8772ea405ac87b1cf65551.png')}}"
+                                                src="{{ asset('assets/_next/static/images/convertibles-24a1fb24de8772ea405ac87b1cf65551.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/convertibles-24a1fb24de8772ea405ac87b1cf65551.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/convertibles-24a1fb24de8772ea405ac87b1cf65551.png') }});">
                                         </div>
                                     </div>
                                 </a></div>
@@ -844,17 +1207,17 @@
                                             Best Vans</h3>
                                         <div class="img-container hidden sm:block"
                                             style="height: 61px; padding-bottom: 0px; width: 123px;"><img
-                                                src="{{asset('assets/_next/static/images/vans-0b42b678c324e84c8568a867fe23d507.png')}}"
+                                                src="{{ asset('assets/_next/static/images/vans-0b42b678c324e84c8568a867fe23d507.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/vans-0b42b678c324e84c8568a867fe23d507.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/vans-0b42b678c324e84c8568a867fe23d507.png') }});">
                                         </div>
                                         <div class="img-container mr-1 mt-0 translate-y-[3px] sm:hidden"
                                             style="height: 43px; padding-bottom: 0px; width: 101px;"><img
-                                                src="{{asset('assets/_next/static/images/vans-0b42b678c324e84c8568a867fe23d507.png')}}"
+                                                src="{{ asset('assets/_next/static/images/vans-0b42b678c324e84c8568a867fe23d507.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/vans-0b42b678c324e84c8568a867fe23d507.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/vans-0b42b678c324e84c8568a867fe23d507.png') }});">
                                         </div>
                                     </div>
                                 </a></div>
@@ -872,17 +1235,17 @@
                                             Best Hybrids</h3>
                                         <div class="img-container hidden sm:block"
                                             style="height: 61px; padding-bottom: 0px; width: 123px;"><img
-                                                src="{{asset('assets/_next/static/images/hybrids-ecd066b6103e4bf815202aa289544709.png')}}"
+                                                src="{{ asset('assets/_next/static/images/hybrids-ecd066b6103e4bf815202aa289544709.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/hybrids-ecd066b6103e4bf815202aa289544709.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/hybrids-ecd066b6103e4bf815202aa289544709.png') }});">
                                         </div>
                                         <div class="img-container mr-1 mt-0 translate-y-[3px] sm:hidden"
                                             style="height: 43px; padding-bottom: 0px; width: 101px;"><img
-                                                src="{{asset('assets/_next/static/images/hybrids-ecd066b6103e4bf815202aa289544709.png')}}"
+                                                src="{{ asset('assets/_next/static/images/hybrids-ecd066b6103e4bf815202aa289544709.png') }}"
                                                 alt="" role="presentation" loading="lazy"
                                                 class="img-inner img-contain"
-                                                style="background-image: url({{asset('assets/_next/static/images/hybrids-ecd066b6103e4bf815202aa289544709.png')}});">
+                                                style="background-image: url({{ asset('assets/_next/static/images/hybrids-ecd066b6103e4bf815202aa289544709.png') }});">
                                         </div>
                                     </div>
                                 </a></div>
@@ -894,9 +1257,10 @@
                 <div class="container max-w-[864px]">
                     <div class="space-y-3 pb-2-5 text-center md:pb-3">
                         <h2 class="heading-3 normal-case">Browse by Brand</h2>
-                        <div class="switch-bar"><a class="linkable switch switch-active w-[125px]" href="#"
-                                role="button" aria-pressed="true" data-test="newCarsMakes">New Cars</a><a
-                                class="linkable switch w-[125px]" href="#" role="button" aria-pressed="false"
+                        <div class="switch-bar"><a class="linkable switch w-[125px]" href="javascript:void(0)"
+                                role="button" aria-pressed="true" data-test="newCarsMakes" data-selected="true">New Cars</a>
+                            <a
+                                class="linkable switch w-[125px]" href="javascript:void(0)" role="button" aria-pressed="false"
                                 data-test="usedCarsMakes">Used Cars</a></div>
                     </div>
                     <div class="row">
@@ -2020,7 +2384,7 @@
                                 <div class="picture-container"
                                     style="padding-bottom: 0px; width: 320px; height: 215px;"><img
                                         class="picture-inner picture-svg"
-                                        src="{{asset('assets/_next/static/images/research-and-compare-3cc2e7d020c7f58b483416f960a5caa1.svg')}}"
+                                        src="{{ asset('assets/_next/static/images/research-and-compare-3cc2e7d020c7f58b483416f960a5caa1.svg') }}"
                                         data-test="img" data-test-item="researchLandingToolsAndGuidesCarComparisonCard"
                                         alt="" role="presentation"></div>
                             </div>
@@ -2035,7 +2399,7 @@
                                 <div class="picture-container"
                                     style="padding-bottom: 0px; width: 320px; height: 215px;"><img
                                         class="picture-inner picture-svg"
-                                        src="{{asset('assets/_next/static/images/lease-calculator-632d0ef4ce8451a7a5045bdb9b742518.svg')}}"
+                                        src="{{ asset('assets/_next/static/images/lease-calculator-632d0ef4ce8451a7a5045bdb9b742518.svg') }}"
                                         data-test="img"
                                         data-test-item="researchLandingToolsAndGuidesLeaseCalculatorCard" alt=""
                                         role="presentation"></div>
@@ -2050,7 +2414,7 @@
                                 <div class="picture-container"
                                     style="padding-bottom: 0px; width: 320px; height: 215px;"><img
                                         class="picture-inner picture-svg"
-                                        src="{{asset('assets/_next/static/images/loan-calculator-972faadbbdcf088570f845a658c7cee1.svg')}}"
+                                        src="{{ asset('assets/_next/static/images/loan-calculator-972faadbbdcf088570f845a658c7cee1.svg') }}"
                                         data-test="img" data-test-item="researchLandingToolsAndGuidesLoanCalculatorCard"
                                         alt="" role="presentation"></div>
                             </div>
@@ -2063,7 +2427,8 @@
                         <div class="col">
                             <h2 class="heading-3 normal-case" data-test="researchLandingDealsAndIncentivesHeading">See
                                 <a data-test="researchLandingDealsAndIncentivesLink" href="/deals/">Car Deals and
-                                    Incentives</a> Near You</h2>
+                                    Incentives</a> Near You
+                            </h2>
                         </div>
                     </div>
                     <div class="row">

@@ -240,578 +240,281 @@
                   <div class="heading-base mb-5 font-bold">
                     Browse Deals by Vehicle&nbsp;Type
                   </div>
-                  <div class="carousel">
-                    <div class="relative flex w-full items-center">
-                      <button
-                        class="carousel-arrow carousel-arrow-middle carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-0 carousel-arrow-prev carousel-arrow-prev"
-                        data-test="carouselArrowPrev"
-                        aria-label="Previous"
-                      >
-                        <svg
-                          width="16px"
-                          height="16px"
-                          viewBox="0 0 16 16"
-                          class="carousel-arrow-icon"
-                        >
-                          <g
-                            stroke-width="1"
-                            fill="none"
-                            fill-rule="evenodd"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          >
-                            <polyline
-                              stroke-width="1.5"
-                              fill-rule="nonzero"
-                              points="5 2 12 8.36363636 5 14.7272727"
-                            ></polyline>
-                          </g>
-                        </svg>
-                      </button>
-                      <div
-                        class="grow"
-                        style="position: relative; overflow: hidden"
-                      >
-                        <ul
-                          data-test="carouselSlideContainer"
-                          class=""
-                          style="
-                            display: flex;
-                            flex-flow: row;
-                            position: relative;
-                            overflow: hidden;
-                          "
-                        >
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                            inert=""
-                            aria-hidden="true"
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/convertibles/"
-                              tabindex="-1"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconConvertables-be884bb8d136f35bb6558b94fd825344.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
+
+
+                  <div class="hidden-sm-down relative" data-test="rankingsNavigation">
+                <div>
+                    <div class="container container-max-width-3">
+                        <nav aria-label="Rankings Categories" data-test="rankingCategoriesCarousel">
+                            <div class="flex w-full items-center">
+                                <div class="w-full">
+                                    <div class="carousel [@media(any-hover:hover)]:h-[115px] [@media(any-hover:hover)]:overflow-hidden [@media(any-hover:hover)]:px-1">
+                                        <div class="relative flex w-full items-center">
+                                            <button class="carousel-arrow carousel-arrow-outside carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-0 carousel-arrow-prev carousel-arrow-prev" data-test="carouselArrowPrev" aria-label="Previous">
+                                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="carousel-arrow-icon">
+                                                    <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                                        <polyline stroke-width="1.5" fill-rule="nonzero" points="5 2 12 8.36363636 5 14.7272727"></polyline>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                            <div class="grow" style="position: relative; overflow: hidden">
+                                                <ul role="menubar" data-test="carouselSlideContainer" class="" style="display: flex; flex-flow: row; position: relative; overflow: hidden; transform: translateX(-232px);">
+                                                    <li role="none" class="p-0 lg:w-[25%] xl:w-[20%]" data-test="" style="
+                                      scroll-snap-align: start;
+                                      flex-shrink: 0;
+                                      width: 20%;
+                                    " inert="" aria-hidden="true">
+                                                        <button type="button" class="link-button inset-focus h-[-moz-fit-content] w-full items-center border-none" aria-haspopup="menu" role="menuitem" aria-expanded="false" aria-label="Best Cars" style="block-size: fit-content" tabindex="-1">
+                                                            <div class="linkable card rounded-none shadow-none before:hidden bg-transparent shadow-none" size="2" data-test="rankingCarouselCategory">
+                                                                <div data-test="cardContent" class="card-content card-content-center flex-row items-center py-2 md:flex-col md:py-3">
+                                                                    <div class="img-container" style="
+                                              height: 50px;
+                                              padding-bottom: 0px;
+                                              width: 100px;
+                                            ">
+                                                                        <img src="http://127.0.0.1:8000/assets/_next/static/images/iconSedans-299d7e8cb0d0d72d58efcb8af804a9e5.svg" alt="" role="presentation" loading="lazy" class="img-inner img-contain" style="
+                                                background-image: url(http://127.0.0.1:8000/assets/_next/static/images/iconSedans-299d7e8cb0d0d72d58efcb8af804a9e5.svg);
+                                              ">
+                                                                    </div>
+                                                                    <div class="heading-5 normal-case heading-xl-4 xl:normal-case ml-3 pt-1 md:ml-0">
+                                                                        Cars
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </li>
+                                                    <li role="none" class="p-0 lg:w-[25%] xl:w-[20%]" data-test="" style="
+                                      scroll-snap-align: start;
+                                      flex-shrink: 0;
+                                      width: 20%;
+                                    " inert="" aria-hidden="true">
+                                                        <button type="button" class="link-button inset-focus h-[-moz-fit-content] w-full items-center border-none" aria-haspopup="menu" role="menuitem" aria-expanded="false" aria-label="Best Trucks" style="block-size: fit-content" tabindex="-1">
+                                                            <div class="linkable card rounded-none shadow-none before:hidden bg-transparent shadow-none" size="2" data-test="rankingCarouselCategory">
+                                                                <div data-test="cardContent" class="card-content card-content-center flex-row items-center py-2 md:flex-col md:py-3">
+                                                                    <div class="img-container" style="
+                                              height: 50px;
+                                              padding-bottom: 0px;
+                                              width: 100px;
+                                            ">
+                                                                        <img src="http://127.0.0.1:8000/assets/_next/static/images/iconTrucks-580a7f2703d3c26ce63c295dc03d166d.svg" alt="" role="presentation" loading="lazy" class="img-inner img-contain" style="
+                                                background-image: url(http://127.0.0.1:8000/assets/_next/static/images/iconTrucks-580a7f2703d3c26ce63c295dc03d166d.svg);">
+                                                                    </div>
+                                                                    <div class="heading-5 normal-case heading-xl-4 xl:normal-case ml-3 pt-1 md:ml-0">
+                                                                        Trucks
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </li>
+                                                    <li role="none" class="p-0 lg:w-[25%] xl:w-[20%]" data-test="" style="
+                                      scroll-snap-align: start;
+                                      flex-shrink: 0;
+                                      width: 20%;
+                                    " inert="" aria-hidden="true">
+                                                        <button type="button" class="link-button inset-focus h-[-moz-fit-content] w-full items-center border-none" aria-haspopup="menu" role="menuitem" aria-expanded="false" aria-label="Best SUVs" style="block-size: fit-content" tabindex="-1">
+                                                            <div class="linkable card rounded-none shadow-none before:hidden bg-transparent shadow-none" size="2" data-test="rankingCarouselCategory">
+                                                                <div data-test="cardContent" class="card-content card-content-center flex-row items-center py-2 md:flex-col md:py-3">
+                                                                    <div class="img-container" style="
+                                              height: 50px;
+                                              padding-bottom: 0px;
+                                              width: 100px;
+                                            ">
+                                                                        <img src="http://127.0.0.1:8000/assets/_next/static/images/iconSuv-f1ac2be397703ffcacdbfd74eea4299a.svg" alt="" role="presentation" loading="lazy" class="img-inner img-contain" style="
+                                                background-image: url(http://127.0.0.1:8000/assets/_next/static/images/iconSuv-f1ac2be397703ffcacdbfd74eea4299a.svg)
+                                              ">
+                                                                    </div>
+                                                                    <div class="heading-5 normal-case heading-xl-4 xl:normal-case ml-3 pt-1 md:ml-0">
+                                                                        SUVs
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </li>
+                                                    <li role="none" class="p-0 lg:w-[25%] xl:w-[20%]" data-test="" style="
+                                      scroll-snap-align: start;
+                                      flex-shrink: 0;
+                                      width: 20%;
+                                    " inert="" aria-hidden="true">
+                                                        <button type="button" class="link-button inset-focus h-[-moz-fit-content] w-full items-center border-none" aria-haspopup="menu" role="menuitem" aria-expanded="false" aria-label="Best Sedans" style="block-size: fit-content" tabindex="-1">
+                                                            <div class="linkable card rounded-none shadow-none before:hidden bg-transparent shadow-none" size="2" data-test="rankingCarouselCategory">
+                                                                <div data-test="cardContent" class="card-content card-content-center flex-row items-center py-2 md:flex-col md:py-3">
+                                                                    <div class="img-container" style="
+                                              height: 50px;
+                                              padding-bottom: 0px;
+                                              width: 100px;
+                                            ">
+                                                                        <img src="http://127.0.0.1:8000/assets/_next/static/images/iconSedans-299d7e8cb0d0d72d58efcb8af804a9e5.svg" alt="" role="presentation" loading="lazy" class="img-inner img-contain" style="
+                                                background-image: url(http://127.0.0.1:8000/assets/_next/static/images/iconSedans-299d7e8cb0d0d72d58efcb8af804a9e5.svg)
+                                              ">
+                                                                    </div>
+                                                                    <div class="heading-5 normal-case heading-xl-4 xl:normal-case ml-3 pt-1 md:ml-0">
+                                                                        Sedans
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </li>
+                                                    <li role="none" class="p-0 lg:w-[25%] xl:w-[20%]" data-test="" style="
+                                      scroll-snap-align: start;
+                                      flex-shrink: 0;
+                                      width: 20%;
+                                    " inert="" aria-hidden="true">
+                                                        <button type="button" class="link-button inset-focus h-[-moz-fit-content] w-full items-center border-none" aria-haspopup="menu" role="menuitem" aria-expanded="false" aria-label="Best Hatchbacks" style="block-size: fit-content" tabindex="-1">
+                                                            <div class="linkable card rounded-none shadow-none before:hidden bg-transparent shadow-none" size="2" data-test="rankingCarouselCategory">
+                                                                <div data-test="cardContent" class="card-content card-content-center flex-row items-center py-2 md:flex-col md:py-3">
+                                                                    <div class="img-container" style="
+                                              height: 50px;
+                                              padding-bottom: 0px;
+                                              width: 100px;
+                                            ">
+                                                                        <img src="http://127.0.0.1:8000/assets/_next/static/images/iconHatchbacks-5fef3ca145dd8b50777b2033a6f4d6b0.svg" alt="" role="presentation" loading="lazy" class="img-inner img-contain" style="
+                                                background-image: url(http://127.0.0.1:8000/assets/_next/static/images/iconHatchbacks-5fef3ca145dd8b50777b2033a6f4d6b0.svg)
+                                              ">
+                                                                    </div>
+                                                                    <div class="heading-5 normal-case heading-xl-4 xl:normal-case ml-3 pt-1 md:ml-0">
+                                                                        Hatchbacks
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </li>
+                                                    <li role="none" class="p-0 lg:w-[25%] xl:w-[20%]" data-test="carouselCurrentSlide5" style="
+                                      scroll-snap-align: start;
+                                      flex-shrink: 0;
+                                      width: 20%;
+                                    ">
+                                                        <button type="button" class="link-button inset-focus h-[-moz-fit-content] w-full items-center border-none" aria-haspopup="menu" role="menuitem" aria-expanded="false" aria-label="Best Wagons" style="block-size: fit-content">
+                                                            <div class="linkable card rounded-none shadow-none before:hidden bg-transparent shadow-none" size="2" data-test="rankingCarouselCategory">
+                                                                <div data-test="cardContent" class="card-content card-content-center flex-row items-center py-2 md:flex-col md:py-3">
+                                                                    <div class="img-container" style="
+                                              height: 50px;
+                                              padding-bottom: 0px;
+                                              width: 100px;
+                                            ">
+                                                                        <img src="http://127.0.0.1:8000/assets/_next/static/images/iconWagons-570cc460532e6540d6108d60cf281230.svg" alt="" role="presentation" loading="lazy" class="img-inner img-contain" style="
+                                                background-image: url(http://127.0.0.1:8000/assets/_next/static/images/iconWagons-570cc460532e6540d6108d60cf281230.svg)
+                                              ">
+                                                                    </div>
+                                                                    <div class="heading-5 normal-case heading-xl-4 xl:normal-case ml-3 pt-1 md:ml-0">
+                                                                        Wagons
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </li>
+                                                    <li role="none" class="p-0 lg:w-[25%] xl:w-[20%]" data-test="" style="
+                                      scroll-snap-align: start;
+                                      flex-shrink: 0;
+                                      width: 20%;
+                                    ">
+                                                        <button type="button" class="link-button inset-focus h-[-moz-fit-content] w-full items-center border-none" aria-haspopup="menu" role="menuitem" aria-expanded="false" aria-label="Best Coupes" style="block-size: fit-content">
+                                                            <div class="linkable card rounded-none shadow-none before:hidden bg-transparent shadow-none" size="2" data-test="rankingCarouselCategory">
+                                                                <div data-test="cardContent" class="card-content card-content-center flex-row items-center py-2 md:flex-col md:py-3">
+                                                                    <div class="img-container" style="
+                                              height: 50px;
+                                              padding-bottom: 0px;
+                                              width: 100px;
+                                            ">
+                                                                        <img src="http://127.0.0.1:8000/assets/_next/static/images/iconCoupes-b13ad2ede15fb4beb0d01df2269cf9f8.svg" alt="" role="presentation" loading="lazy" class="img-inner img-contain" style="
+                                                background-image: url(http://127.0.0.1:8000/assets/_next/static/images/iconCoupes-b13ad2ede15fb4beb0d01df2269cf9f8.svg)
+                                              ">
+                                                                    </div>
+                                                                    <div class="heading-5 normal-case heading-xl-4 xl:normal-case ml-3 pt-1 md:ml-0">
+                                                                        Coupes
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </li>
+                                                    <li role="none" class="p-0 lg:w-[25%] xl:w-[20%]" data-test="" style="
+                                      scroll-snap-align: start;
+                                      flex-shrink: 0;
+                                      width: 20%;
+                                    ">
+                                                        <button type="button" class="link-button inset-focus h-[-moz-fit-content] w-full items-center border-none" aria-haspopup="menu" role="menuitem" aria-expanded="false" aria-label="Best Convertibles" style="block-size: fit-content">
+                                                            <div class="linkable card rounded-none shadow-none before:hidden bg-transparent shadow-none" size="2" data-test="rankingCarouselCategory">
+                                                                <div data-test="cardContent" class="card-content card-content-center flex-row items-center py-2 md:flex-col md:py-3">
+                                                                    <div class="img-container" style="
+                                              height: 50px;
+                                              padding-bottom: 0px;
+                                              width: 100px;
+                                            ">
+                                                                        <img src="http://127.0.0.1:8000/assets/_next/static/images/iconConvertables-be884bb8d136f35bb6558b94fd825344.svg" alt="" role="presentation" loading="lazy" class="img-inner img-contain" style="
+                                                background-image: url(http://127.0.0.1:8000/assets/_next/static/images/iconConvertables-be884bb8d136f35bb6558b94fd825344.svg)
+                                              ">
+                                                                    </div>
+                                                                    <div class="heading-5 normal-case heading-xl-4 xl:normal-case ml-3 pt-1 md:ml-0">
+                                                                        Convertibles
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </li>
+                                                    <li role="none" class="p-0 lg:w-[25%] xl:w-[20%]" data-test="" style="
+                                      scroll-snap-align: start;
+                                      flex-shrink: 0;
+                                      width: 20%;
+                                    ">
+                                                        <button type="button" class="link-button inset-focus h-[-moz-fit-content] w-full items-center border-none" aria-haspopup="menu" role="menuitem" aria-expanded="false" aria-label="Best Vans" style="block-size: fit-content">
+                                                            <div class="linkable card rounded-none shadow-none before:hidden bg-transparent shadow-none" size="2" data-test="rankingCarouselCategory">
+                                                                <div data-test="cardContent" class="card-content card-content-center flex-row items-center py-2 md:flex-col md:py-3">
+                                                                    <div class="img-container" style="
+                                              height: 50px;
+                                              padding-bottom: 0px;
+                                              width: 100px;
+                                            ">
+                                                                        <img src="http://127.0.0.1:8000/assets/_next/static/images/iconVans-870c7511e02faf9d23d77dfe8e77ff45.svg" alt="" role="presentation" loading="lazy" class="img-inner img-contain" style="
+                                                background-image: url(http://127.0.0.1:8000/assets/_next/static/images/iconVans-870c7511e02faf9d23d77dfe8e77ff45.svg)
+                                              ">
+                                                                    </div>
+                                                                    <div class="heading-5 normal-case heading-xl-4 xl:normal-case ml-3 pt-1 md:ml-0">
+                                                                        Vans
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </li>
+                                                    <li role="none" class="p-0 lg:w-[25%] xl:w-[20%]" data-test="" style="
+                                      scroll-snap-align: start;
+                                      flex-shrink: 0;
+                                      width: 20%;
+                                    ">
+                                                        <button type="button" class="link-button inset-focus h-[-moz-fit-content] w-full items-center border-none" aria-haspopup="menu" role="menuitem" aria-expanded="false" aria-label="Best Other" style="block-size: fit-content">
+                                                            <div class="linkable card rounded-none shadow-none before:hidden bg-transparent shadow-none" size="2" data-test="rankingCarouselCategory">
+                                                                <div data-test="cardContent" class="card-content card-content-center flex-row items-center py-2 md:flex-col md:py-3">
+                                                                    <div class="img-container" style="
+                                              height: 50px;
+                                              padding-bottom: 0px;
+                                              width: 100px;
+                                            ">
+                                                                        <img src="http://127.0.0.1:8000/assets/_next/static/images/iconSedans-299d7e8cb0d0d72d58efcb8af804a9e5.svg" alt="" role="presentation" loading="lazy" class="img-inner img-contain" style="
+                                                background-image: url(http://127.0.0.1:8000/assets/_next/static/images/iconSedans-299d7e8cb0d0d72d58efcb8af804a9e5.svg)
+                                              ">
+                                                                    </div>
+                                                                    <div class="heading-5 normal-case heading-xl-4 xl:normal-case ml-3 pt-1 md:ml-0">
+                                                                        Other
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <button class="carousel-arrow carousel-arrow-outside carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-0 carousel-arrow-next carousel-arrow-next" data-test="carouselArrowNext" aria-label="Next">
+                                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="carousel-arrow-icon">
+                                                    <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                                        <polyline stroke-width="1.5" fill-rule="nonzero" points="5 2 12 8.36363636 5 14.7272727"></polyline>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Convertibles</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                            inert=""
-                            aria-hidden="true"
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/coupes/"
-                              tabindex="-1"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconCoupes-b13ad2ede15fb4beb0d01df2269cf9f8.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Coupes</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                            inert=""
-                            aria-hidden="true"
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/suvs/"
-                              tabindex="-1"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconSuv-f1ac2be397703ffcacdbfd74eea4299a.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >SUVs</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                            inert=""
-                            aria-hidden="true"
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/sedans/"
-                              tabindex="-1"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconSedans-299d7e8cb0d0d72d58efcb8af804a9e5.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Sedans</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                            inert=""
-                            aria-hidden="true"
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/trucks/"
-                              tabindex="-1"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconTrucks-580a7f2703d3c26ce63c295dc03d166d.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Trucks</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                            inert=""
-                            aria-hidden="true"
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/hatchbacks/"
-                              tabindex="-1"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconHatchbacks-5fef3ca145dd8b50777b2033a6f4d6b0.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Hatchbacks</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test="carouselCurrentSlide6"
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/vans/"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconVans-870c7511e02faf9d23d77dfe8e77ff45.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Vans</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/wagons/"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconWagons-570cc460532e6540d6108d60cf281230.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Wagons</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/luxury-cars/"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconLuxuryCar-87a471f1074ed4055fb4a68b07764ee6.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Luxury Cars</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/luxury-suvs/"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconLuxurySUV-d6de04f820cf51ed437f864b7fcbf7c8.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Luxury SUVs</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/fuel-hybrid/"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconHybrids-750de8cd6fcd9984877da94f2d91c978.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Hybrids</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/fuel-electric/"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 border-b-2 border-b-[#109de7] max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconElectrics-37b61a4ced0f9b529aa71879b3b1aeaa.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Electric Vehicles</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                          <li
-                            class=""
-                            data-test=""
-                            style="
-                              scroll-snap-align: start;
-                              flex-shrink: 0;
-                              width: 14.2857%;
-                            "
-                          >
-                            <a
-                              class="my-1 mx-1 block no-underline hover:no-underline"
-                              href="/deals/fuel-diesel/"
-                              ><div
-                                class="flex justify-center flex-col items-center w-full pb-2 max-sm:min-h-[100px]"
-                              >
-                                <div
-                                  class="picture-container"
-                                  style="
-                                    padding-bottom: 0px;
-                                    width: 100px;
-                                    height: 50px;
-                                  "
-                                >
-                                  <img
-                                    class="picture-inner picture-svg px-2 lg:px-0"
-                                    src="assets/_next/static/images/iconDiesel-d5cc1b3d19e25226bf7d3ec17ab5ba05.svg"
-                                    alt=""
-                                    role="presentation"
-                                  />
-                                </div>
-                                <span
-                                  class="pt-3 px-1 flex justify-center text-center max-sm:whitespace-nowrap max-sm:text-[14px]"
-                                  >Diesels</span
-                                >
-                              </div></a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                      <button
-                        class="carousel-arrow carousel-arrow-middle carousel-arrow-light carousel-arrow-small carousel-arrow-slide-spacing-0 carousel-arrow-next carousel-arrow-next"
-                        data-test="carouselArrowNext"
-                        aria-label="Next"
-                        disabled=""
-                      >
-                        <svg
-                          width="16px"
-                          height="16px"
-                          viewBox="0 0 16 16"
-                          class="carousel-arrow-icon"
-                        >
-                          <g
-                            stroke-width="1"
-                            fill="none"
-                            fill-rule="evenodd"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          >
-                            <polyline
-                              stroke-width="1.5"
-                              fill-rule="nonzero"
-                              points="5 2 12 8.36363636 5 14.7272727"
-                            ></polyline>
-                          </g>
-                        </svg>
-                      </button>
+                            </div>
+                        </nav>
                     </div>
-                  </div>
+                </div>
+            </div>
                 </div>
               </div>
               <div class="bg-light pt-5 lg:pt-6">
@@ -4900,6 +4603,15 @@
                           </svg>
                         </button>
                       </div>
+                      <div class="text-center mt-0" data-test="seeLessLinkContainer" style="display: none">
+                        <button type="button" class="link-button see-more-link" data-test="seeLessButton">
+                            <span class="see-less-link-text">See Less</span>
+                            <svg viewBox="0 0 24 24" class="icon icon-fill-default see-less-icon-angle"
+                                aria-hidden="true" style="width: 24px; height: 24px;">
+                                <use href="#keyboard_arrow_up"></use>
+                            </svg>
+                        </button>
+                    </div>
                       <div data-test="seeMoreFade" class="see-more-fade"></div>
                     </div>
                   </div>
@@ -5052,6 +4764,15 @@
                           </svg>
                         </button>
                       </div>
+                      <div class="text-center mt-0" data-test="seeLessLinkContainer" style="display: none">
+                        <button type="button" class="link-button see-more-link" data-test="seeLessButton">
+                            <span class="see-less-link-text">See Less</span>
+                            <svg viewBox="0 0 24 24" class="icon icon-fill-default see-less-icon-angle"
+                                aria-hidden="true" style="width: 24px; height: 24px;">
+                                <use href="#keyboard_arrow_up"></use>
+                            </svg>
+                        </button>
+                    </div>
                       <div data-test="seeMoreFade" class="see-more-fade"></div>
                     </div>
                   </div>
@@ -5206,6 +4927,15 @@
                           </svg>
                         </button>
                       </div>
+                      <div class="text-center mt-0" data-test="seeLessLinkContainer" style="display: none">
+                        <button type="button" class="link-button see-more-link" data-test="seeLessButton">
+                            <span class="see-less-link-text">See Less</span>
+                            <svg viewBox="0 0 24 24" class="icon icon-fill-default see-less-icon-angle"
+                                aria-hidden="true" style="width: 24px; height: 24px;">
+                                <use href="#keyboard_arrow_up"></use>
+                            </svg>
+                        </button>
+                    </div>
                       <div data-test="seeMoreFade" class="see-more-fade"></div>
                     </div>
                   </div>
@@ -5468,6 +5198,15 @@
                           </svg>
                         </button>
                       </div>
+                      <div class="text-center mt-0" data-test="seeLessLinkContainer" style="display: none">
+                        <button type="button" class="link-button see-more-link" data-test="seeLessButton">
+                            <span class="see-less-link-text">See Less</span>
+                            <svg viewBox="0 0 24 24" class="icon icon-fill-default see-less-icon-angle"
+                                aria-hidden="true" style="width: 24px; height: 24px;">
+                                <use href="#keyboard_arrow_up"></use>
+                            </svg>
+                        </button>
+                    </div>
                       <div data-test="seeMoreFade" class="see-more-fade"></div>
                     </div>
                   </div>
