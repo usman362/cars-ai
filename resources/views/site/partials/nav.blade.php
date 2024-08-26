@@ -68,7 +68,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/shop/new/?filterType=brand"
+                    href="{{url('shop-new')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Build and Price</span
@@ -82,7 +82,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/deals/"
+                    href="{{url('deals')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Deals</span
@@ -96,7 +96,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/new-cars-for-sale/listings/"
+                    href="{{url('new-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >New Car Listings</span
@@ -110,7 +110,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/new-cars-for-sale/listings/fuel-electric/"
+                    href="{{url('new-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >New EVs</span
@@ -124,7 +124,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/new-cars-for-sale/listings/body-suv/"
+                    href="{{url('new-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >New SUVs</span
@@ -138,7 +138,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/new-cars-for-sale/listings/body-truck/"
+                    href="{{url('new-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >New Trucks</span
@@ -152,7 +152,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/new-cars-for-sale/listings/body-van/"
+                    href="{{url('new-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >New Vans</span
@@ -166,7 +166,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/new-cars-for-sale/listings/body-convertible/"
+                    href="{{url('new-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >New Convertibles</span
@@ -208,7 +208,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/used-cars-for-sale/listings/?buyOnline=true"
+                    href="{{url('used-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Buy Online</span
@@ -222,7 +222,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/used-cars-for-sale/"
+                    href="{{url('used-cars-for-sale')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Used Cars Search</span
@@ -236,7 +236,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/used-cars-for-sale/listings/"
+                    href="{{url('used-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Used Car Listings</span
@@ -250,7 +250,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/used-cars-for-sale/listings/fuel-electric/"
+                    href="{{url('used-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Used EVs</span
@@ -264,7 +264,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/used-cars-for-sale/listings/body-suv/"
+                    href="{{url('used-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Used SUVs</span
@@ -278,7 +278,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/used-cars-for-sale/listings/?certifiedPreOwned[]=true"
+                    href="{{url('used-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Used Certified Pre-Owned</span
@@ -292,7 +292,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/used-cars-for-sale/listings/body-truck/"
+                    href="{{url('used-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Used Trucks</span
@@ -306,7 +306,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/used-cars-for-sale/listings/body-van/"
+                    href="{{url('used-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Used Vans</span
@@ -320,7 +320,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/used-cars-for-sale/listings/body-convertible/"
+                    href="{{url('used-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Used Convertibles</span
@@ -362,7 +362,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/electric/"
+                    href="{{url('electric')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >EV Hub</span
@@ -376,7 +376,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/new-cars-for-sale/listings/fuel-electric/"
+                    href="{{url('new-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >New EVs</span
@@ -390,7 +390,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/used-cars-for-sale/listings/fuel-electric/"
+                    href="{{url('used-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Used EVs</span
@@ -404,7 +404,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/used-cars-for-sale/listings/tesla/"
+                    href="{{url('used-car-listings')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Used Teslas</span
@@ -418,7 +418,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/electric/incentives/"
+                    href="{{url('electric-incentive')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >EV Incentives</span
@@ -432,7 +432,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/deals/fuel-electric/"
+                    href="{{url('fuel-electric-deals')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >EV Deals</span
@@ -446,7 +446,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/best-cars-trucks/fuel-electric/"
+                    href="{{url('best-cars-electric')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Best EVs</span
@@ -455,7 +455,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                 </li>
                 <li class="pb-1 pt-1">
                   <a
-                    href="https://www.truecar.com/blog/electric-vehicle-buyers-guide/"
+                    href="javascript:void(0)"
                     target="_blank"
                     data-test="globalNavDropdownList"
                     data-test-item="Buyer'sGuide"
@@ -503,7 +503,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/car-reviews/"
+                    href="{{url('car-reviews')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Car Reviews</span
@@ -517,7 +517,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/best-cars-trucks/"
+                    href="{{url('best-cars-trucks')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Car Rankings</span
@@ -531,7 +531,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/compare/"
+                    href="{{url('compare')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Compare Cars</span
@@ -545,7 +545,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/fit-quiz/steps/"
+                    href="javascript:void(0)"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Car Finder Quiz</span
@@ -559,7 +559,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/car-affordability-calculator/"
+                    href="{{url('car-affordability-calculator')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Buying Power Calculator</span
@@ -573,7 +573,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/car-loan-calculator/"
+                    href="{{url('car-loan-calculator')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Auto Loan Calculator</span
@@ -587,7 +587,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/l/lease-a-car/"
+                    href="{{url('lease-a-car')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Lease a Car</span
@@ -601,7 +601,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/electric/"
+                    href="{{url('electric')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Electric Vehicles</span
@@ -615,7 +615,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
                     tabindex="0"
                     role="menuitem"
                     class="inset-focus pl-3 pt-1 pb-1 no-underline hover:bg-[transparent] focus:bg-[transparent] active:bg-[transparent] dropdown-item"
-                    href="/research/"
+                    href="{{url('research')}}"
                     ><span
                       class="text-base theme-black font-normal hover:underline active:underline"
                       >Research Center</span
@@ -627,7 +627,7 @@ class="absolute top-0 z-[1000] w-full border-b-0 transition-[background-color_1s
             <a
               class="no-underline pr-3 text-base text-center pl-2-5 w-max theme-black hover:underline active:underline"
               data-test="navTrade"
-              href="/sell-your-car/"
+              href="{{url('sell-your-car')}}"
               >Sell Your Car</a
             >
           </div>

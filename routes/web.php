@@ -14,6 +14,7 @@ Route::view('/best-cars-trucks', 'site.best-cars-trucks'); //done
 Route::view('/car-reviews', 'site.car-reviews'); //done
 Route::view('/compare', 'site.compare');//done
 Route::view('/deals', 'site.deals');//done
+Route::view('/{id}/deals', 'site.brand-deals');//done
 Route::view('/electric-incentive', 'site.electric-incentive'); //done
 Route::view('/electric', 'site.electric');//done
 Route::view('/fuel-electric-deals', 'site.fuel-electric-deals');//done
@@ -33,6 +34,10 @@ Route::view('/partner', 'site.partner'); //done
 Route::view('/oem', 'site.oem'); //done
 Route::view('/about-us', 'site.about-us'); //done
 Route::view('/careers', 'site.careers'); //done
+Route::view('/terms', 'site.terms'); //done
+Route::view('/privacy', 'site.privacy'); //done
+Route::view('/privacy-right', 'site.privacy-right'); //done
+Route::view('/privacy-right-data', 'site.privacy-right-data'); //done
 
 // Auth::routes();
 
