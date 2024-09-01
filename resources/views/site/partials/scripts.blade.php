@@ -35,6 +35,38 @@
 <script type="text/javascript"
     src="https://px.mountain.com/st?ga_tracking_id=UA-81859011-3&amp;shpt=TrueCar%20%7C%20New%20%26%20Used%20Cars%20for%20Sale%20%7C%20Car%20Pricing%20%26%20Reviews&amp;ga_info=%7B%22status%22%3A%22FAILED%22%2C%22ga_tracking_id%22%3A%22UA-81859011-3%22%2C%22shpt%22%3A%22TrueCar%20%7C%20New%20%26%20Used%20Cars%20for%20Sale%20%7C%20Car%20Pricing%20%26%20Reviews%22%2C%22dcm_cid%22%3A%221413160162.1722798316%22%2C%22execution_workflow%22%3A%7B%22iteration%22%3A29%2C%22getClientIdByGA%22%3A%22FAILED%22%2C%22getClientIdByTracker%22%3A%22FAILED%22%2C%22getClientIdByGAData%22%3A%22FAILED%22%2C%22getClientIdByCookie%22%3A%22FAILED%22%2C%22shpt%22%3A%22OK%22%2C%22dcm_cid%22%3A%22OK%22%7D%2C%22message%22%3A%22Could%20not%20evaluate%20some%20of%20the%20GA%20parameters%20due%20to%20timeout%20reached%20(3000ms).%20Check%20the%20execution_workflow%20for%20details.%22%7D&amp;dcm_cid=1413160162.1722798316&amp;available_ga=%5B%7B%22id%22%3A%22G-J3VWL05G5K%22%2C%22sess_id%22%3A%221722798316%22%7D%5D&amp;hardcoded_ga=UA-81859011-3&amp;dxver=4.0.0&amp;shaid=35018&amp;plh=https%3A%2F%2Fwww.truecar.com%2F&amp;cb=84437223920397900term%3Dvalue&amp;shoid=TC_1413160162.1722798316&amp;shpn=2025 BMW 5&nbsp;Series&amp;shps=2025bmw5series&amp;shpc=&amp;shadditional=googletagmanager%3Dtrue%2Cga4%3Dtrue%2Ctealium%3Dtrue">
 </script>
+
+ <!-- Jquery Ui Js File -->
+ <script src="{{asset('novaride/js/jquery-ui.js')}}"></script>
+ <!-- Bootstrap js file -->
+ <script src="{{asset('novaride/js/bootstrap.min.js')}}"></script>
+ <!-- Validator js file -->
+ <script src="{{asset('novaride/js/validator.min.js')}}"></script>
+ <!-- SlickNav js file -->
+ <script src="{{asset('novaride/js/jquery.slicknav.js')}}"></script>
+ <!-- Swiper js file -->
+ <script src="{{asset('novaride/js/swiper-bundle.min.js')}}"></script>
+ <!-- Counter js file -->
+ <script src="{{asset('novaride/js/jquery.waypoints.min.js')}}"></script>
+ <script src="{{asset('novaride/js/jquery.counterup.min.js')}}"></script>
+ <!-- Magnific js file -->
+ <script src="{{asset('novaride/js/jquery.magnific-popup.min.js')}}"></script>
+ <!-- SmoothScroll -->
+ <script src="{{asset('novaride/js/SmoothScroll.js')}}"></script>
+ <!-- Parallax js -->
+ <script src="{{asset('novaride/js/parallaxie.js')}}"></script>
+ <!-- MagicCursor js file -->
+ <script src="{{asset('novaride/js/gsap.min.js')}}"></script>
+ <script src="{{asset('novaride/js/magiccursor.js')}}"></script>
+ <!-- Text Effect js file -->
+ <script src="{{asset('novaride/js/SplitText.js')}}"></script>
+ <script src="{{asset('novaride/js/ScrollTrigger.min.js')}}"></script>
+ <!-- YTPlayer js File -->
+ <script src="{{asset('novaride/js/jquery.mb.YTPlayer.min.js')}}"></script>
+ <!-- Wow js file -->
+ <script src="{{asset('novaride/js/wow.js')}}"></script>
+ <!-- Main Custom js file -->
+ <script src="{{asset('novaride/js/function.js')}}"></script>
 <script type="text/javascript">
     !(function() {
         var e =
