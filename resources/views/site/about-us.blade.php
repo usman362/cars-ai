@@ -1,163 +1,846 @@
 @extends('site.layouts.app')
 @section('content')
-    <main id="mainContent" style="margin-top:60px"
-        class="mx-auto md:max-w-[var(--layout-max-width-md,none)] lg:max-w-[var(--layout-max-width-lg,none)] xl:max-w-[var(--layout-max-width-xl,none)] md:border-l-[line-width:var(--layout-border,0)] md:border-r-[line-width:var(--layout-border,0)] md:border-r-[#ccc] md:border-l-[#ccc]">
-        <div data-test="homeInfoSectionApp">
-            <nav data-test="homeInfoSectionNav">
-                <div class="flex justify-center overflow-hidden border theme-white">
-                    <div class="container">
-                        <ul class="tab-bar flex justify-between text-xs md:text-sm lg:text-base">
-                            <li class="flex justify-center md:px-3 lg:px-4"><a aria-current="page" aria-disabled="false"
-                                    class="inline-block tab tab-active" href="/about-us/"><span
-                                        class="tab-text">About</span><span class="tab-bottom-border"></span></a></li>
-                            <li class="flex justify-center md:px-3 lg:px-4"><a href="https://ir.truecar.com/executive-team/"
-                                    target="_blank" rel="noopener" aria-current="false" aria-disabled="false"
-                                    class="inline-block tab"><span class="tab-text">Leadership</span><span
-                                        class="tab-bottom-border"></span></a></li>
-                            <li class="flex justify-center md:px-3 lg:px-4"><a aria-current="false" aria-disabled="false"
-                                    class="inline-block tab" href="/careers/"><span class="tab-text">Careers</span><span
-                                        class="tab-bottom-border"></span></a></li>
-                            <li class="flex justify-center md:px-3 lg:px-4"><a href="https://ir.truecar.com/press-releases/"
-                                    target="_blank" rel="noopener" aria-current="false" aria-disabled="false"
-                                    class="inline-block tab"><span class="tab-text">Press</span><span
-                                        class="tab-bottom-border"></span></a></li>
-                            <li class="flex justify-center md:px-3 lg:px-4"><a href="https://ir.truecar.com/"
-                                    target="_blank" rel="noopener" aria-current="false" aria-disabled="false"
-                                    class="inline-block tab"><span class="tab-text">Investors</span><span
-                                        class="tab-bottom-border"></span></a></li>
+<style>
+    body{
+        background-color: #000000;
+        color: #ffffff
+    }
+</style>
+    <!-- Page Header Start -->
+    <div class="page-header bg-section parallaxie" style="margin-top: 160px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1 class="text-anime-style-3" data-cursor="-opaque">About Us</h1>
+                        <nav class="wow fadeInUp">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./">home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">about us</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Page About Us Section Start -->
+    <div class="about-us page-about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- About Us Image Start -->
+                    <div class="about-image">
+                        <!-- About Image Start -->
+                        <div class="about-img-1">
+                            <figure class="reveal">
+                                <img src="{{asset('novaride/images/about-img-1.jpg')}}" alt="">
+                            </figure>
+                        </div>
+                        <!-- About Image End -->
+
+                        <!-- About Image Start -->
+                        <div class="about-img-2">
+                            <figure class="reveal">
+                                <img src="{{asset('novaride/images/about-img-2.jpg')}}" alt="">
+                            </figure>
+                        </div>
+                        <!-- About Image End -->
+                    </div>
+                    <!-- About Us Image End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- About Us Content Start -->
+                    <div class="about-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">about us</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Your trusted partner in reliable car rental
+                            </h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">Aqestic Optio Amet A Ququam Saepe Aliquid Voluate
+                                Dicta Fuga Dolor Saerror Sed Earum A Magni Soluta Quam Minus Dolor Dolor</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- About Content Body Start -->
+                        <div class="about-content-body">
+                            <!-- About Trusted Booking Start -->
+                            <div class="about-trusted-booking wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="icon-box">
+                                    <img src="{{asset('novaride/images/icon-about-trusted-1.svg')}}" alt="">
+                                </div>
+                                <div class="trusted-booking-content">
+                                    <h3>easy booking process</h3>
+                                    <p>We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest
+                                        And The Safest Service</p>
+                                </div>
+                            </div>
+                            <!-- About Trusted Booking End -->
+
+                            <!-- About Trusted Booking Start -->
+                            <div class="about-trusted-booking wow fadeInUp" data-wow-delay="0.75s">
+                                <div class="icon-box">
+                                    <img src="{{asset('novaride/images/icon-about-trusted-2.svg')}}" alt="">
+                                </div>
+                                <div class="trusted-booking-content">
+                                    <h3>convenient pick-up & return process</h3>
+                                    <p>We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest
+                                        And The Safest Service</p>
+                                </div>
+                            </div>
+                            <!-- About Trusted Booking End -->
+                        </div>
+                        <!-- About Content Body End -->
+                    </div>
+                    <!-- About Us Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page About Us Section End -->
+
+    <!-- Exclusive Partners Section Start -->
+    <div class="exclusive-partners bg-section">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">executive partners</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Trusted by leading brands</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <!-- Partners Logo Start -->
+                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="{{asset('novaride/images/icon-partners-1.svg')}}" alt="">
+                    </div>
+                    <!-- Partners Logo End -->
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <!-- Partners Logo Start -->
+                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="{{asset('novaride/images/icon-partners-2.svg')}}" alt="">
+                    </div>
+                    <!-- Partners Logo End -->
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <!-- Partners Logo Start -->
+                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="{{asset('novaride/images/icon-partners-3.svg')}}" alt="">
+                    </div>
+                    <!-- Partners Logo End -->
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <!-- Partners Logo Start -->
+                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.8s">
+                        <img src="{{asset('novaride/images/icon-partners-4.svg')}}" alt="">
+                    </div>
+                    <!-- Partners Logo End -->
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <!-- Partners Logo Start -->
+                    <div class="partners-logo wow fadeInUp" data-wow-delay="1s">
+                        <img src="{{asset('novaride/images/icon-partners-3.svg')}}" alt="">
+                    </div>
+                    <!-- Partners Logo End -->
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <!-- Partners Logo Start -->
+                    <div class="partners-logo wow fadeInUp" data-wow-delay="1.2s">
+                        <img src="{{asset('novaride/images/icon-partners-4.svg')}}" alt="">
+                    </div>
+                    <!-- Partners Logo End -->
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <!-- Partners Logo Start -->
+                    <div class="partners-logo wow fadeInUp" data-wow-delay="1.4s">
+                        <img src="{{asset('novaride/images/icon-partners-1.svg')}}" alt="">
+                    </div>
+                    <!-- Partners Logo End -->
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <!-- Partners Logo Start -->
+                    <div class="partners-logo wow fadeInUp" data-wow-delay="1.6s">
+                        <img src="{{asset('novaride/images/icon-partners-2.svg')}}" alt="">
+                    </div>
+                    <!-- Partners Logo End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Exclusive Partners Section End -->
+
+    <!-- Vision Mission Section Start -->
+    <div class="vision-mission">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">vision mission</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Driving excellence and innovation in car
+                            rental services</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Sidebar Our Vision Mission Nav start -->
+                    <div class="our-projects-nav wow fadeInUp" data-wow-delay="0.25s">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#vision" type="button" role="tab" aria-selected="true">our
+                                    vision</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#mission"
+                                    type="button" role="tab" aria-selected="false">our mission</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#approach" type="button" role="tab" aria-selected="false">our
+                                    approach</button>
+                            </li>
                         </ul>
                     </div>
+                    <!-- Sidebar Our Vision Mission Nav End -->
+
+                    <!-- Vision Mission Box Start -->
+                    <div class="vision-mission-box tab-content" id="myTabContent">
+                        <!-- Our Vision Item Start -->
+                        <div class="our-vision-item tab-pane fade show active" id="vision" role="tabpanel">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <!-- Vision Mission Content Start -->
+                                    <div class="vision-mission-content">
+                                        <!-- Section Title Start -->
+                                        <div class="section-title">
+                                            <h3 class="wow fadeInUp">our vision</h3>
+                                            <h2 class="text-anime-style-3" data-cursor="-opaque">Pioneering excellence in
+                                                car rental services</h2>
+                                            <p class="wow fadeInUp" data-wow-delay="0.25s">We aim to continually innovate
+                                                and integrate the latest technology into our services. From easy online
+                                                bookings to advanced vehicle tracking systems, our goal is to make the car
+                                                rental process seamless and efficient for our customers. Quality is at the
+                                                heart of everything we do. We maintain a diverse fleet of well-maintained
+                                                vehicles that meet the highest standards of safety and comfort.</p>
+                                        </div>
+                                        <!-- Section Title End -->
+
+                                        <!-- Vision Mission List Start -->
+                                        <div class="vision-mission-list wow fadeInUp" data-wow-delay="0.5s">
+                                            <ul>
+                                                <li>Our customers are our top priority</li>
+                                                <li>Quality is at the heart of everything we do</li>
+                                                <li>every vehicle leaves care looking its absolute best</li>
+                                            </ul>
+                                        </div>
+                                        <!-- Vision Mission List End -->
+                                    </div>
+                                    <!-- Vision Mission Content End -->
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <!-- Vision Image Start -->
+                                    <div class="vision-image">
+                                        <figure class="image-anime reveal">
+                                            <img src="{{asset('novaride/images/our-vision-img.jpg')}}" alt="">
+                                        </figure>
+                                    </div>
+                                    <!-- Vision Image End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Our Vision Item End -->
+
+                        <!-- Our Vision Item Start -->
+                        <div class="our-vision-item tab-pane fade" id="mission" role="tabpanel">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <!-- Vision Mission Content Start -->
+                                    <div class="vision-mission-content">
+                                        <!-- Section Title Start -->
+                                        <div class="section-title">
+                                            <h3>our mission</h3>
+                                            <h2 data-cursor="-opaque">Pioneering excellence in car rental services</h2>
+                                            <p>We aim to continually innovate and integrate the latest technology into our
+                                                services. From easy online bookings to advanced vehicle tracking systems,
+                                                our goal is to make the car rental process seamless and efficient for our
+                                                customers. Quality is at the heart of everything we do. We maintain a
+                                                diverse fleet of well-maintained vehicles that meet the highest standards of
+                                                safety and comfort.</p>
+                                        </div>
+                                        <!-- Section Title End -->
+
+                                        <!-- Vision Mission List Start -->
+                                        <div class="vision-mission-list">
+                                            <ul>
+                                                <li>Our customers are our top priority</li>
+                                                <li>Quality is at the heart of everything we do</li>
+                                                <li>every vehicle leaves care looking its absolute best</li>
+                                            </ul>
+                                        </div>
+                                        <!-- Vision Mission List End -->
+                                    </div>
+                                    <!-- Vision Mission Content End -->
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <!-- Vision Image Start -->
+                                    <div class="vision-image">
+                                        <figure class="image-anime reveal">
+                                            <img src="{{asset('novaride/images/our-mission-img.jpg')}}" alt="">
+                                        </figure>
+                                    </div>
+                                    <!-- Vision Image End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Our Vision Item End -->
+
+                        <!-- Our Mission Item Start -->
+                        <div class="our-mission-item tab-pane fade" id="approach" role="tabpanel">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <!-- Vision Mission Content Start -->
+                                    <div class="vision-mission-content">
+                                        <!-- Section Title Start -->
+                                        <div class="section-title">
+                                            <h3>our approach</h3>
+                                            <h2 data-cursor="-opaque">Pioneering excellence in car rental services</h2>
+                                            <p>We aim to continually innovate and integrate the latest technology into our
+                                                services. From easy online bookings to advanced vehicle tracking systems,
+                                                our goal is to make the car rental process seamless and efficient for our
+                                                customers. Quality is at the heart of everything we do. We maintain a
+                                                diverse fleet of well-maintained vehicles that meet the highest standards of
+                                                safety and comfort.</p>
+                                        </div>
+                                        <!-- Section Title End -->
+
+                                        <!-- Vision Mission List Start -->
+                                        <div class="vision-mission-list">
+                                            <ul>
+                                                <li>Our customers are our top priority</li>
+                                                <li>Quality is at the heart of everything we do</li>
+                                                <li>every vehicle leaves care looking its absolute best</li>
+                                            </ul>
+                                        </div>
+                                        <!-- Vision Mission List End -->
+                                    </div>
+                                    <!-- Vision Mission Content End -->
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <!-- Vision Image Start -->
+                                    <div class="vision-image">
+                                        <figure class="image-anime reveal">
+                                            <img src="{{asset('novaride/images/our-approach-img.jpg')}}" alt="">
+                                        </figure>
+                                    </div>
+                                    <!-- Vision Image End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Our Mission Item End -->
+                    </div>
+                    <!-- Vision Mission Box End -->
                 </div>
-            </nav>
-            <section>
-                <h1 class="heading-3 normal-case heading-md-1 md:normal-case py-3 text-center"><span class="block">Make car
-                        buying easy,</span>transparent and efficient for all.</h1>
-                <div>
-                    <div class="relative h-[0px] w-full" style="padding-bottom:56.25%"><iframe
-                            title="Car Buying Shaped To Your Life | TrueCar"
-                            class="absolute top-[0px] left-[0px] h-[100%] w-[100%] !border-none"
-                            src="https://www.youtube.com/embed/-rTtnjKFuVw?rel=0&amp;modestbranding=1&amp;enablejsapi=1"
-                            frameborder="0" allow="fullscreen" allowfullscreen="" width="1440" height="810"
-                            loading="lazy" data-gtm-yt-inspected-6="true" id="361796689"></iframe></div>
+            </div>
+        </div>
+    </div>
+    <!-- Vision Mission Section End -->
+
+    <!-- Our Video Section Start -->
+    <div class="our-video bg-section">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">watch our video</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Discover what sets us apart in the car rental
+                            industry</h2>
+                    </div>
+                    <!-- Section Title End -->
                 </div>
-                <div class="container container-max-width-1">
-                    <div class="py-5">
-                        <h2 class="heading-3 normal-case heading-md-2 md:normal-case py-2">Who We Are</h2>
-                        <div class="mb-3">
-                            <p data-test="homeAboutBody">For nearly two decades, TrueCar has enabled consumers to connect
-                                with Certified Dealers to engage in buying and selling automotive transactions. We are the
-                                first and only online marketplace for new, used and certified pre-owned vehicles. We provide
-                                consumers with the research and shopping tools they need to confidently purchase or lease a
-                                vehicle that fits their life. In partnership with our network of Certified Dealers, we offer
-                                one of the most expansive inventories.</p>
-                            <p class="pt-3">Now, TrueCar is building a modern-day marketplace to make car buying and
-                                selling more easy, convenient and transparent, and bringing more of the transaction online.
-                                We are designing a shopping experience customized to individual preferences. There is no
-                                “one-size-fits-all” solution when it comes to purchasing a car. Whether your budget is
-                                $6,000 or $60,000, or if it’s your first time buying a car or 14th time, TrueCar makes car
-                                buying true for you.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-5">
+                    <!-- Customer Counter Item Start -->
+                    <div class="customer-counter-item">
+                        <!-- Customer Counter Image Start -->
+                        <div class="customer-counter-image">
+                            <img src="{{asset('novaride/images/video-counter-img-1.jpg')}}" alt="">
+                        </div>
+                        <!-- Customer Counter Image End -->
+
+                        <!-- Satisfied Customer Counter Start -->
+                        <div class="satisfied-customer-counter">
+                            <h3><span class="counter">3100</span>+</h3>
+                            <p>satisfied customer</p>
+                        </div>
+                        <!-- Satisfied Customer Counter End -->
+
+                        <!-- Satisfied Customer Image Start -->
+                        <div class="satisfied-customer-image">
+                            <img src="{{asset('novaride/images/satisfied-customer-img.png')}}" alt="">
+                        </div>
+                        <!-- Satisfied Customer Image End -->
+                    </div>
+                    <!-- Customer Counter Item End -->
+                </div>
+
+                <div class="col-lg-8 col-md-7">
+                    <!-- Video Image Box Start -->
+                    <div class="video-image-box">
+                        <!-- Video Image Start -->
+                        <div class="video-image" data-cursor-text="Play">
+                            <figure>
+                                <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video">
+                                    <img src="{{asset('novaride/images/video-counter-img-2.jpg')}}" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <!-- Video Image End -->
+
+                        <!-- Video Image Play Button Start -->
+                        <div class="video-image-play-button" data-cursor-text="Play">
+                            <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                        <!-- Video Image Play Button End -->
+                    </div>
+                    <!-- Video Image Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Video Section End -->
+
+    <!-- Why Choose Us Section Start -->
+    <div class="why-choose-us">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">why choose us</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Unmatched quality and service for your needs
+                        </h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 order-lg-1 order-md-1 order-1">
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-item wow fadeInUp">
+                        <div class="icon-box">
+                            <img src="{{asset('novaride/images/icon-why-choose-1.svg')}}" alt="">
+                        </div>
+                        <div class="why-choose-content">
+                            <h3>extensive fleet options</h3>
+                            <p>Quisque Sollicitudin Feugiat Risus, Eu Posuere Ex Euismod Eu. Phasellus Hendrerit, Massa</p>
                         </div>
                     </div>
+                    <!-- Why Choose Item End -->
+
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="icon-box">
+                            <img src="{{asset('novaride/images/icon-why-choose-2.svg')}}" alt="">
+                        </div>
+                        <div class="why-choose-content">
+                            <h3>exceptional customer service</h3>
+                            <p>Quisque Sollicitudin Feugiat Risus, Eu Posuere Ex Euismod Eu. Phasellus Hendrerit, Massa</p>
+                        </div>
+                    </div>
+                    <!-- Why Choose Item End -->
                 </div>
-            </section>
-            <div class="list-striped">
-                <section>
-                    <div class="container container-max-width-1">
-                        <div class="pt-5 md:pt-6 md:pb-6">
-                            <div class="border-b pb-3 md:pb-5">
-                                <h2 class="heading-3 normal-case heading-md-2 md:normal-case pb-2">What We Do</h2>We’re
-                                redefining car buying to reflect the experience people desire: flexible, convenient and
-                                shaped to their life. We do this by enabling consumers and dealers to connect through a
-                                world-class technology platform that offers more access, more choice, and more control than
-                                ever before from discovery to delivery.
+
+                <div class="col-lg-4 col-md-12 order-lg-2 order-md-3 order-2">
+                    <div class="why-choose-image">
+                        <figure class="reveal">
+                            <img src="{{asset('novaride/images/why-choose-img.jpg')}}" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 order-lg-3 order-md-2 order-3">
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-item wow fadeInUp">
+                        <div class="icon-box">
+                            <img src="{{asset('novaride/images/icon-why-choose-3.svg')}}" alt="">
+                        </div>
+                        <div class="why-choose-content">
+                            <h3>convenient locations</h3>
+                            <p>Quisque Sollicitudin Feugiat Risus, Eu Posuere Ex Euismod Eu. Phasellus Hendrerit, Massa</p>
+                        </div>
+                    </div>
+                    <!-- Why Choose Item End -->
+
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="icon-box">
+                            <img src="{{asset('novaride/images/icon-why-choose-4.svg')}}" alt="">
+                        </div>
+                        <div class="why-choose-content">
+                            <h3>reliability and safety</h3>
+                            <p>Quisque Sollicitudin Feugiat Risus, Eu Posuere Ex Euismod Eu. Phasellus Hendrerit, Massa</p>
+                        </div>
+                    </div>
+                    <!-- Why Choose Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Section End -->
+
+    <!-- Our Team Start -->
+    <div class="our-team bg-section">
+        <div class="container">
+            <div class="row align-items-center section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">our experienced drivers</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Ensuring your safety and comfort on every
+                            journey</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('novaride/images/team-1.jpg')}}" alt="">
+                            </figure>
+
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="pt-5">
-                                <div class="row pb-5">
-                                    <div class="md:pr-5 col-12 col-md-6">
-                                        <div class="picture-container picture-container-block"
-                                            style="padding-bottom:64.04682274247492%"><img class="picture-block"
-                                                sizes="425px"
-                                                src="{{asset('assets/_next/static/images/designed-with-purpose-bd456f5883add456d3846ce979732fb5.jpg')}}?auto=format&amp;h=307.4247491638796&amp;w=480"
-                                                srcset="{{asset('assets/_next/static/images/designed-with-purpose-bd456f5883add456d3846ce979732fb5.jpg')}}?auto=format&amp;h=307.4247491638796&amp;w=480 480w, {{asset('assets/_next/static/images/designed-with-purpose-bd456f5883add456d3846ce979732fb5.jpg')}}?auto=format&amp;h=614.8494983277592&amp;w=960 960w"
-                                                alt="" role="presentation"></div>
-                                    </div>
-                                    <div class="pt-3 md:pl-5 md:pt-0 col-12 col-md-6">
-                                        <h3 class="heading-3 normal-case pb-2">Designed With Purpose</h3>There’s nothing
-                                        better than that “I’ve got this” feeling.
-                                        That’s why, at TrueCar, we empower car buyers and sellers with the
-                                        resources they need for a tailored experience from start to
-                                        finish. Now they can shop how they want, when they want to find
-                                        the right car for their lifestyle and budget from one of the
-                                        nation’s largest inventories of vehicles.
-                                        <div class="pt-2-5"><a href="/">Start shopping</a></div>
-                                    </div>
-                                </div>
-                                <div class="row pb-5">
-                                    <div class="md:pr-5 col-12 col-md-6">
-                                        <div class="picture-container picture-container-block"
-                                            style="padding-bottom:64.04682274247492%"><img class="picture-block"
-                                                sizes="425px"
-                                                src="{{asset('assets/_next/static/images/developed-by-relationships-03afecdffef6dca88d960c689477137a.jpg')}}?auto=format&amp;h=307.4247491638796&amp;w=480"
-                                                srcset="{{asset('assets/_next/static/images/developed-by-relationships-03afecdffef6dca88d960c689477137a.jpg')}}?auto=format&amp;h=307.4247491638796&amp;w=480 480w, {{asset('assets/_next/static/images/developed-by-relationships-03afecdffef6dca88d960c689477137a.jpg')}}?auto=format&amp;h=614.8494983277592&amp;w=960 960w"
-                                                alt="" role="presentation"></div>
-                                    </div>
-                                    <div class="pt-3 md:pl-5 md:pt-0 col-12 col-md-6">
-                                        <h3 class="heading-3 normal-case pb-2">Developed By Relationships</h3>Our
-                                        relationships are the cornerstone of our business, and we’re proud
-                                        of the connections we’ve fostered – from our network of over 10,000
-                                        Certified Dealers nationwide to our partnerships with some of America’s
-                                        most trusted brands to power their car buying programs.<div class="pt-2-5"><a
-                                                href="https://dealerportal.truecar.com/" target="_blank">Be a partner</a>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>john smith</h3>
+                            <p>senior chauffeur</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('novaride/images/team-2.jpg')}}" alt="">
+                            </figure>
+
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>taylor smith</h3>
+                            <p>city tour guide</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.5s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('novaride/images/team-3.jpg')}}" alt="">
+                            </figure>
+
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>jordan brown</h3>
+                            <p>distance driver</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.75s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('novaride/images/team-4.jpg')}}" alt="">
+                            </figure>
+
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>davis casey</h3>
+                            <p>travel specialist</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Team End -->
+
+    <!-- Our Testiminial Start -->
+    <div class="our-testimonial">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">testimonials</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">What our customers are saying about us</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Testimonial Slider Start -->
+                    <div class="testimonial-slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper" data-cursor-text="Drag">
+                                <!-- Testimonial Slide Start -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>Renting a car from nova ride was a great decision. Not only did I get a
+                                                    reliable and comfortable vehicle, but the prices were also very
+                                                    competitive.</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="{{asset('novaride/images/author-1.jpg')}}" alt="">
+                                                </figure>
+                                            </div>
+                                            <div class="author-content">
+                                                <h3>floyd miles</h3>
+                                                <p>project manager</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row pb-5">
-                                    <div class="md:pr-5 col-12 col-md-6">
-                                        <div class="picture-container picture-container-block"
-                                            style="padding-bottom:64.04682274247492%"><img class="picture-block"
-                                                sizes="425px"
-                                                src="{{asset('assets/_next/static/images/driven-by-humanity-4c96b7ed55e517dd8464f0f9cd41bfe6.jpg')}}?auto=format&amp;h=307.4247491638796&amp;w=480"
-                                                srcset="{{asset('assets/_next/static/images/driven-by-humanity-4c96b7ed55e517dd8464f0f9cd41bfe6.jpg')}}?auto=format&amp;h=307.4247491638796&amp;w=480 480w, {{asset('assets/_next/static/images/driven-by-humanity-4c96b7ed55e517dd8464f0f9cd41bfe6.jpg')}}?auto=format&amp;h=614.8494983277592&amp;w=960 960w"
-                                                alt="" role="presentation"></div>
-                                    </div>
-                                    <div class="pt-3 md:pl-5 md:pt-0 col-12 col-md-6">
-                                        <h3 class="heading-3 normal-case pb-2">Driven By Humanity</h3>It’s people who are
-                                        at the center of our universe. Cars play an
-                                        important role in our daily lives and for many, it is one of the biggest
-                                        purchases you can make. We’re dedicated to helping everyone in our
-                                        community achieve their goals as easily and efficiently as possible,
-                                        including our consumers, our dealers and our valued members of the
-                                        military community.<div class="pt-2-5"><a href="https://www.truecar.com/blog/"
-                                                target="_blank">Learn more</a></div>
+                                <!-- Testimonial Slide End -->
+
+                                <!-- Testimonial Slide Start -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>Renting a car from nova ride was a great decision. Not only did I get a
+                                                    reliable and comfortable vehicle, but the prices were also very
+                                                    competitive.</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="{{asset('novaride/images/author-2.jpg')}}" alt="">
+                                                </figure>
+                                            </div>
+                                            <div class="author-content">
+                                                <h3>annette black</h3>
+                                                <p>project manager</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- Testimonial Slide End -->
+
+                                <!-- Testimonial Slide Start -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>Renting a car from nova ride was a great decision. Not only did I get a
+                                                    reliable and comfortable vehicle, but the prices were also very
+                                                    competitive.</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="{{asset('novaride/images/author-3.jpg')}}" alt="">
+                                                </figure>
+                                            </div>
+                                            <div class="author-content">
+                                                <h3>leslie alexander</h3>
+                                                <p>project manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial Slide End -->
+
+                                <!-- Testimonial Slide Start -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>Renting a car from nova ride was a great decision. Not only did I get a
+                                                    reliable and comfortable vehicle, but the prices were also very
+                                                    competitive.</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="{{asset('novaride/images/author-4.jpg')}}" alt="">
+                                                </figure>
+                                            </div>
+                                            <div class="author-content">
+                                                <h3>alis white</h3>
+                                                <p>project manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial Slide End -->
+                            </div>
+                            <div class="testimonial-btn">
+                                <div class="testimonial-button-prev"></div>
+                                <div class="testimonial-button-next"></div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section>
-                    <div class="container container-max-width-1">
-                        <div class="row items-center py-5 md:py-7">
-                            <div class="flex flex-col items-center md:items-start col-12 col-md-5">
-                                <h2 class="heading-3 normal-case heading-md-2 md:normal-case">Keep up with the&nbsp;latest
-                                </h2>
-                                <div class="w-3/4 pt-3 pb-6 md:pb-0"><a data-ignore-contrast="true" data-loading="false"
-                                        href="https://ir.truecar.com/press-releases/" target="_blank" rel="noopener"
-                                        class="btn btn-primary btn-md btn-block"><span class="btn-inner">See
-                                            Newsroom</span></a></div>
-                            </div>
-                            <div class="col-12 col-md-7">
-                                <div class="picture-container picture-container-block"
-                                    style="padding-bottom:36.36904761904762%"><img class="picture-block"
-                                        sizes="538.328125px"
-                                        src="{{asset('assets/_next/static/images/keep-up-with-the-latest-c4dde311f38be687d8173e507af4f525.png')}}?auto=format&amp;h=203.66666666666666&amp;w=560"
-                                        srcset="{{asset('assets/_next/static/images/keep-up-with-the-latest-c4dde311f38be687d8173e507af4f525.png')}}?auto=format&amp;h=203.66666666666666&amp;w=560 560w, {{asset('assets/_next/static/images/keep-up-with-the-latest-c4dde311f38be687d8173e507af4f525.png')}}?auto=format&amp;h=349.1428571428571&amp;w=960 960w"
-                                        alt="" role="presentation"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    <!-- Testimonial Slider End -->
+                </div>
             </div>
         </div>
-    </main>
+    </div>
+    <!-- Our Testiminial End -->
 @endsection
