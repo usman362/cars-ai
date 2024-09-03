@@ -51,7 +51,7 @@
                                             style="--width: 50%;">
                                             <div class="picture-container picture-container-block"
                                                 style="padding-bottom: 50%;"><img class="picture-block picture-svg"
-                                                    src="assets/_next/static/images/BestEV-2ac663d70aa64c26d8323b9a278df2a1.svg"
+                                                    src="{{asset('assets/_next/static/images/BestEV-2ac663d70aa64c26d8323b9a278df2a1.svg')}}"
                                                     alt="" role="presentation"></div>
                                         </div>
                                         <div data-test="cardContent"
@@ -73,7 +73,7 @@
                                             style="--width: 50%;">
                                             <div class="picture-container picture-container-block"
                                                 style="padding-bottom: 50%;"><img class="picture-block picture-svg"
-                                                    src="assets/_next/static/images/BestSUV-b1bb70d2ae8e880c9453c563da076d10.svg"
+                                                    src="{{asset('assets/_next/static/images/BestSUV-b1bb70d2ae8e880c9453c563da076d10.svg')}}"
                                                     alt="" role="presentation"></div>
                                         </div>
                                         <div data-test="cardContent"
@@ -93,7 +93,7 @@
                                             style="--width: 50%;">
                                             <div class="picture-container picture-container-block"
                                                 style="padding-bottom: 50%;"><img class="picture-block picture-svg"
-                                                    src="assets/_next/static/images/BestLUX-8d6701cf220fc28226acbf9584bdc329.svg"
+                                                    src="{{asset('assets/_next/static/images/BestLUX-8d6701cf220fc28226acbf9584bdc329.svg')}}"
                                                     alt="" role="presentation"></div>
                                         </div>
                                         <div data-test="cardContent"
@@ -113,7 +113,7 @@
                                             style="--width: 50%;">
                                             <div class="picture-container picture-container-block"
                                                 style="padding-bottom: 50%;"><img class="picture-block picture-svg"
-                                                    src="assets/_next/static/images/BestAWD-d518e9ecc89632d4e86445c249635e3a.svg"
+                                                    src="{{asset('assets/_next/static/images/BestAWD-d518e9ecc89632d4e86445c249635e3a.svg')}}"
                                                     alt="" role="presentation"></div>
                                         </div>
                                         <div data-test="cardContent"
@@ -133,7 +133,7 @@
                                             style="--width: 56%;">
                                             <div class="picture-container picture-container-block"
                                                 style="padding-bottom: 41.6667%;"><img class="picture-block picture-svg"
-                                                    src="assets/_next/static/images/TopRange-5b3635f1e42ef0b6f46817a262d61b81.svg"
+                                                    src="{{asset('assets/_next/static/images/TopRange-5b3635f1e42ef0b6f46817a262d61b81.svg')}}"
                                                     alt="" role="presentation"></div>
                                         </div>
                                         <div data-test="cardContent"
@@ -155,7 +155,7 @@
                                             style="--width: 66%;">
                                             <div class="picture-container picture-container-block"
                                                 style="padding-bottom: 36.3636%;"><img class="picture-block picture-svg"
-                                                    src="assets/_next/static/images/LowestPricedEV-db3fb4c26e0c518be8d24369750bbfbf.svg"
+                                                    src="{{asset('assets/_next/static/images/LowestPricedEV-db3fb4c26e0c518be8d24369750bbfbf.svg')}}"
                                                     alt="" role="presentation"></div>
                                         </div>
                                         <div data-test="cardContent"
