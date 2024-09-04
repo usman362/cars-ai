@@ -6,7 +6,7 @@
                 <ul class="contact-details clearfix">
                     <li class="template-phone">
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:(520)%20577%202710">
+                        <a href="tel:000000000">
                             (520) 577 2710 </a>
                     </li>
                     <li class="template-mail">
@@ -21,7 +21,7 @@
             <div id="search-4" class="widget widget_search">
                 <div class="search-container">
                     <a class="template-search" href="#" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <form class="search-form" action="https://quanticalabs.com/wp_themes/carservice">
+                    <form class="search-form" action="">
                         <input name="s" class="search-input hint" type="text" value="Search..."
                             placeholder="Search...">
                         <fieldset class="search-submit-container">
@@ -32,15 +32,15 @@
                 </div>
             </div>
             <div id="carservice_cart_icon-2" class="widget cs_cart_icon_widget"> <a
-                    href="https://quanticalabs.com/wp_themes/carservice/cart/"
+                    href=""
                     class="cart-icon template-shopping-cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-items-number"
                         style="display: none;">0</span></a>
             </div>
             <div id="carservice_social_icons-2" class="widget cs_social_icons_widget">
                 <ul class="social-icons">
-                    <li><a target="_blank" href="http://facebook.com/QuanticaLabs" class="social-facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a target="_blank" href="https://twitter.com/QuanticaLabs" class="social-twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a target="_blank" href="https://pinterest.com/quanticalabs/" class="social-pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a target="_blank" href="javascript:void(0)" class="social-facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a target="_blank" href="javascript:void(0)" class="social-twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a target="_blank" href="javascript:void(0)" class="social-pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
                 </ul>
             </div>
         </div>
