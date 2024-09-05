@@ -1,144 +1,60 @@
 @extends('site.layouts.app')
 @section('content')
+    <style>
+        .page-faqs {
+            background-color: #000000;
+            color: #fff;
+            margin-top: 14px
+        }
+
+        .accordion-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            /* padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x); */
+            font-size: 1rem;
+            /* color: var(--bs-accordion-btn-color); */
+            text-align: left;
+            /* background-color: var(--bs-accordion-btn-bg); */
+            border: 0;
+            border-radius: 0;
+            overflow-anchor: none;
+            /* transition: var(--bs-accordion-transition); */
+        }
+    </style>
     <main id="mainContent"
         class="mx-auto md:max-w-[var(--layout-max-width-md,none)] lg:max-w-[var(--layout-max-width-lg,none)] xl:max-w-[var(--layout-max-width-xl,none)] md:border-l-[line-width:var(--layout-border,0)] md:border-r-[line-width:var(--layout-border,0)] md:border-r-[#ccc] md:border-l-[#ccc]"
-        style="margin-top:60px">
+        style="margin-top:160px">
         <div>
-            <div class="relative overflow-hidden bg-[#343434] pb-[57px] lg:pb-[73px]">
-                <div class="absolute top-[-60px] z-1 h-[60px] w-[100%] shadow-[2px_2px_5px_rgba(1,_1,_1,_0.15)]"></div>
-                <div
-                    class="container container-max-width-2 w-full flex justify-center flex-col items-center relative md:items-start max-md:max-w-[375px]">
-                    <div
-                        class="absolute left-[51%] top-[-16%] h-[221px] w-[221px] rounded-[50%] bg-[#ffffff] md:left-[73%] md:top-[-10%] md:h-[331px] md:w-[371px] lg:top-[-22%] lg:left-[70%] lg:h-[599px] lg:w-[599px]">
-                    </div>
-                    <div
-                        class="relative left-[8%] top-[-10%] z-[4] w-[260px] md:left-[60%] md:top-[27%] md:w-[383px] lg:absolute lg:left-[63%] lg:top-[20%] lg:w-[675px] pt-2">
-                        <div class="picture-container picture-container-block" style="padding-bottom: 50%;"><img
-                                class="picture-block" sizes="675px"
-                                src="https://static.tcimg.net/vehicles/primary/2638db88c57c8270/2022-Jeep-Grand_Cherokee-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720"
-                                srcset="https://static.tcimg.net/vehicles/primary/2638db88c57c8270/2022-Jeep-Grand_Cherokee-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720 720w, https://static.tcimg.net/vehicles/primary/2638db88c57c8270/2022-Jeep-Grand_Cherokee-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=700&amp;w=1400 1400w"
-                                alt="" role="presentation"></div>
-                    </div>
-                    <div class="">
-                        <h1 class="heading-3 normal-case heading-md-2 md:normal-case heading-lg-1 lg:normal-case pt-2 text-center text-white md:pt-5 md:text-left lg:pt-7"
-                            data-test="dealsLandingHeading">Find the Best Car Deals <div class="md:inline">Near You</div>
-                        </h1>
-                        <p class="pt-2 text-center text-white md:pt-3 md:text-left lg:pt-4">Looking for a specific car?</p>
-                        <div class="w-full pt-2-5 md:pr-7 lg:pt-3 lg:pr-2-5">
-                            <div>
-                                <div class="flex flex-col items-center md:flex-row md:items-stretch">
-                                    <div
-                                        class="field-container-challenger w-[236px] max-lg:w-[185px] max-md:w-[247px] max-md:pb-[12px] md:mr-3">
-                                        <div
-                                            class="field-wrapper-challenger field-theme-dark-challenger field-label-padding-challenger">
-                                            <div class="field-content-row field-with-suffix">
-                                                <div class="field-input-label-challenger input-label-select"><select
-                                                        required="" aria-label="Select Make"
-                                                        class="form-select-element-challenger"
-                                                        data-test="dealsLandingSelectMake">
-                                                        <option disabled="" value="">Select Make</option>
-                                                        <option value="acura">Acura</option>
-                                                        <option value="alfa-romeo">Alfa Romeo</option>
-                                                        <option value="audi">Audi</option>
-                                                        <option value="bmw">BMW</option>
-                                                        <option value="buick">Buick</option>
-                                                        <option value="cadillac">Cadillac</option>
-                                                        <option value="chevrolet">Chevrolet</option>
-                                                        <option value="chrysler">Chrysler</option>
-                                                        <option value="dodge">Dodge</option>
-                                                        <option value="fiat">FIAT</option>
-                                                        <option value="ford">Ford</option>
-                                                        <option value="genesis">Genesis</option>
-                                                        <option value="gmc">GMC</option>
-                                                        <option value="honda">Honda</option>
-                                                        <option value="hyundai">Hyundai</option>
-                                                        <option value="infiniti">INFINITI</option>
-                                                        <option value="jaguar">Jaguar</option>
-                                                        <option value="jeep">Jeep</option>
-                                                        <option value="kia">Kia</option>
-                                                        <option value="land-rover">Land Rover</option>
-                                                        <option value="lexus">Lexus</option>
-                                                        <option value="lincoln">Lincoln</option>
-                                                        <option value="maserati">Maserati</option>
-                                                        <option value="mazda">Mazda</option>
-                                                        <option value="mercedes-benz">Mercedes-Benz</option>
-                                                        <option value="mini">MINI</option>
-                                                        <option value="mitsubishi">Mitsubishi</option>
-                                                        <option value="nissan">Nissan</option>
-                                                        <option value="ram">Ram</option>
-                                                        <option value="subaru">Subaru</option>
-                                                        <option value="toyota">Toyota</option>
-                                                        <option value="volkswagen">Volkswagen</option>
-                                                        <option value="volvo">Volvo</option>
-                                                    </select>
-                                                    <div class="field-label-text-challenger" data-test="fieldLabel"><label
-                                                            data-ignore-contrast="true">Select Make</label></div>
-                                                </div>
-                                                <div class="field-addon-challenger field-addon-challenger-suffix"><svg
-                                                        viewBox="0 0 24 24" class="icon icon-fill-default"
-                                                        aria-hidden="true" style="width: 24px; height: 24px;">
-                                                        <use href="#arrow_drop_down"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div class="field-message-challenger">
-                                                <div class="field-message-text-challenger"></div>
-                                            </div>
+
+            <div class="page-header bg-section parallaxie">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Page Header Box Start -->
+                            <div class="page-header-box">
+                                <h1 class="text-anime-style-3" data-cursor="-opaque" style="perspective: 400px;">
+                                    <div class="split-line" style="display: block; text-align: center; position: relative;">
+                                        <div style="position:relative;display:inline-block;">
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                Find the Best Car Deals Near You</div>
                                         </div>
-                                    </div>
-                                    <div
-                                        class="field-container-challenger pt-1 md:pt-0 w-[236px] max-lg:w-[185px] max-md:w-[247px] max-md:pb-[12px]">
-                                        <div
-                                            class="field-wrapper-challenger field-theme-dark-challenger field-label-padding-challenger">
-                                            <div class="field-content-row field-with-suffix">
-                                                <div class="field-input-label-challenger input-label-select"><select
-                                                        required="" aria-label="Select Model"
-                                                        class="form-select-element-challenger"
-                                                        data-test="dealsLandingSelectModel">
-                                                        <option disabled="" value="">Select Model</option>
-                                                        <option value="All Models">All Models</option>
-                                                        <option value="giulia">Giulia</option>
-                                                        <option value="stelvio">Stelvio</option>
-                                                        <option value="tonale">Tonale</option>
-                                                    </select>
-                                                    <div class="field-label-text-challenger" data-test="fieldLabel"><label
-                                                            data-ignore-contrast="true">Select Model</label></div>
-                                                </div>
-                                                <div class="field-addon-challenger field-addon-challenger-suffix"><svg
-                                                        viewBox="0 0 24 24" class="icon icon-fill-default"
-                                                        aria-hidden="true" style="width: 24px; height: 24px;">
-                                                        <use href="#arrow_drop_down"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div class="field-message-challenger">
-                                                <div class="field-message-text-challenger"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="pt-2 md:pt-2-5 lg:pt-3 pb-5 md:pb-4 lg:pb-6 mx-auto md:mx-0 w-[247px] md:w-[185px] lg:w-[236px]">
-                                    <a data-ignore-contrast="true" data-loading="false" data-test="findDealsCTA"
-                                        class="btn-dark btn btn-primary btn-md btn-block"
-                                        href="/alfa-romeo/deals/?modelSlug=stelvio"><span class="btn-inner">Find
-                                            Deals</span></a></div>
+                                </h1>
+                                <nav class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="./">home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">deals</li>
+                                    </ol>
+                                </nav>
                             </div>
+                            <!-- Page Header Box End -->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mt-[-56px] lg:mt-[-67px]">
-                <div
-                    class="linkable card transition-[transition:box-shadow] shadow-[2px_2px_7px_0_rgba(1,1,1,0.15)] duration-300 ease-[cubic-bezier(0.64,0.04,0.35,1)] relative z-[3] rounded-[0px] bg-[#f8f8f8]">
-                    <div class="container container-max-width-2 flex items-baseline py-2-5 lg:py-3"><svg
-                            viewBox="0 0 24 24" class="icon icon-fill-default" aria-hidden="true"
-                            style="width: 16px; height: 16px;">
-                            <use href="#location_on"></use>
-                        </svg><span class="pr-3 pl-2 font-bold" data-test="selectedZipCode">Santa Monica, CA 90401</span>
-                        <div><button type="button" class="link-button pb-1" data-test="changeLocationLink">Change
-                                Location</button></div>
-                    </div>
-                </div>
-            </div>
+
             <div class="bg-light pb-3 md:pb-4">
                 <div class="container container-max-width-2">
                     <div class="heading-3 normal-case heading-lg-2 lg:normal-case pb-4 pt-5 md:pt-6 lg:pb-5">Find Deals by
@@ -150,8 +66,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconConvertables-be884bb8d136f35bb6558b94fd825344.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconConvertables-be884bb8d136f35bb6558b94fd825344.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Convertibles</span>
                             </div>
                         </a><a
@@ -160,8 +77,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconCoupes-b13ad2ede15fb4beb0d01df2269cf9f8.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconCoupes-b13ad2ede15fb4beb0d01df2269cf9f8.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Coupes</span>
                             </div>
                         </a><a
@@ -170,8 +88,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconSuv-f1ac2be397703ffcacdbfd74eea4299a.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconSuv-f1ac2be397703ffcacdbfd74eea4299a.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">SUVs</span>
                             </div>
                         </a><a
@@ -180,8 +99,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconSedans-299d7e8cb0d0d72d58efcb8af804a9e5.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconSedans-299d7e8cb0d0d72d58efcb8af804a9e5.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Sedans</span>
                             </div>
                         </a><a
@@ -190,8 +110,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconTrucks-580a7f2703d3c26ce63c295dc03d166d.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconTrucks-580a7f2703d3c26ce63c295dc03d166d.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Trucks</span>
                             </div>
                         </a><a
@@ -200,8 +121,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconHatchbacks-5fef3ca145dd8b50777b2033a6f4d6b0.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconHatchbacks-5fef3ca145dd8b50777b2033a6f4d6b0.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Hatchbacks</span>
                             </div>
                         </a><a
@@ -210,8 +132,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconVans-870c7511e02faf9d23d77dfe8e77ff45.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconVans-870c7511e02faf9d23d77dfe8e77ff45.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Vans</span>
                             </div>
                         </a><a
@@ -220,8 +143,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconWagons-570cc460532e6540d6108d60cf281230.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconWagons-570cc460532e6540d6108d60cf281230.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Wagons</span>
                             </div>
                         </a><a
@@ -231,8 +155,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconLuxuryCar-87a471f1074ed4055fb4a68b07764ee6.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconLuxuryCar-87a471f1074ed4055fb4a68b07764ee6.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Luxury
                                     Cars</span>
                             </div>
@@ -243,8 +168,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconLuxurySUV-d6de04f820cf51ed437f864b7fcbf7c8.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconLuxurySUV-d6de04f820cf51ed437f864b7fcbf7c8.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Luxury
                                     SUVs</span>
                             </div>
@@ -255,8 +181,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconHybrids-750de8cd6fcd9984877da94f2d91c978.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconHybrids-750de8cd6fcd9984877da94f2d91c978.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Hybrids</span>
                             </div>
                         </a><a
@@ -266,8 +193,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconElectrics-37b61a4ced0f9b529aa71879b3b1aeaa.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconElectrics-37b61a4ced0f9b529aa71879b3b1aeaa.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Electric
                                     Vehicles</span>
                             </div>
@@ -278,8 +206,9 @@
                             <div class="flex justify-center flex-col items-center w-full max-sm:min-h-[100px]">
                                 <div class="picture-container" style="padding-bottom: 0px; width: 100px; height: 50px;">
                                     <img class="picture-inner picture-svg px-2 lg:px-0"
-                                        src="assets/_next/static/images/iconDiesel-d5cc1b3d19e25226bf7d3ec17ab5ba05.svg"
-                                        alt="" role="presentation"></div><span
+                                        src="{{ asset('assets/_next/static/images/iconDiesel-d5cc1b3d19e25226bf7d3ec17ab5ba05.svg') }}"
+                                        alt="" role="presentation">
+                                </div><span
                                     class="pt-1 lg:pt-2 font-bold px-1 text-center overflow-hidden text-ellipsis">Diesels</span>
                             </div>
                         </a></div>
@@ -1374,27 +1303,176 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div class="container container-max-width-3">
-                    <h2 class="heading-3 normal-case heading-lg-2 lg:normal-case">Best Car Deals &amp; Incentives for
-                        August 2024</h2>
-                    <div class="flex justify-between pb-4 lg:pb-0 mt-2 md:mt-3">
-                        <div class="flex lg:flex-row items-baseline">
-                            <div class="pr-3 md:pb-2 lg:pb-0" data-test="zipCodeValue"><span class="hidden-md-down">We
-                                    found </span><span class="md:font-bold">62 <span>deals </span></span><span
-                                    class="hidden-lg-up">found </span>near <span class="hidden-sm-down">Santa Monica,
-                                    CA</span> <span class="max-md:font-bold">90401</span></div><button type="button"
-                                class="link-button block lg:inline" data-test="changeLocationModalLink">Change <span
-                                    class="hidden-sm-down">Location</span><span class="hidden-md-up">ZIP</span></button>
+            <div class="cta-box bg-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-7">
+                            <!-- Cta Box Content Start -->
+                            <div class="cta-box-content">
+                                <!-- Section Title Start -->
+                                <div class="section-title">
+                                    <h2 class="text-anime-style-3" data-cursor="-opaque" style="perspective: 400px;">
+                                        <div class="split-line"
+                                            style="display: block; text-align: start; position: relative;">
+                                            <div style="position:relative;display:inline-block;">
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    R</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    e</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    a</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    d</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    y</div>
+                                            </div>
+                                            <div style="position:relative;display:inline-block;">
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    t</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    o</div>
+                                            </div>
+                                            <div style="position:relative;display:inline-block;">
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    h</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    i</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    t</div>
+                                            </div>
+                                            <div style="position:relative;display:inline-block;">
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    t</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    h</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    e</div>
+                                            </div>
+                                            <div style="position:relative;display:inline-block;">
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    r</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    o</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    a</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    d</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    ?</div>
+                                            </div>
+                                        </div>
+                                        <div class="split-line"
+                                            style="display: block; text-align: start; position: relative;">
+                                            <div style="position:relative;display:inline-block;">
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    B</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    o</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    o</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    k</div>
+                                            </div>
+                                            <div style="position:relative;display:inline-block;">
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    y</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    o</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    u</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    r</div>
+                                            </div>
+                                            <div style="position:relative;display:inline-block;">
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    c</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    a</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    r</div>
+                                            </div>
+                                            <div style="position:relative;display:inline-block;">
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    t</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    o</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    d</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    a</div>
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    y</div>
+                                            </div>
+                                            <div style="position:relative;display:inline-block;">
+                                                <div
+                                                    style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                    !</div>
+                                            </div>
+                                        </div>
+                                    </h2>
+                                    <p class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Our
+                                        friendly customer service team is here to help. Contact us anytime for support and
+                                        inquiries.</p>
+                                </div>
+                                <!-- Section Title End -->
+
+                                <!-- Cta Box Btn Start -->
+                                <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.5s"
+                                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                                    <a href="#" class="btn-default">contact us</a>
+                                </div>
+                                <!-- Cta Box Btn End -->
+                            </div>
+                            <!-- Cta Box Content End -->
+                        </div>
+
+                        <div class="col-lg-6 col-md-5">
+                            <!-- Cta Box Image Start -->
+                            <div class="cat-box-image">
+                                <figure>
+                                    <img src="{{ asset('novaride/images/cta-car-img.png') }}" alt="">
+                                </figure>
+                            </div>
+                            <!-- Cta Box Image End -->
                         </div>
                     </div>
-                    <div class="py-2" data-test="vehicleTypeDealsBody">Are you looking to buy a new car? You can find
-                        all of the latest new car, truck, and SUV deals and incentives for August 2024 below. Browse by
-                        manufacturer or vehicle type and find the latest deals for financing, cash, or leasing. For example,
-                        the 2024 Honda Civic has a 3.9% APR for 48 months deal, while the 2024 Toyota Corolla is offering
-                        $1,000 customer cash. Incentives and new car deals are updated each month, so be sure to check back
-                        for the latest specials.</div>
                 </div>
+            </div>
+            <section>
                 <div class="pt-4">
                     <div class="container">
                         <div class="border-b pb-5" data-test="dealsSection">
@@ -1451,7 +1529,8 @@
                                         <img class="picture-block" sizes="400px"
                                             src="https://static.tcimg.net/vehicles/primary/e2af810e5f998397/2024-Honda-Civic-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360"
                                             srcset="https://static.tcimg.net/vehicles/primary/e2af810e5f998397/2024-Honda-Civic-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360 360w, https://static.tcimg.net/vehicles/primary/e2af810e5f998397/2024-Honda-Civic-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720 720w"
-                                            alt="" role="presentation"></div>
+                                            alt="" role="presentation">
+                                    </div>
                                     <div class="hidden-lg-up pt-1 text-center">2024 Honda Civic</div>
                                 </div>
                                 <div class="hidden-md-up">
@@ -1480,7 +1559,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">Honda
                                                         Military Appreciation&nbsp;Offer</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -1512,7 +1592,8 @@
                                                     <div
                                                         class="bg-[#0e68ac] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">FINANCE</span></div>
+                                                            data-test="dealType">FINANCE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">
                                                         Special APR</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -1546,7 +1627,8 @@
                                                     <div
                                                         class="bg-[#343434] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">LEASE</span></div>
+                                                            data-test="dealType">LEASE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2024
                                                         Honda Civic&nbsp;Lease</h2>
                                                     <div class="flex grow flex-nowrap">
@@ -1630,7 +1712,8 @@
                                         <img class="picture-block" sizes="400px"
                                             src="https://static.tcimg.net/vehicles/primary/2f98c332d7c16ad4/2024-Toyota-Corolla-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360"
                                             srcset="https://static.tcimg.net/vehicles/primary/2f98c332d7c16ad4/2024-Toyota-Corolla-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360 360w, https://static.tcimg.net/vehicles/primary/2f98c332d7c16ad4/2024-Toyota-Corolla-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720 720w"
-                                            alt="" role="presentation"></div>
+                                            alt="" role="presentation">
+                                    </div>
                                     <div class="hidden-lg-up pt-1 text-center">2024 Toyota Corolla</div>
                                 </div>
                                 <div class="hidden-md-up">
@@ -1659,7 +1742,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">TFS
                                                         Toyota Lease Loyalty&nbsp;Program </h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -1691,7 +1775,8 @@
                                                     <div
                                                         class="bg-[#0e68ac] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">FINANCE</span></div>
+                                                            data-test="dealType">FINANCE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">TFS
                                                         Special APR T3 -&nbsp;LA</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -1724,7 +1809,8 @@
                                                     <div
                                                         class="bg-[#343434] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">LEASE</span></div>
+                                                            data-test="dealType">LEASE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2024
                                                         Toyota Corolla&nbsp;Lease</h2>
                                                     <div class="flex grow flex-nowrap">
@@ -1808,7 +1894,8 @@
                                         <img class="picture-block" sizes="400px"
                                             src="https://static.tcimg.net/vehicles/primary/0037d8af3b341851/2024-Honda-Accord-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360"
                                             srcset="https://static.tcimg.net/vehicles/primary/0037d8af3b341851/2024-Honda-Accord-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360 360w, https://static.tcimg.net/vehicles/primary/0037d8af3b341851/2024-Honda-Accord-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720 720w"
-                                            alt="" role="presentation"></div>
+                                            alt="" role="presentation">
+                                    </div>
                                     <div class="hidden-lg-up pt-1 text-center">2024 Honda Accord</div>
                                 </div>
                                 <div class="hidden-md-up">
@@ -1837,7 +1924,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">HFS
                                                         Lease Loyalty/Conquest</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -1869,7 +1957,8 @@
                                                     <div
                                                         class="bg-[#0e68ac] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">FINANCE</span></div>
+                                                            data-test="dealType">FINANCE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">
                                                         Special APR</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -1902,7 +1991,8 @@
                                                     <div
                                                         class="bg-[#343434] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">LEASE</span></div>
+                                                            data-test="dealType">LEASE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2024
                                                         Honda Accord&nbsp;Lease</h2>
                                                     <div class="flex grow flex-nowrap">
@@ -1986,7 +2076,8 @@
                                         <img class="picture-block" sizes="400px"
                                             src="https://static.tcimg.net/vehicles/primary/735fb852128cb024/2025-Toyota-Camry-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360"
                                             srcset="https://static.tcimg.net/vehicles/primary/735fb852128cb024/2025-Toyota-Camry-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360 360w, https://static.tcimg.net/vehicles/primary/735fb852128cb024/2025-Toyota-Camry-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720 720w"
-                                            alt="" role="presentation"></div>
+                                            alt="" role="presentation">
+                                    </div>
                                     <div class="hidden-lg-up pt-1 text-center">2025 Toyota Camry</div>
                                 </div>
                                 <div class="hidden-md-up">
@@ -2015,7 +2106,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">TFS
                                                         Toyota Lease Loyalty&nbsp;Program </h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2047,7 +2139,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">TFS
                                                         Military Program -&nbsp;$500 </h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2079,7 +2172,8 @@
                                                     <div
                                                         class="bg-[#0e68ac] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">FINANCE</span></div>
+                                                            data-test="dealType">FINANCE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">TFS
                                                         Special APR T3 -&nbsp;LA</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2166,7 +2260,8 @@
                                         <img class="picture-block" sizes="400px"
                                             src="https://static.tcimg.net/vehicles/primary/f3da9046a3d27ec7/2024-Hyundai-Elantra-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360"
                                             srcset="https://static.tcimg.net/vehicles/primary/f3da9046a3d27ec7/2024-Hyundai-Elantra-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360 360w, https://static.tcimg.net/vehicles/primary/f3da9046a3d27ec7/2024-Hyundai-Elantra-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720 720w"
-                                            alt="" role="presentation"></div>
+                                            alt="" role="presentation">
+                                    </div>
                                     <div class="hidden-lg-up pt-1 text-center">2024 Hyundai Elantra</div>
                                 </div>
                                 <div class="hidden-md-up">
@@ -2195,7 +2290,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">Retail
                                                         Bonus Cash</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2228,7 +2324,8 @@
                                                     <div
                                                         class="bg-[#0e68ac] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">FINANCE</span></div>
+                                                            data-test="dealType">FINANCE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">
                                                         Hyundai HMF Dealer&nbsp;Choice </h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2271,7 +2368,8 @@
                                                     <div
                                                         class="bg-[#343434] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">LEASE</span></div>
+                                                            data-test="dealType">LEASE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2024
                                                         Hyundai Elantra&nbsp;Lease</h2>
                                                     <div class="flex grow flex-nowrap">
@@ -2355,7 +2453,8 @@
                                         <img class="picture-block" sizes="400px"
                                             src="https://static.tcimg.net/vehicles/primary/fc39ce2bdc5a250f/2023-Dodge-Charger-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360"
                                             srcset="https://static.tcimg.net/vehicles/primary/fc39ce2bdc5a250f/2023-Dodge-Charger-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360 360w, https://static.tcimg.net/vehicles/primary/fc39ce2bdc5a250f/2023-Dodge-Charger-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720 720w"
-                                            alt="" role="presentation"></div>
+                                            alt="" role="presentation">
+                                    </div>
                                     <div class="hidden-lg-up pt-1 text-center">2023 Dodge Charger</div>
                                 </div>
                                 <div class="hidden-md-up">
@@ -2384,7 +2483,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2023
                                                         IDL Bonus&nbsp;Cash</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2417,7 +2517,8 @@
                                                     <div
                                                         class="bg-[#0e68ac] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">FINANCE</span></div>
+                                                            data-test="dealType">FINANCE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2023
                                                         SFS Standalone APR&nbsp;(72) </h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2451,7 +2552,8 @@
                                                     <div
                                                         class="bg-[#343434] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">LEASE</span></div>
+                                                            data-test="dealType">LEASE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2023
                                                         Dodge Charger&nbsp;Lease</h2>
                                                     <div class="flex grow flex-nowrap">
@@ -2535,7 +2637,8 @@
                                         <img class="picture-block" sizes="400px"
                                             src="https://static.tcimg.net/vehicles/primary/8eb2f7a014ad464b/2024-Ford-Mustang-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360"
                                             srcset="https://static.tcimg.net/vehicles/primary/8eb2f7a014ad464b/2024-Ford-Mustang-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360 360w, https://static.tcimg.net/vehicles/primary/8eb2f7a014ad464b/2024-Ford-Mustang-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720 720w"
-                                            alt="" role="presentation"></div>
+                                            alt="" role="presentation">
+                                    </div>
                                     <div class="hidden-lg-up pt-1 text-center">2024 Ford Mustang</div>
                                 </div>
                                 <div class="hidden-md-up">
@@ -2564,7 +2667,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">RCL
                                                         Customer Cash</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2597,7 +2701,8 @@
                                                     <div
                                                         class="bg-[#0e68ac] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">FINANCE</span></div>
+                                                            data-test="dealType">FINANCE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">Ford
                                                         Credit 90-Day Deferred Payment APR&nbsp;Financing</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2631,7 +2736,8 @@
                                                     <div
                                                         class="bg-[#343434] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">LEASE</span></div>
+                                                            data-test="dealType">LEASE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2024
                                                         Ford Mustang&nbsp;Lease</h2>
                                                     <div class="flex grow flex-nowrap">
@@ -2715,7 +2821,8 @@
                                         <img class="picture-block" sizes="400px"
                                             src="https://static.tcimg.net/vehicles/primary/f1bb175460a2174a/2023-Dodge-Challenger-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360"
                                             srcset="https://static.tcimg.net/vehicles/primary/f1bb175460a2174a/2023-Dodge-Challenger-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360 360w, https://static.tcimg.net/vehicles/primary/f1bb175460a2174a/2023-Dodge-Challenger-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720 720w"
-                                            alt="" role="presentation"></div>
+                                            alt="" role="presentation">
+                                    </div>
                                     <div class="hidden-lg-up pt-1 text-center">2023 Dodge Challenger</div>
                                 </div>
                                 <div class="hidden-md-up">
@@ -2744,7 +2851,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2023
                                                         National Power Dollars Retail Bonus&nbsp;Cash</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2777,7 +2885,8 @@
                                                     <div
                                                         class="bg-[#0e68ac] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">FINANCE</span></div>
+                                                            data-test="dealType">FINANCE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2023
                                                         SFS Standalone APR&nbsp;(72) </h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2811,7 +2920,8 @@
                                                     <div
                                                         class="bg-[#343434] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">LEASE</span></div>
+                                                            data-test="dealType">LEASE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2023
                                                         Dodge Challenger&nbsp;Lease</h2>
                                                     <div class="flex grow flex-nowrap">
@@ -2894,7 +3004,8 @@
                                         <img class="picture-block" sizes="400px"
                                             src="https://static.tcimg.net/vehicles/primary/ce2a0b1cb16e728c/2024-Kia-Forte-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360"
                                             srcset="https://static.tcimg.net/vehicles/primary/ce2a0b1cb16e728c/2024-Kia-Forte-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360 360w, https://static.tcimg.net/vehicles/primary/ce2a0b1cb16e728c/2024-Kia-Forte-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720 720w"
-                                            alt="" role="presentation"></div>
+                                            alt="" role="presentation">
+                                    </div>
                                     <div class="hidden-lg-up pt-1 text-center">2024 Kia Forte</div>
                                 </div>
                                 <div class="hidden-md-up">
@@ -2923,7 +3034,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">Kia
                                                         Customer Cash</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2955,7 +3067,8 @@
                                                     <div
                                                         class="bg-[#0e68ac] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">FINANCE</span></div>
+                                                            data-test="dealType">FINANCE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">KMF
                                                         Low APR&nbsp;Program</h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -2988,7 +3101,8 @@
                                                     <div
                                                         class="bg-[#343434] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">LEASE</span></div>
+                                                            data-test="dealType">LEASE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2024
                                                         Kia Forte&nbsp;Lease</h2>
                                                     <div class="flex grow flex-nowrap">
@@ -3072,7 +3186,8 @@
                                         <img class="picture-block" sizes="400px"
                                             src="https://static.tcimg.net/vehicles/primary/1c9b9245c2179921/2024-Toyota-Prius-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360"
                                             srcset="https://static.tcimg.net/vehicles/primary/1c9b9245c2179921/2024-Toyota-Prius-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=180&amp;w=360 360w, https://static.tcimg.net/vehicles/primary/1c9b9245c2179921/2024-Toyota-Prius-white-full_color-driver_side_front_quarter.png?auto=format&amp;h=360&amp;w=720 720w"
-                                            alt="" role="presentation"></div>
+                                            alt="" role="presentation">
+                                    </div>
                                     <div class="hidden-lg-up pt-1 text-center">2024 Toyota Prius</div>
                                 </div>
                                 <div class="hidden-md-up">
@@ -3101,7 +3216,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">TFS
                                                         Toyota Lease Loyalty&nbsp;Program </h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -3133,7 +3249,8 @@
                                                     <div
                                                         class="bg-[#377e6e] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white" data-test="dealType">CASH
-                                                            OFFER</span></div>
+                                                            OFFER</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">TFS
                                                         Military Program -&nbsp;$500 </h2>
                                                     <div class="flex flex-nowrap justify-between">
@@ -3165,7 +3282,8 @@
                                                     <div
                                                         class="bg-[#343434] mb-3 px-2-5 py-1 rounded self-start inline-block">
                                                         <span class="font-bold text-white"
-                                                            data-test="dealType">LEASE</span></div>
+                                                            data-test="dealType">LEASE</span>
+                                                    </div>
                                                     <h2 class="heading-base mb-2 font-bold" style="flex-grow: 2;">2024
                                                         Toyota Prius&nbsp;Lease</h2>
                                                     <div class="flex grow flex-nowrap">
@@ -3194,621 +3312,878 @@
                     </div>
                 </div>
             </section>
-            <section class="bg-light">
-                <div class="container py-3">
-                    <div class="text-center">
-                        <div class="mb-4 md:mb-6">
-                            <h2 class="heading-3 normal-case py-3" data-test="dealsContentCashDealsHeading">Car Cash
-                                Deals</h2>
-                            <p data-test="dealsContentCashDeals">Right now is a great time to shop for a new car. If you
-                                are purchasing, car models have cash offers of $400 - $5,000. Cars with cash deals include
-                                the 2024 Honda Civic with $500 cash back, 2024 Toyota Corolla with $1,000 cash back, and
-                                2024 Honda Accord with $1,250 cash back.</p>
-                        </div>
-                        <div class="mb-4 md:mb-6">
-                            <h2 class="heading-3 normal-case py-3" data-test="dealsContentLeaseDealsHeading">Car Lease
-                                Deals</h2>
-                            <p data-test="dealsContentLeaseDeals">Want to get into a new car for a low monthly payment?
-                                Then these car leasing deals might be right for you. Car lease deals for vehicles like the
-                                2024 Hyundai Elantra can be had for as low as $254 per month for a 36-month term when you
-                                pay $2,000 due at signing. Browse all car leases and see the real averages people pay per
-                                model.</p>
-                        </div>
-                        <div class="mb-4 md:mb-6">
-                            <h2 class="heading-3 normal-case py-3" data-test="dealsContentFinanceDealsHeading">Car
-                                Finance Deals</h2>
-                            <p data-test="dealsContentFinanceDeals">If you opt to finance a car, you may be qualified from
-                                rates as low as 1.9% for 36 months. The cars offering these terms include the 2024 Ford
-                                Mustang.</p>
-                        </div>
-                    </div>
-                    <h2 class="heading-3 normal-case mt-6 text-center" data-test="incentivesMoreInfoHeading">More
-                        Information About&nbsp;Incentives</h2>
-                    <p class="px-5 pt-2-5 pb-6 text-center">Vehicle incentives and rebates are programs made available by
-                        car manufacturers to encourage vehicle sales by providing consumers with cash allowances or
-                        favorable financing/lease rates. Incentives can vary by location, vehicle configuration, as well as
-                        the buyer’s method of payment (cash purchase, financing, lease). Some incentives can be stacked with
-                        other incentive programs, and some have eligibility conditions that must be met to qualify.
-                        Additional incentives are sometimes targeted to customer segment groups like college graduates,
-                        military members, etc. Incentives are normally subject to change and governed by specific
-                        eligibility rules. Please see your local dealer for details on incentives that might be available to
-                        you.</p>
-                </div>
-            </section>
-            <section>
-                <div class="container pb-3 pt-4 md:pt-5">
-                    <h2 class="heading-3 normal-case pb-3 text-center" data-test="incentivesMoreInfoHeading">Car Deals
-                        &amp; Incentives&nbsp;FAQs</h2>
-                    <div class="row mb-3 lg:mb-4">
-                        <div class="col-12">
-                            <div class="expandable-list-item"><button
-                                    class="flex flex-nowrap justify-between expandable-list-item-button items-center"
-                                    aria-expanded="false">
-                                    <div class="heading-4 normal-case w-full px-3 py-3">
-                                        <h3 class="heading-4 normal-case">What is customer&nbsp;cash?</h3>
-                                    </div><span class="ml-3 whitespace-nowrap">
-                                        <div style="position: static;"><svg viewBox="0 0 24 24"
-                                                class="icon icon-fill-default my-3 mr-3" aria-hidden="true"
-                                                data-test-item="down" style="width: 21px; height: 21px;">
-                                                <use href="#keyboard_arrow_down"></use>
-                                            </svg></div>
-                                    </span>
-                                </button>
-                                <div class="expandable-list-item-collapse border-t collapse">
-                                    <div class="px-3 py-3 expandable-list-item-shadow">
-                                        <div class="whitespace-pre-line">Customer cash is a direct discount or rebate
-                                            taken off of the price of the vehicle. Often, these incentives require buyers to
-                                            quality based on specific criteria such as being a recent college graduate or a
-                                            current owner of that manufacturer’s vehicle. However, this isn’t always the
-                                            case, and manufacturers can give some cash back offers to any customer.</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="expandable-list-item"><button
-                                    class="flex flex-nowrap justify-between expandable-list-item-button items-center"
-                                    aria-expanded="false">
-                                    <div class="heading-4 normal-case w-full px-3 py-3">
-                                        <h3 class="heading-4 normal-case">What are common finance&nbsp;deals?</h3>
-                                    </div><span class="ml-3 whitespace-nowrap">
-                                        <div style="position: static;"><svg viewBox="0 0 24 24"
-                                                class="icon icon-fill-default my-3 mr-3" aria-hidden="true"
-                                                data-test-item="down" style="width: 21px; height: 21px;">
-                                                <use href="#keyboard_arrow_down"></use>
-                                            </svg></div>
-                                    </span>
-                                </button>
-                                <div class="expandable-list-item-collapse border-t collapse">
-                                    <div class="px-3 py-3 expandable-list-item-shadow">
-                                        <div class="whitespace-pre-line">Manufacturers can offer buyers an interest rate
-                                            or APR with a specific term limit (monthly payments) to be more competitive in
-                                            the overall cost of the vehicle. It is common to see interest rates as low as 0%
-                                            with terms of 48-60 months. It is important to keep in mind that a customer
-                                            typically needs a high credit score to qualify.</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="expandable-list-item"><button
-                                    class="flex flex-nowrap justify-between expandable-list-item-button items-center"
-                                    aria-expanded="false">
-                                    <div class="heading-4 normal-case w-full px-3 py-3">
-                                        <h3 class="heading-4 normal-case">How do lease deals&nbsp;work?</h3>
-                                    </div><span class="ml-3 whitespace-nowrap">
-                                        <div style="position: static;"><svg viewBox="0 0 24 24"
-                                                class="icon icon-fill-default my-3 mr-3" aria-hidden="true"
-                                                data-test-item="down" style="width: 21px; height: 21px;">
-                                                <use href="#keyboard_arrow_down"></use>
-                                            </svg></div>
-                                    </span>
-                                </button>
-                                <div class="expandable-list-item-collapse border-t collapse">
-                                    <div class="px-3 py-3 expandable-list-item-shadow">
-                                        <div class="whitespace-pre-line">Typically, a manufacturer will offer a lease deal
-                                            through their financial subsidiary company. Leasing allows them to over-inflate
-                                            the residual value of the car at the end of the lease, meaning car dealerships
-                                            can offer much more competitive terms when it comes to the monthly payment and
-                                            depreciation of the vehicle because the consumer is paying less overall across
-                                            the lease.</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="expandable-list-item"><button
-                                    class="flex flex-nowrap justify-between expandable-list-item-button items-center"
-                                    aria-expanded="false">
-                                    <div class="heading-4 normal-case w-full px-3 py-3">
-                                        <h3 class="heading-4 normal-case">Which is better, finance, cash back, or
-                                            lease&nbsp;deal?</h3>
-                                    </div><span class="ml-3 whitespace-nowrap">
-                                        <div style="position: static;"><svg viewBox="0 0 24 24"
-                                                class="icon icon-fill-default my-3 mr-3" aria-hidden="true"
-                                                data-test-item="down" style="width: 21px; height: 21px;">
-                                                <use href="#keyboard_arrow_down"></use>
-                                            </svg></div>
-                                    </span>
-                                </button>
-                                <div class="expandable-list-item-collapse border-t collapse">
-                                    <div class="px-3 py-3 expandable-list-item-shadow">
-                                        <div class="whitespace-pre-line">The best incentives deal is the one that fits
-                                            your budget. If you are OK with having a slightly higher monthly payment, a 0%
-                                            finance offer is hard to beat. If you don’t want to keep the car for more than a
-                                            few years, leasing is likely the way to go. However, if you want the lowest
-                                            total upfront cost, a cash back offer might make the most sense.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="container container-max-width-3 pb-5 pt-4 md:pt-5" data-test="dealsSeoFooter">
+        </div>
+        <div class="page-faqs">
+            <div class="container">
                 <div class="row">
-                    <div class="text-ellipsis col-12 col-sm-6 col-lg-3">
-                        <h2 class="heading-5 normal-case pb-2" data-test="seoLinkColumnHeading">Vehicle Rankings</h2>
-                        <div class="see-more space-y-2" data-ignore-contrast="true">
-                            <div data-test="seeMoreBody" style="overflow: hidden; max-height: 10.5em;">
-                                <div>
-                                    <ul class="space-y-2 whitespace-nowrap">
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/cars/">Best Cars</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/trucks/">Best
-                                                Trucks</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/suvs/">Best SUVs</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/sedans/">Best
-                                                Sedans</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/hatchbacks/">Best
-                                                Hatchbacks</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/wagons/">Best
-                                                Wagons</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/coupes/">Best
-                                                Coupes</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/convertibles/">Best
-                                                Convertibles</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/vans/">Best Vans</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/fuel-hybrid/">Best
-                                                Hybrids</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/best-cars-trucks/fuel-plug-in-hybrid/">Best Plug-In Hybrids</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/fuel-electric/">Best
-                                                Electric Vehicles</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/best-cars-trucks/fuel-diesel/">Best
-                                                Diesel Vehicles</a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-lg-4">
+                        <!-- Faqs Sidebar Start -->
+                        <div class="faq-sidebar">
+                            <!-- Faqs Catagery List Start -->
+                            <div class="faq-catagery-list wow fadeInUp" data-wow-delay="0.25s"
+                                style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                                <ul>
+                                    <li><a href="#general_information">general information</a></li>
+                                    <li><a href="#booking_and_reservations">booking and reservations</a></li>
+                                    <li><a href="#pricing_and_payment">pricing and payment</a></li>
+                                    <li><a href="#vehicle_information">vehicle information</a></li>
+                                </ul>
                             </div>
-                            <div class="text-left mt-0" data-test="seeMoreLinkContainer"><button type="button"
-                                    class="link-button see-more-link" data-test="seeMoreButton"><span
-                                        class="see-more-link-text">See More</span><svg viewBox="0 0 24 24"
-                                        class="icon icon-fill-default see-more-icon-angle" aria-hidden="true"
-                                        style="width: 24px; height: 24px;">
-                                        <use href="#keyboard_arrow_down"></use>
-                                    </svg></button></div>
-                            <div class="text-center mt-0" data-test="seeLessLinkContainer" style="display: none">
-                                <button type="button" class="link-button see-more-link" data-test="seeLessButton">
-                                    <span class="see-less-link-text">See Less</span>
-                                    <svg viewBox="0 0 24 24" class="icon icon-fill-default see-less-icon-angle"
-                                        aria-hidden="true" style="width: 24px; height: 24px;">
-                                        <use href="#keyboard_arrow_up"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div data-test="seeMoreFade" class="see-more-fade"></div>
+                            <!-- Faqs Catagery List End -->
                         </div>
+                        <!-- Faqs Sidebar End -->
                     </div>
-                    <div class="text-ellipsis col-12 col-sm-6 col-lg-3">
-                        <h2 class="heading-5 normal-case pb-2" data-test="seoLinkColumnHeading">Popular New Cars</h2>
-                        <div class="see-more space-y-2" data-ignore-contrast="true">
-                            <div data-test="seeMoreBody" style="overflow: hidden; max-height: 10.5em;">
-                                <div>
-                                    <ul class="space-y-2 whitespace-nowrap">
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/dodge/challenger/">New Dodge
-                                                Challenger</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/ford/edge/">New Ford Edge</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/ford/escape/">New Ford Escape</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/ford/explorer/">New Ford Explorer</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/ford/f-150/">New Ford F-150</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/honda/accord/">New Honda Accord</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/honda/civic/">New Honda Civic</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/honda/cr-v/">New Honda CR-V</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/honda/pilot/">New Honda Pilot</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/hyundai/elantra/">New Hyundai
-                                                Elantra</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/hyundai/kona/">New Hyundai Kona</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/hyundai/santa-fe/">New Hyundai Santa
-                                                Fe</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/jeep/cherokee/">New Jeep Cherokee</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/jeep/grand-cherokee/">New Jeep Grand
-                                                Cherokee</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/jeep/renegade/">New Jeep Renegade</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/jeep/wrangler/">New Jeep Wrangler</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/kia/sorento/">New Kia Sorento</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/kia/stinger/">New Kia Stinger</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/mazda/cx-5/">New Mazda CX-5</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/nissan/rogue/">New Nissan Rogue</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/subaru/ascent/">New Subaru Ascent</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/subaru/crosstrek/">New Subaru
-                                                Crosstrek</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/subaru/forester/">New Subaru
-                                                Forester</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/subaru/outback/">New Subaru Outback</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal"
-                                                href="/new-cars-for-sale/listings/toyota/4runner/">New Toyota 4Runner</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="text-left mt-0" data-test="seeMoreLinkContainer"><button type="button"
-                                    class="link-button see-more-link" data-test="seeMoreButton"><span
-                                        class="see-more-link-text">See More</span><svg viewBox="0 0 24 24"
-                                        class="icon icon-fill-default see-more-icon-angle" aria-hidden="true"
-                                        style="width: 24px; height: 24px;">
-                                        <use href="#keyboard_arrow_down"></use>
-                                    </svg></button></div>
-                            <div class="text-center mt-0" data-test="seeLessLinkContainer" style="display: none">
-                                <button type="button" class="link-button see-more-link" data-test="seeLessButton">
-                                    <span class="see-less-link-text">See Less</span>
-                                    <svg viewBox="0 0 24 24" class="icon icon-fill-default see-less-icon-angle"
-                                        aria-hidden="true" style="width: 24px; height: 24px;">
-                                        <use href="#keyboard_arrow_up"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div data-test="seeMoreFade" class="see-more-fade"></div>
-                        </div>
-                    </div>
-                    <div class="text-ellipsis col-12 col-sm-6 col-lg-3">
-                        <h2 class="heading-5 normal-case pb-2" data-test="seoLinkColumnHeading">Research Cars</h2>
-                        <div class="see-more space-y-2" data-ignore-contrast="true">
-                            <div data-test="seeMoreBody" style="overflow: hidden; max-height: 10.5em;">
-                                <div>
-                                    <ul class="space-y-2 whitespace-nowrap">
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/dodge/challenger/">2023 Dodge
-                                                Challenger</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/ford/edge/">2024 Ford Edge</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/ford/escape/">2024 Ford
-                                                Escape</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/ford/explorer/">2024 Ford
-                                                Explorer</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/ford/f-150/">2024 Ford
-                                                F-150</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/honda/accord/">2024 Honda
-                                                Accord</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/honda/civic/">2024 Honda
-                                                Civic</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/honda/cr-v/">2024 Honda
-                                                CR-V</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/honda/pilot/">2025 Honda
-                                                Pilot</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/hyundai/elantra/">2024 Hyundai
-                                                Elantra</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/hyundai/kona/">2024 Hyundai
-                                                Kona</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/hyundai/santa-fe/">2024
-                                                Hyundai Santa Fe</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/jeep/cherokee/">2023 Jeep
-                                                Cherokee</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/jeep/grand-cherokee/">2024
-                                                Jeep Grand Cherokee</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/jeep/renegade/">2023 Jeep
-                                                Renegade</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/jeep/wrangler/">2024 Jeep
-                                                Wrangler</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/kia/sorento/">2024 Kia
-                                                Sorento</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/kia/stinger/">2023 Kia
-                                                Stinger</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/mazda/cx-5/">2025 Mazda
-                                                CX-5</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/nissan/rogue/">2024 Nissan
-                                                Rogue</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/subaru/ascent/">2024 Subaru
-                                                Ascent</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/subaru/crosstrek/">2024 Subaru
-                                                Crosstrek</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/subaru/forester/">2025 Subaru
-                                                Forester</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/subaru/outback/">2024 Subaru
-                                                Outback</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/overview/toyota/4runner/">2024 Toyota
-                                                4Runner</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="text-left mt-0" data-test="seeMoreLinkContainer"><button type="button"
-                                    class="link-button see-more-link" data-test="seeMoreButton"><span
-                                        class="see-more-link-text">See More</span><svg viewBox="0 0 24 24"
-                                        class="icon icon-fill-default see-more-icon-angle" aria-hidden="true"
-                                        style="width: 24px; height: 24px;">
-                                        <use href="#keyboard_arrow_down"></use>
-                                    </svg></button></div>
-                            <div class="text-center mt-0" data-test="seeLessLinkContainer" style="display: none">
-                                <button type="button" class="link-button see-more-link" data-test="seeLessButton">
-                                    <span class="see-less-link-text">See Less</span>
-                                    <svg viewBox="0 0 24 24" class="icon icon-fill-default see-less-icon-angle"
-                                        aria-hidden="true" style="width: 24px; height: 24px;">
-                                        <use href="#keyboard_arrow_up"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div data-test="seeMoreFade" class="see-more-fade"></div>
-                        </div>
-                    </div>
-                    <div class="text-ellipsis col-12 col-sm-6 col-lg-3">
-                        <h2 class="heading-5 normal-case pb-2" data-test="seoLinkColumnHeading">Browse Inventory</h2>
-                        <div class="see-more space-y-2" data-ignore-contrast="true">
-                            <div data-test="seeMoreBody" style="overflow: hidden; max-height: 10.5em;">
-                                <div>
-                                    <ul class="space-y-2 whitespace-nowrap">
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ca/">California
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/tx/">Texas Inventory</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/fl/">Florida
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ny/">New York
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/pa/">Pennsylvania
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/il/">Illinois
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/oh/">Ohio Inventory</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ga/">Georgia
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/nc/">North Carolina
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/mi/">Michigan
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/nj/">New Jersey
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/va/">Virginia
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/wa/">Washington
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/az/">Arizona
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ma/">Massachusetts
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/tn/">Tennessee
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/in/">Indiana
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/mo/">Missouri
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/md/">Maryland
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/wi/">Wisconsin
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/co/">Colorado
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/mn/">Minnesota
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/sc/">South Carolina
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/al/">Alabama
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/la/">Louisiana
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ky/">Kentucky
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/or/">Oregon Inventory</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ok/">Oklahoma
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ct/">Connecticut
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ut/">Utah Inventory</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ia/">Iowa Inventory</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/nv/">Nevada Inventory</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ar/">Arkansas
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ms/">Mississippi
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ks/">Kansas Inventory</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/nm/">New Mexico
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ne/">Nebraska
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/wv/">West Virginia
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/id/">Idaho Inventory</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/hi/">Hawaii Inventory</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/nh/">New Hampshire
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/me/">Maine Inventory</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/mt/">Montana
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ri/">Rhode Island
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/de/">Delaware
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/sd/">South Dakota
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/nd/">North Dakota
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/ak/">Alaska Inventory</a>
-                                        </li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/dc/">District of Columbia
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/vt/">Vermont
-                                                Inventory</a></li>
-                                        <li class=""><a aria-current="false" aria-disabled="false"
-                                                class="link-item-minimal" href="/sitemap/state/wy/">Wyoming
-                                                Inventory</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="text-left mt-0" data-test="seeMoreLinkContainer"><button type="button"
-                                    class="link-button see-more-link" data-test="seeMoreButton"><span
-                                        class="see-more-link-text">See More</span><svg viewBox="0 0 24 24"
-                                        class="icon icon-fill-default see-more-icon-angle" aria-hidden="true"
-                                        style="width: 24px; height: 24px;">
-                                        <use href="#keyboard_arrow_down"></use>
-                                    </svg></button></div>
 
-                            <div class="text-center mt-0" data-test="seeLessLinkContainer" style="display: none">
-                                <button type="button" class="link-button see-more-link" data-test="seeLessButton">
-                                    <span class="see-less-link-text">See Less</span>
-                                    <svg viewBox="0 0 24 24" class="icon icon-fill-default see-less-icon-angle"
-                                        aria-hidden="true" style="width: 24px; height: 24px;">
-                                        <use href="#keyboard_arrow_up"></use>
-                                    </svg>
-                                </button>
+                    <div class="col-lg-8">
+                        <!-- FAQs section start -->
+                        <div class="rental-condition-accordion" id="general_information">
+                            <div class="section-title faqs-section-title">
+                                <h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">FAQs
+                                </h3>
+                                <h2 class="text-anime-style-3" data-cursor="-opaque" style="perspective: 400px;">
+                                    <div class="split-line"
+                                        style="display: block; text-align: start; position: relative;">
+                                        <div style="position:relative;display:inline-block;">
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                G</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                e</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                n</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                e</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                r</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                a</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                l</div>
+                                        </div>
+                                        <div style="position:relative;display:inline-block;">
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                i</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                n</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                f</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                o</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                r</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                m</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                a</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                t</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                i</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                o</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                n</div>
+                                        </div>
+                                    </div>
+                                </h2>
                             </div>
-                            <div data-test="seeMoreFade" class="see-more-fade"></div>
+                            <!-- FAQ Accordion Start -->
+                            <div class="faq-accordion" id="accordion">
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp"
+                                    style="visibility: visible; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse1" aria-expanded="true"
+                                            aria-controls="collapse1">
+                                            What types of vehicles are available for rent?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse1" class="accordion-collapse collapse show"
+                                        aria-labelledby="heading1" data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept international driver's licenses. An additional
+                                                government-issued ID, such as a passport, is also required.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.25s"
+                                    style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading2">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse2"
+                                            aria-expanded="false" aria-controls="collapse2">
+                                            Where are your rental locations?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept international driver's licenses. An additional
+                                                government-issued ID, such as a passport, is also required.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s"
+                                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse3"
+                                            aria-expanded="false" aria-controls="collapse3">
+                                            What are your hours of operation?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept international driver's licenses. An additional
+                                                government-issued ID, such as a passport, is also required.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+                            </div>
+                            <!-- FAQ Accordion End -->
                         </div>
+                        <!-- FAQs section End -->
+
+                        <!-- FAQs section start -->
+                        <div class="rental-condition-accordion" id="booking_and_reservations">
+                            <div class="section-title faqs-section-title">
+                                <h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">FAQs
+                                </h3>
+                                <h2 class="text-anime-style-3" data-cursor="-opaque" style="perspective: 400px;">
+                                    <div class="split-line"
+                                        style="display: block; text-align: start; position: relative;">
+                                        <div style="position:relative;display:inline-block;">
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                B</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                o</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                o</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                k</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                i</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                n</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                g</div>
+                                        </div>
+                                        <div style="position:relative;display:inline-block;">
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                a</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                n</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                d</div>
+                                        </div>
+                                        <div style="position:relative;display:inline-block;">
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                r</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                e</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                s</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                e</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                r</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                v</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                a</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                t</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                i</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                o</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                n</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                s</div>
+                                        </div>
+                                    </div>
+                                </h2>
+                            </div>
+                            <!-- FAQ Accordion Start -->
+                            <div class="faq-accordion" id="accordion1">
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.75s"
+                                    style="visibility: visible; animation-delay: 0.75s; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading4">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse4" aria-expanded="false"
+                                            aria-controls="collapse4">
+                                            How do I make a reservation?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse4" class="accordion-collapse collapse show"
+                                        aria-labelledby="heading4" data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <p>Yes, you can rent a car for someone else, but the primary driver must be
+                                                present at the time of rental to provide their driver's license and sign the
+                                                rental agreement.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="1s"
+                                    style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading5">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse5"
+                                            aria-expanded="false" aria-controls="collapse5">
+                                            Can I modify or cancel my reservation?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                                        data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <p>Yes, you can rent a car for someone else, but the primary driver must be
+                                                present at the time of rental to provide their driver's license and sign the
+                                                rental agreement.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s"
+                                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading6">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse6"
+                                            aria-expanded="false" aria-controls="collapse6">
+                                            What is your cancellation policy?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                                        data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <p>Yes, you can rent a car for someone else, but the primary driver must be
+                                                present at the time of rental to provide their driver's license and sign the
+                                                rental agreement.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+                            </div>
+                            <!-- FAQ Accordion End -->
+                        </div>
+                        <!-- FAQs section End -->
+
+                        <!-- FAQs section start -->
+                        <div class="rental-condition-accordion" id="pricing_and_payment">
+                            <div class="section-title faqs-section-title">
+                                <h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">FAQs
+                                </h3>
+                                <h2 class="text-anime-style-3" data-cursor="-opaque" style="perspective: 400px;">
+                                    <div class="split-line"
+                                        style="display: block; text-align: start; position: relative;">
+                                        <div style="position:relative;display:inline-block;">
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                P</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                r</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                i</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                c</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                i</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                n</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                g</div>
+                                        </div>
+                                        <div style="position:relative;display:inline-block;">
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                a</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                n</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                d</div>
+                                        </div>
+                                        <div style="position:relative;display:inline-block;">
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                p</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                a</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                y</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                m</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                e</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                n</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                t</div>
+                                        </div>
+                                    </div>
+                                </h2>
+                            </div>
+                            <!-- FAQ Accordion Start -->
+                            <div class="faq-accordion" id="accordion2">
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp"
+                                    style="visibility: visible; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading7">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse7" aria-expanded="true"
+                                            aria-controls="collapse7">
+                                            What forms of payment do you accept?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse7" class="accordion-collapse collapse show"
+                                        aria-labelledby="heading7" data-bs-parent="#accordion2">
+                                        <div class="accordion-body">
+                                            <p>Reservations can be made online through our website, by calling our customer
+                                                service hotline, or by visiting one of our rental locations in person.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.25s"
+                                    style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading8">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse8"
+                                            aria-expanded="false" aria-controls="collapse8">
+                                            Are there any hidden fees?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                                        data-bs-parent="#accordion2">
+                                        <div class="accordion-body">
+                                            <p>Reservations can be made online through our website, by calling our customer
+                                                service hotline, or by visiting one of our rental locations in person.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s"
+                                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading9">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse9"
+                                            aria-expanded="false" aria-controls="collapse9">
+                                            Do you require a deposit?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                                        data-bs-parent="#accordion2">
+                                        <div class="accordion-body">
+                                            <p>Reservations can be made online through our website, by calling our customer
+                                                service hotline, or by visiting one of our rental locations in person.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+                            </div>
+                            <!-- FAQ Accordion End -->
+                        </div>
+                        <!-- FAQs section End -->
+
+                        <!-- FAQs section start -->
+                        <div class="rental-condition-accordion" id="vehicle_information">
+                            <div class="section-title faqs-section-title">
+                                <h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">FAQs
+                                </h3>
+                                <h2 class="text-anime-style-3" data-cursor="-opaque" style="perspective: 400px;">
+                                    <div class="split-line"
+                                        style="display: block; text-align: start; position: relative;">
+                                        <div style="position:relative;display:inline-block;">
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                V</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                e</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                h</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                i</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                c</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                l</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                e</div>
+                                        </div>
+                                        <div style="position:relative;display:inline-block;">
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                i</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                n</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                f</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                o</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                r</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                m</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                a</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                t</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                i</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                o</div>
+                                            <div
+                                                style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                                n</div>
+                                        </div>
+                                    </div>
+                                </h2>
+                            </div>
+                            <!-- FAQ Accordion Start -->
+                            <div class="faq-accordion" id="accordion3">
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp"
+                                    style="visibility: visible; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading10">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse10" aria-expanded="true"
+                                            aria-controls="collapse10">
+                                            Are your vehicles insured?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse10" class="accordion-collapse collapse show"
+                                        aria-labelledby="heading10" data-bs-parent="#accordion3">
+                                        <div class="accordion-body">
+                                            <p>We offer a diverse fleet of vehicles, including economy cars, compact cars,
+                                                SUVs, luxury cars, and more to suit various needs and preferences.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.25s"
+                                    style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading11">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse11"
+                                            aria-expanded="false" aria-controls="collapse11">
+                                            Do you offer vehicles with automatic transmission?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse11" class="accordion-collapse collapse"
+                                        aria-labelledby="heading11" data-bs-parent="#accordion3">
+                                        <div class="accordion-body">
+                                            <p>We offer a diverse fleet of vehicles, including economy cars, compact cars,
+                                                SUVs, luxury cars, and more to suit various needs and preferences.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s"
+                                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                                    <h2 class="accordion-header" id="heading12">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse12"
+                                            aria-expanded="false" aria-controls="collapse12">
+                                            Can I choose a specific vehicle model?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse12" class="accordion-collapse collapse"
+                                        aria-labelledby="heading12" data-bs-parent="#accordion3">
+                                        <div class="accordion-body">
+                                            <p>We offer a diverse fleet of vehicles, including economy cars, compact cars,
+                                                SUVs, luxury cars, and more to suit various needs and preferences.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+                            </div>
+                            <!-- FAQ Accordion End -->
+                        </div>
+                        <!-- FAQs section End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-testimonial">
+            <div class="container">
+                <div class="row section-row">
+                    <div class="col-lg-12">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">testimonials
+                            </h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque" style="perspective: 400px;">
+                                <div class="split-line" style="display: block; text-align: center; position: relative;">
+                                    <div style="position:relative;display:inline-block;">
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            W</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            h</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            a</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            t</div>
+                                    </div>
+                                    <div style="position:relative;display:inline-block;">
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            o</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            u</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            r</div>
+                                    </div>
+                                    <div style="position:relative;display:inline-block;">
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            c</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            u</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            s</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            t</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            o</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            m</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            e</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            r</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            s</div>
+                                    </div>
+                                    <div style="position:relative;display:inline-block;">
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            a</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            r</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            e</div>
+                                    </div>
+                                </div>
+                                <div class="split-line" style="display: block; text-align: center; position: relative;">
+                                    <div style="position:relative;display:inline-block;">
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            s</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            a</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            y</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            i</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            n</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            g</div>
+                                    </div>
+                                    <div style="position:relative;display:inline-block;">
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            a</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            b</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            o</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            u</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            t</div>
+                                    </div>
+                                    <div style="position:relative;display:inline-block;">
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            u</div>
+                                        <div
+                                            style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">
+                                            s</div>
+                                    </div>
+                                </div>
+                            </h2>
+                        </div>
+                        <!-- Section Title End -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Testimonial Slider Start -->
+                        <div class="testimonial-slider">
+                            <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                                <div class="swiper-wrapper" data-cursor-text="Drag"
+                                    id="swiper-wrapper-76746779e8e44012" aria-live="off"
+                                    style="transition-duration: 0ms; transform: translate3d(-433.333px, 0px, 0px); transition-delay: 0ms;">
+                                    <!-- Testimonial Slide Start -->
+
+                                    <!-- Testimonial Slide End -->
+
+                                    <!-- Testimonial Slide Start -->
+
+                                    <!-- Testimonial Slide End -->
+
+                                    <!-- Testimonial Slide Start -->
+
+                                    <!-- Testimonial Slide End -->
+
+                                    <!-- Testimonial Slide Start -->
+                                    <div class="swiper-slide swiper-slide-prev" role="group" aria-label="4 / 4"
+                                        data-swiper-slide-index="3" style="width: 403.333px; margin-right: 30px;">
+                                        <div class="testimonial-item">
+                                            <div class="testimonial-header">
+                                                <div class="testimonial-rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <p>Renting a car from nova ride was a great decision. Not only did I get
+                                                        a reliable and comfortable vehicle, but the prices were also very
+                                                        competitive.</p>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-body">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="{{ asset('novaride/images/author-4.jpg') }}"
+                                                            alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="author-content">
+                                                    <h3>alis white</h3>
+                                                    <p>project manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Testimonial Slide End -->
+                                    <div class="swiper-slide swiper-slide-active"
+                                        style="width: 403.333px; margin-right: 30px;" role="group"
+                                        aria-label="1 / 4" data-swiper-slide-index="0">
+                                        <div class="testimonial-item">
+                                            <div class="testimonial-header">
+                                                <div class="testimonial-rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <p>Renting a car from nova ride was a great decision. Not only did I get
+                                                        a reliable and comfortable vehicle, but the prices were also very
+                                                        competitive.</p>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-body">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="{{ asset('novaride/images/author-1.jpg') }}"
+                                                            alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="author-content">
+                                                    <h3>floyd miles</h3>
+                                                    <p>project manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-next"
+                                        style="width: 403.333px; margin-right: 30px;" role="group"
+                                        aria-label="2 / 4" data-swiper-slide-index="1">
+                                        <div class="testimonial-item">
+                                            <div class="testimonial-header">
+                                                <div class="testimonial-rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <p>Renting a car from nova ride was a great decision. Not only did I get
+                                                        a reliable and comfortable vehicle, but the prices were also very
+                                                        competitive.</p>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-body">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="{{ asset('novaride/images/author-2.jpg') }}"
+                                                            alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="author-content">
+                                                    <h3>annette black</h3>
+                                                    <p>project manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 403.333px; margin-right: 30px;"
+                                        role="group" aria-label="3 / 4" data-swiper-slide-index="2">
+                                        <div class="testimonial-item">
+                                            <div class="testimonial-header">
+                                                <div class="testimonial-rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <p>Renting a car from nova ride was a great decision. Not only did I get
+                                                        a reliable and comfortable vehicle, but the prices were also very
+                                                        competitive.</p>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-body">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="{{ asset('novaride/images/author-3.jpg') }}"
+                                                            alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="author-content">
+                                                    <h3>leslie alexander</h3>
+                                                    <p>project manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-btn">
+                                    <div class="testimonial-button-prev" tabindex="0" role="button"
+                                        aria-label="Previous slide" aria-controls="swiper-wrapper-76746779e8e44012">
+                                    </div>
+                                    <div class="testimonial-button-next" tabindex="0" role="button"
+                                        aria-label="Next slide" aria-controls="swiper-wrapper-76746779e8e44012"></div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                        <!-- Testimonial Slider End -->
                     </div>
                 </div>
             </div>
