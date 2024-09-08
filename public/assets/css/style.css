@@ -24742,14 +24742,14 @@
       @media (min-width: 768px) {
         .global-footer {
             display: block;
-            margin-top: 2.5rem;
+            margin-top: 0;
             padding-top: 2.5rem;
         }
     }
     .global-footer {
         border-top: 2px solid #e0e4e3;
         font-size: .875rem;
-        margin-top: 2.5rem;
+        margin-top: 0;
         padding-top: .5rem;
         position: relative;
     }
