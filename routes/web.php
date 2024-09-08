@@ -33,7 +33,7 @@ Route::view('/contact-us', 'site.contact-us'); //done
 Route::view('/partner', 'site.partner'); //done
 Route::view('/oem', 'site.oem'); //done
 Route::view('/about-us', 'site.about-us'); //done
-Route::view('/careers', 'site.careers'); //done
+// Route::view('/careers', 'site.careers'); //done
 Route::view('/terms', 'site.terms'); //done
 Route::view('/privacy', 'site.privacy'); //done
 Route::view('/privacy-right', 'site.privacy-right'); //done
