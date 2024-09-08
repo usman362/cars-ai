@@ -22,9 +22,9 @@ Route::view('/new-car-listings', 'site.new-car-listings'); //done
 Route::view('/shop-new', 'site.shop-new'); //done
 Route::view('/used-car-listings', 'site.used-car-listings'); //done
 Route::view('/used-cars-for-sale', 'site.used-cars-for-sale'); //done
-Route::view('/car-affordability-calculator', 'site.car-affordability-calculator'); //done
+// Route::view('/car-affordability-calculator', 'site.car-affordability-calculator'); //done
 Route::view('/car-loan-calculator', 'site.car-loan-calculator');//done
-Route::view('/lease-a-car', 'site.lease-a-car'); //done
+// Route::view('/lease-a-car', 'site.lease-a-car'); //done
 Route::view('/research', 'site.research'); //done
 Route::view('/sell-your-car', 'site.sell-your-car'); //done
 Route::view('/plus', 'site.plus');
